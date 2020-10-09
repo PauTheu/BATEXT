@@ -1,0 +1,97 @@
+% Encoding: UTF-8
+
+@Article{stuart1996local,
+  author    = {Stuart, Toby E and Podolny, Joel M},
+  journal   = {Strategic management journal},
+  title     = {Local search and the evolution of technological capabilities},
+  year      = {1996},
+  number    = {S1},
+  pages     = {21--38},
+  volume    = {17},
+  publisher = {Wiley Online Library},
+}
+
+@TechReport{jaffe1986technological,
+  author      = {Jaffe, Adam B},
+  institution = {national bureau of economic research},
+  title       = {Technological opportunity and spillovers of R\&D: evidence from firms' patents, profits and market value},
+  year        = {1986},
+}
+
+@Article{kitahara2017technology,
+  author  = {Kitahara, Minoru and Oikawa, Koki},
+  journal = {Tokyo Center for Economic Research (TCER) Paper},
+  title   = {Technology Polarization},
+  year    = {2017},
+  number  = {E113},
+}
+
+@Article{engelsman1994patent,
+  author    = {Engelsman, Eibert C and van Raan, Anthony FJ},
+  journal   = {Research policy},
+  title     = {A patent-based cartography of technology},
+  year      = {1994},
+  number    = {1},
+  pages     = {1--26},
+  volume    = {23},
+  publisher = {Elsevier},
+}
+
+@Article{karki1997patent,
+  author    = {Karki, MMS},
+  journal   = {World Patent Information},
+  title     = {Patent citation analysis: A policy analysis tool},
+  year      = {1997},
+  number    = {4},
+  pages     = {269--272},
+  volume    = {19},
+  publisher = {Elsevier},
+}
+
+@Article{jaffe1989characterizing,
+  author    = {Jaffe, Adam B},
+  journal   = {Research Policy},
+  title     = {Characterizing the “technological position” of firms, with application to quantifying technological opportunity and research spillovers},
+  year      = {1989},
+  number    = {2},
+  pages     = {87--97},
+  volume    = {18},
+  publisher = {Elsevier},
+}
+
+@Article{jaffe1993geographic,
+  author    = {Jaffe, Adam B and Trajtenberg, Manuel and Henderson, Rebecca},
+  journal   = {the Quarterly journal of Economics},
+  title     = {Geographic localization of knowledge spillovers as evidenced by patent citations},
+  year      = {1993},
+  number    = {3},
+  pages     = {577--598},
+  volume    = {108},
+  publisher = {MIT Press},
+}
+
+@Article{blei2003latent,
+  author  = {Blei, David M and Ng, Andrew Y and Jordan, Michael I},
+  journal = {Journal of machine Learning research},
+  title   = {Latent dirichlet allocation},
+  year    = {2003},
+  number  = {Jan},
+  pages   = {993--1022},
+  volume  = {3},
+}
+
+@Article{benner2008close,
+  author    = {Benner, Mary and Waldfogel, Joel},
+  journal   = {Research Policy},
+  title     = {Close to you? Bias and precision in patent-based measures of technological proximity},
+  year      = {2008},
+  number    = {9},
+  pages     = {1556--1567},
+  volume    = {37},
+  publisher = {Elsevier},
+}
+
+@Article{,
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

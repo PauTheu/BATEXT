@@ -1,0 +1,379 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{bar2012measure}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a37974071e9d77a84da33ef71cc2caa4}{%
+           family={Bar},
+           familyi={B\bibinitperiod},
+           given={Talia},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a6fa890bc007440792be9bc899357a7}{%
+           family={Leiponen},
+           familyi={L\bibinitperiod},
+           given={Aija},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7ebbd8cf6fcec98262603c50332cd419}
+      \strng{fullhash}{7ebbd8cf6fcec98262603c50332cd419}
+      \strng{bibnamehash}{7ebbd8cf6fcec98262603c50332cd419}
+      \strng{authorbibnamehash}{7ebbd8cf6fcec98262603c50332cd419}
+      \strng{authornamehash}{7ebbd8cf6fcec98262603c50332cd419}
+      \strng{authorfullhash}{7ebbd8cf6fcec98262603c50332cd419}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economics Letters}
+      \field{number}{3}
+      \field{title}{A measure of technological distance}
+      \field{volume}{116}
+      \field{year}{2012}
+      \field{pages}{457\bibrangedash 459}
+      \range{pages}{3}
+    \endentry
+    \entry{benner2008close}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=30f434002a6341ea41fe4c8127e9be4a}{%
+           family={Benner},
+           familyi={B\bibinitperiod},
+           given={Mary},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3d471c76b815d0be18ca05304a0aa12}{%
+           family={Waldfogel},
+           familyi={W\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9c5fc1d191534fd1e5a17f0095a0eb63}
+      \strng{fullhash}{9c5fc1d191534fd1e5a17f0095a0eb63}
+      \strng{bibnamehash}{9c5fc1d191534fd1e5a17f0095a0eb63}
+      \strng{authorbibnamehash}{9c5fc1d191534fd1e5a17f0095a0eb63}
+      \strng{authornamehash}{9c5fc1d191534fd1e5a17f0095a0eb63}
+      \strng{authorfullhash}{9c5fc1d191534fd1e5a17f0095a0eb63}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research Policy}
+      \field{number}{9}
+      \field{title}{Close to you? Bias and precision in patent-based measures of technological proximity}
+      \field{volume}{37}
+      \field{year}{2008}
+      \field{pages}{1556\bibrangedash 1567}
+      \range{pages}{12}
+    \endentry
+    \entry{engelsman1994patent}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9f27d3633a6357dd28bcd74de37983b3}{%
+           family={Engelsman},
+           familyi={E\bibinitperiod},
+           given={Eibert\bibnamedelima C},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d3e4fbd04ed9f21bb128a1eb8fd5a70}{%
+           family={Raan},
+           familyi={R\bibinitperiod},
+           given={Anthony\bibnamedelima FJ},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ae32b18683fcb6cad1ba073929de29b9}
+      \strng{fullhash}{ae32b18683fcb6cad1ba073929de29b9}
+      \strng{bibnamehash}{ae32b18683fcb6cad1ba073929de29b9}
+      \strng{authorbibnamehash}{ae32b18683fcb6cad1ba073929de29b9}
+      \strng{authornamehash}{ae32b18683fcb6cad1ba073929de29b9}
+      \strng{authorfullhash}{ae32b18683fcb6cad1ba073929de29b9}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research policy}
+      \field{number}{1}
+      \field{title}{A patent-based cartography of technology}
+      \field{volume}{23}
+      \field{year}{1994}
+      \field{pages}{1\bibrangedash 26}
+      \range{pages}{26}
+    \endentry
+    \entry{jaffe1986technological}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1689f4d03efc6b66e1fcab2c1efc1dab}{%
+           family={Jaffe},
+           familyi={J\bibinitperiod},
+           given={Adam\bibnamedelima B},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {national bureau of economic research}%
+      }
+      \strng{namehash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{fullhash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{bibnamehash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{authorbibnamehash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{authornamehash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{authorfullhash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \field{extraname}{1}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Technological opportunity and spillovers of R\&D: evidence from firms' patents, profits and market value}
+      \field{type}{techreport}
+      \field{year}{1986}
+    \endentry
+    \entry{jaffe1989characterizing}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1689f4d03efc6b66e1fcab2c1efc1dab}{%
+           family={Jaffe},
+           familyi={J\bibinitperiod},
+           given={Adam\bibnamedelima B},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{fullhash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{bibnamehash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{authorbibnamehash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{authornamehash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \strng{authorfullhash}{1689f4d03efc6b66e1fcab2c1efc1dab}
+      \field{extraname}{2}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research Policy}
+      \field{number}{2}
+      \field{title}{Characterizing the “technological position” of firms, with application to quantifying technological opportunity and research spillovers}
+      \field{volume}{18}
+      \field{year}{1989}
+      \field{pages}{87\bibrangedash 97}
+      \range{pages}{11}
+    \endentry
+    \entry{jaffe1993geographic}{article}{}
+      \name{author}{3}{ul=1}{%
+        {{un=0,uniquepart=base,hash=1689f4d03efc6b66e1fcab2c1efc1dab}{%
+           family={Jaffe},
+           familyi={J\bibinitperiod},
+           given={Adam\bibnamedelima B},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89a5f929407017c13e56780461b8a441}{%
+           family={Trajtenberg},
+           familyi={T\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3df80be20b83e30d2320467b4d8d3f7}{%
+           family={Henderson},
+           familyi={H\bibinitperiod},
+           given={Rebecca},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{34cad986c43c31e601adac63b7f9f03a}
+      \strng{fullhash}{f8aedc8937ec30f1e9f98aedb3eb32ba}
+      \strng{bibnamehash}{f8aedc8937ec30f1e9f98aedb3eb32ba}
+      \strng{authorbibnamehash}{f8aedc8937ec30f1e9f98aedb3eb32ba}
+      \strng{authornamehash}{34cad986c43c31e601adac63b7f9f03a}
+      \strng{authorfullhash}{f8aedc8937ec30f1e9f98aedb3eb32ba}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{the Quarterly journal of Economics}
+      \field{number}{3}
+      \field{title}{Geographic localization of knowledge spillovers as evidenced by patent citations}
+      \field{volume}{108}
+      \field{year}{1993}
+      \field{pages}{577\bibrangedash 598}
+      \range{pages}{22}
+    \endentry
+    \entry{karki1997patent}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=563a1db8e793692caa20e393cb303a37}{%
+           family={Karki},
+           familyi={K\bibinitperiod},
+           given={MMS},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{563a1db8e793692caa20e393cb303a37}
+      \strng{fullhash}{563a1db8e793692caa20e393cb303a37}
+      \strng{bibnamehash}{563a1db8e793692caa20e393cb303a37}
+      \strng{authorbibnamehash}{563a1db8e793692caa20e393cb303a37}
+      \strng{authornamehash}{563a1db8e793692caa20e393cb303a37}
+      \strng{authorfullhash}{563a1db8e793692caa20e393cb303a37}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{World Patent Information}
+      \field{number}{4}
+      \field{title}{Patent citation analysis: A policy analysis tool}
+      \field{volume}{19}
+      \field{year}{1997}
+      \field{pages}{269\bibrangedash 272}
+      \range{pages}{4}
+    \endentry
+    \entry{kitahara2017technology}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b4aa1735d3e67bdef6b55f38e0a2730b}{%
+           family={Kitahara},
+           familyi={K\bibinitperiod},
+           given={Minoru},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75f55fa62d30839610647b7a11ce66e0}{%
+           family={Oikawa},
+           familyi={O\bibinitperiod},
+           given={Koki},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4378782d5f33e391ada97a79864eec04}
+      \strng{fullhash}{4378782d5f33e391ada97a79864eec04}
+      \strng{bibnamehash}{4378782d5f33e391ada97a79864eec04}
+      \strng{authorbibnamehash}{4378782d5f33e391ada97a79864eec04}
+      \strng{authornamehash}{4378782d5f33e391ada97a79864eec04}
+      \strng{authorfullhash}{4378782d5f33e391ada97a79864eec04}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Tokyo Center for Economic Research (TCER) Paper}
+      \field{number}{E113}
+      \field{title}{Technology Polarization}
+      \field{year}{2017}
+    \endentry
+    \entry{kruskal1978multidimensional}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=569f9ff2dff516524ca08370ba81ba29}{%
+           family={Kruskal},
+           familyi={K\bibinitperiod},
+           given={Joseph\bibnamedelima B},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Sage}%
+      }
+      \strng{namehash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{fullhash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{bibnamehash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{authorbibnamehash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{authornamehash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{authorfullhash}{569f9ff2dff516524ca08370ba81ba29}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{11}
+      \field{title}{Multidimensional scaling}
+      \field{year}{1978}
+    \endentry
+    \entry{stuart1996local}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=09672da8e02272d0a4c16a35f7cd3da5}{%
+           family={Stuart},
+           familyi={S\bibinitperiod},
+           given={Toby\bibnamedelima E},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a8840573f21d859e2f78c99fb14c1c0}{%
+           family={Podolny},
+           familyi={P\bibinitperiod},
+           given={Joel\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{8ca571f48d6523c32ee1e3f1eb7c3ceb}
+      \strng{fullhash}{8ca571f48d6523c32ee1e3f1eb7c3ceb}
+      \strng{bibnamehash}{8ca571f48d6523c32ee1e3f1eb7c3ceb}
+      \strng{authorbibnamehash}{8ca571f48d6523c32ee1e3f1eb7c3ceb}
+      \strng{authornamehash}{8ca571f48d6523c32ee1e3f1eb7c3ceb}
+      \strng{authorfullhash}{8ca571f48d6523c32ee1e3f1eb7c3ceb}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Strategic management journal}
+      \field{number}{S1}
+      \field{title}{Local search and the evolution of technological capabilities}
+      \field{volume}{17}
+      \field{year}{1996}
+      \field{pages}{21\bibrangedash 38}
+      \range{pages}{18}
+    \endentry
+  \enddatalist
+  \missing{jaffe86technological}
+\endrefsection
+\endinput
+

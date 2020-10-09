@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Titelseite %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\sffamily
+
+
+\begin{titlepage}
+
+%% KIT Logo
+\begin{textblock}{10}[0,0](-0.4,-0.55)
+	\ifnum\value{Language}=1
+	\includegraphics[width=.3\textwidth]{logos/kitlogo_de_rgb.pdf}
+	\else
+	\includegraphics[width=.3\textwidth]{logos/kitlogo_en_rgb.pdf}
+	\fi
+\end{textblock}
+
+
+%% Grey frame
+\newcommand{\xone}{-13} %linker Rand des grauen Rahmens
+\newcommand{\xtwo}{169} % rechter Rand
+\newcommand{\yone}{25} %oberer Rand
+\newcommand{\ytwo}{-243} %unterer Rand
+
+\begin{tikzpicture}[overlay]
+\draw[color=gray]
+	(\xone mm, \yone mm) -- (\xtwo mm, \yone mm)
+ 	arc (90:0:20 pt) -- (\xtwo mm + 20 pt , \ytwo mm)
+	-- (\xone mm + 20 pt , \ytwo mm)
+ 	arc (270:180:20 pt)
+	-- (\xone mm, \yone mm);
+\end{tikzpicture}
+
+
+%% ECON Logo
+\begin{textblock}{10}[0,0](10.7, -1.1)
+	\ifnum\value{Logo2}=1
+	\includegraphics[width=0.205\textwidth]{logos/ECON}
+	\else
+	\Zweitlogo
+	\fi
+\end{textblock}
+
+
+%% Zweitlogo
+\ifnum\value{Logo2}=2
+\begin{textblock}{10}[0,0](7.7, -1.1)
+	\includegraphics[width=0.22\textwidth]{logos/ECON}
+\end{textblock}
+\fi
+
+
+%% KIT Slogan
+\begin{textblock}{10}[0,0](-0.4,13.3)
+	\ifnum\value{Language}=1
+	\scriptsize{KIT - Die Forschungsuniversität in der Helmholtz-Gemeinschaft.}
+	\else
+	\scriptsize{KIT - The Research University in the Helmholtz Association.}
+	\fi
+\end{textblock}
+
+
+%% KIT Link
+\begin{textblock}{10}[0,0](10.6,13.25)
+\Large{\textcolor[rgb]{0.76,0.76,0.76}{\textbf{www.kit.edu}}}
+\end{textblock}
+
+
+\vspace{2.5cm}
+
+
+
+\begin{center}
+
+%% Title
+{\huge\bfseries \Titel \par}
+
+\vskip 1.8cm
+
+%% Degree
+{ \large
+\ifnum\value{Language}=1
+
+	\ifnum\value{Doc}=2
+	\MakeUppercase{Seminararbeit} \\
+	\else
+		\ifnum\value{Degree}=1
+		\MakeUppercase{Bachelorarbeit} \\ 
+		\else
+		\MakeUppercase{Masterarbeit} \\ 
+		\fi
+	\fi
+\else
+	\ifnum\value{Doc}=2
+	\MakeUppercase{Seminar work} \\
+	\else
+		\ifnum\value{Degree}=1
+		\MakeUppercase{Bachelor thesis} \\
+		\else
+		\MakeUppercase{Master thesis} \\
+		\fi
+	\fi
+\fi
+}
+
+%% von
+\ifnum\value{Language}=1
+von \\
+\else
+of \\
+\fi
+
+\vskip 0.6cm
+
+%% Thesis: student name
+\ifnum\value{Doc}=1
+
+{\large\bfseries \Studierender \\ }
+
+\vskip 1.2cm
+
+% Student info
+\begin{tabular}{p{4cm}l}
+	\ifnum\value{Language}=1
+		\textbf{Matrikelnummer:} & \Matrikel \\
+		\textbf{Studiengang:} & \ifnum\value{Program}=1 Wirtschaftsingenieurwesen\\ \else \ifnum\value{Program}=2 Technische Volkswirtschaftslehre\\ \else Wirtschaftsmathematik\\ \fi \fi
+	\else	
+		\textbf{Student-ID:} & \Matrikel \\
+		\textbf{Study programme:} & \ifnum\value{Program}=1 Industrial Engineering and Management\\ \else  \ifnum\value{Program}=2 Economics Engineering\\ \else Mathematics in Economics\\ \fi \fi
+	\fi
+\end{tabular}
+
+%% Seminar work: 2 names
+\else
+
+\ifnum\value{SecondStud} = 2
+
+\vskip 0.3cm
+\begin{tabular}{l l}
+{\large \textbf{\Studierender}} & 
+\ifnum\value{Language}=1
+\ifnum\value{Program}=1 Wirtschaftsingenieurwesen\\ \else \ifnum\value{Program}=2 Technische Volkswirtschaftslehre\\ \else Wirtschaftsmathematik\\ \fi \fi
+\else
+\ifnum\value{Program}=1 Industrial Engineering and Management\\ \else  \ifnum\value{Program}=2 Economics Engineering\\ \else Mathematics in Economics\\ \fi \fi
+\fi
+\\[-1.3cm] (\Matrikel) & \ifnum\value{Degree}=1 (Bachelor) \else (Master) \fi \\[0.6cm]
+
+{\large \textbf{\StudierenderZwei}} & 
+\ifnum\value{Language}=1
+\ifnum\value{ProgramZwei}=1 Wirtschaftsingenieurwesen\\ \else \ifnum\value{ProgramZwei}=2 Technische Volkswirtschaftslehre\\ \else Wirtschaftsmathematik\\ \fi \fi
+\else
+\ifnum\value{ProgramZwei}=1 Industrial Engineering and Management\\ \else  \ifnum\value{ProgramZwei}=2 Economics Engineering\\ \else Mathematics in Economics\\ \fi \fi
+\fi
+\\[-1.3cm] (\MatrikelZwei) & \ifnum\value{DegreeZwei}=1 (Bachelor) \else (Master) \fi
+\end{tabular}
+
+%% Seminar work: 1 name
+\else
+
+{\large\bfseries \Studierender \\ }
+
+\vskip 1.2cm
+
+% Student info
+	\begin{tabular}{p{4cm}l}
+		\ifnum\value{Language}=1
+		\textbf{Matrikelnummer:} & \Matrikel \\
+		\textbf{Studiengang:} & \ifnum\value{Program}=1 Wirtschaftsingenieurwesen\\ \else \ifnum\value{Program}=2 Technische Volkswirtschaftslehre\\ \else Wirtschaftsmathematik\\ \fi \fi
+		\else	
+		\textbf{Student-ID:} & \Matrikel \\
+		\textbf{Study programme:} & \ifnum\value{Program}=1 Industrial Engineering and Management\\ \else  \ifnum\value{Program}=2 Economics Engineering\\ \else Mathematics in Economics\\ 
+		\fi \fi
+		\fi
+		\\[-1.3cm] & \ifnum\value{DegreeZwei}=1 (Bachelor) \else (Master) \fi
+		\vspace{-0.6cm}
+	\end{tabular}
+\fi
+
+\fi
+
+\vskip 2cm
+
+%% LS und Institut
+{\bfseries
+\ifnum\value{Language}=1
+Institut für Volkswirtschaftslehre (ECON)\\ Lehrstuhl für Wirtschaftspolitik\\
+\else
+Institute of Economics (ECON)\\ Chair in Economic Policy\\
+\fi
+}
+
+\vskip 1.6cm
+
+%% Superviser etc.
+\begin{tabular}{p{5.5cm}l}
+\ifnum\value{Language}=1
+Prüfer: & Prof. Dr. Ingrid Ott \\
+	
+	\ifnum\value{Examiner2}=2
+	Zweitprüfer: & \Zweitgutachter \\
+	\fi
+	
+Betreuender Mitarbeiter: & \Mitarbeiter \\[0.4cm]
+Bearbeitungszeit: & \Bearbeitungszeitraum \\
+
+\else
+Examiner: & Prof. Dr. Ingrid Ott \\
+	
+	\ifnum\value{Examiner2}=2
+	Second Examiner: & \Zweitgutachter \\
+	\fi
+	
+Supervisor: & \Mitarbeiter \\[0.4cm]
+Time period: & 	\Bearbeitungszeitraum \\
+\fi
+\end{tabular}
+
+\end{center}
+
+\end{titlepage}
+
+\normalfont

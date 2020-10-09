@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Einleitung %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Exposé}
+\label{ch:exposé}	% This allows later to reference the chapter 
+
+
+
+
+\section{Motivation}
+\label{ch:expose:sec:motivation}
+Die Automobilbranche erfährt in den letzten Jahren einen gewaltigen Umbruch.  Autonomes Fahren, E-Mobilität, Hybride, intelligente Sprachassistenzsysteme, personalisierte Apps, Infotainmentsysteme sind nur ein paar der rasant wachsenden Technologiefelder. Das Auto erfindet sich gerade neu, maßgebend dafür ist die Arbeit in den Forschungs- und Entwicklungsabteilungen. Sei es der Ausbau von Vakuum-Dünnschichtverfahren für Batteriesysteme oder die Verunreinigungsanalyse im Produktionsprozess; jede Komponente und jede Software, die in ein Auto gehört oder mit einem PKW zu tun haben könnte, soll in irgendeiner Form ein Teil des Fortschritts sein. Alleine in Deutschland werden jedes Jahr circa 43 Milliarden Euro\footnote{Stand: 2017 URL: https://de.statista.com/statistik/daten/studie/503258/umfrage/deutsche-automobilindustrie-ausgaben-fuer-forschung-und-entwicklung-weltweit/ [17.04.2020].} für Forschung und Entwicklung investiert. Bei einem so diversen Technologiefeld und einem gleichzeitig so mächtigen Investitionsapparat wird die Frage nach den Entwicklungen von Technologien sowie dem Innovationsverhalten von Konkurrenzunternehmen zu einer zentralen Frage für jeden Automobilhersteller. Diese Arbeit soll sich mit dieser Problematik aus der Sicht des japanischen Automobilherstellers Honda auseinandersetzen.
+
+Um Technologien und Unternehmen überhaupt miteinander vergleichen zu können, bedarf es einiger Vorarbeit. In diesem Rahmen soll ein  \glqq technology space\grqq{} aufgestellt werden. In einem Technologieraum können mehrere Firmen auf verschiedene Weise gegenübergestellt und analysiert werden. Dabei können Gemeinsamkeiten und Unterschiede von Firmen identifiziert und Entwicklungen über die Zeit untersucht werden. Der Fokus soll dabei auf dem Forschungs- und Entwicklungsstand der Unternehmen liegen. 
+
+Eine Möglichkeit das technische Knowhow von Unternehmen zu quantifizieren besteht in der Analyse ihrer angemeldeten Patente. Ein Patent stellt eine technische Erfindung dar, kann aber auch auf anderen Technologien basieren und diese zitieren. Zitieren also beispielsweise zwei Unternehmen die Patente gleicher Patentfamilien, liegt die Vermutung nahe, dass sie in einem Technologieraum eine ähnliche Position einnehmen werden. Diese Grundlage wird von \textcite{stuart1996local} genutzt, um Überschneidungen in Technologiebereichen verschiedener Firmen zu finden.
+
+
+\section{Forschungsfragen}
+\label{ch:expose:sec:forschungsfragen}
+\begin{enumerate}
+\item \textbf{Welche Möglichkeiten gibt es ein Technologieraum zu definieren und welche Ziele werden damit verfolgt?}
+\begin{itemize}
+\item Ansätze aus bestehender Literatur beschreiben
+\item verschiedene Zielrichtungen darstellen
+\end{itemize}
+\item \textbf{Wie sieht der Technologieraum für das Unternehmen Honda und seine Konkurrenz aus?}
+\begin{itemize}
+\item Durchführung nach Methodik aus Literatur
+\item Beschreibung, Visualisierung und Bewertung
+\end{itemize}
+\item \textbf{Lässt sich mithilfe von \glqq unsupervised machine learning\grqq{} eine weitere Möglichkeit für die Darstellung von Unternehmen in einem Technologieraum formulieren?}
+\begin{itemize}
+\item Methodik außerhalb bestehender Literatur
+\item z.B. mit NLP oder \glqq Text Mining\grqq{}
+\end{itemize}
+\end{enumerate}
+
+
+\section{Literatur}
+\label{ch:expose:sec:literatur}
+\textcite{stuart1996local} stellen eine Möglichkeit vor, wie Unternehmen und deren Technologien in einem Technologieraum dargestellt werden können. Ihr Ansatz bietet die Grundlage für diese Arbeit. Zunächst stellen die Autoren die \glqq lokale Suche\grqq{} als eine zentrale Voraussetzung für die Lokalisation von Firmen in einem Technologieraum fest. Bei der lokalen Suche geht es um die Annahme, dass Firmen ihre Forschungs- und Entwicklungskapazitäten in die Bereiche investieren, in denen sie bereits erfahren und profiliert sind. Somit ist es wahrscheinlicher, dass Daimler beispielsweise im nächsten Quartal ihre Forschungsgelder in die Weiterentwicklung des autonomen Fahrens investiert, als in Tierfutter. Im Hauptteil ihrer Arbeit stellen die Autoren eine Methodik vor, wie sich - anhand von Überschneidungen in Patentzitaten - ein Maß für die Ähnlichkeiten verschiedener Firmen im Forschungs- und Entwicklungsbereich mathematisch als Distanzen berechnen lassen. Die Firmen werden dann mit dem Aspekt der Ähnlichkeit im Bezug auf ihre Technologien graphisch in einem zweidimensionalen Raum dargestellt und anschließend bewertet.
+
+\textcite{kitahara2017technology} erweitern in ihrer Publikation den traditionellen Ansatz von \textcite{stuart1996local}, um Aussagen über die Entwicklung von Technologien in den Vereinigten Staaten zu treffen. Um präzisere Ergebnisse zu erzielen, berücksichtigen die Autoren dabei nicht nur \glqq first-order overlaps\grqq{} sondern auch \glqq second-order overlaps\grqq{}. Dieses Vorgehen ermöglicht es zusätzlich zu den Patentzitaten auf der ersten Ebene, die von den Patentzitaten auf der ersten Ebene wiederum zitierten Patente - die der zweiten Ebene - in das Modell aufzunehmen. 
+
+In der Publikation von \textcite{jaffe1986technological} werden verschiedene Kennzahlen zur Identifikation von Innovationen innerhalb bestimmter Technologiecluster aufgestellt. Um den Technologieraum aufzustellen ordnet der Autor jedem Unternehmen einen Vektor mit fester Länge zu. Alle Vektoreinträge repräsentieren das Forschungs- und Entwicklungsbudget für je einen Technologiebereich. Da diese Daten in der realen Welt nicht beobachtbar sind, werden sie mittels Patentdaten approximiert. Der zentrale Punkt besteht darin, die betrachteten Technologiebereiche auf die jeweiligen Patentklassen abzubilden. Mithilfe der verfügbaren Firmenpatente stellt \textcite{jaffe1986technological} die Technologievektoren der einzelnen Unternehmen auf und vergleicht diese. Der resultierende \glqq technology space\grqq{} wird dann mittels statistischen Methoden analysiert.
+
+Im weiteren Bearbeitungsprozess und im Kontext des Text Minings wird hier noch Literatur hinzukommen.
+
+\section{Methodik}
+\label{ch:expose:sec:methodik}
+
+
+Die Patentdaten werden von der Patentdatenbank PatStat mittels SQL abgerufen. Diese Datenbank enthält alle Patente der wichtigen Patentämter und die Zitationen zwischen den Patenten. Um die Forschungs- und Entwicklungsfelder analysieren zu können, werde ich die Patentdaten je nach ihrer zugrundeliegenden Technologien anhand von Patentklassen (CPC) in Cluster einteilen und diese einzeln betrachten. Um die Firmen in den \glqq technology space\grqq{} einzuordnen, werde ich mich zunächst an dem Ansatz von \textcite{stuart1996local} orientieren.
+
+Um gemeinsame Wissensbasen im Forschungs- und Entwicklungssektor zu quantifizieren, stellen die Autoren eine Methodik vor, bei der Patentdaten die Basis bilden. Der Grundgedanke besteht darin, einer Firma einen Vektor zuzuordnen, welcher die Informationen für die Überschneidung von Patentzitaten mit jeweils anderen Firmen enthält. Berechnet man die Vektoren für jedes Unternehmen, ergibt sich die \glqq community matrix\grqq{}. Die \glqq community matrix\grqq{} stellt dar, in welchem Verhältnis alle ausgewählten Firmen zueinander stehen. Konkret ist ein Eintrag $\alpha_{ij}$ in der Matrix der Anteil der zitierten Patente von Firma i, die auch Firma j zitiert. Zitiert beispielsweise Firma i 100 Patente und Firma j zitiert 20 dieser Patente ist der Wert an dieser Stelle $0.2$. Um das Vorgehen etwas zu veranschaulichen, werde ich im Folgenden ein Beispiel anführen. Die Zahlenwerte stammen von \textcite [25]{stuart1996local}. 
+
+Es gibt drei fikitive Firmen die mit 0, 1 und 2 kodiert sind und es sind 9 Patente 0-8 verfügbar.
+
+\begin{lstlisting}[style=python]
+firms = list(range(3))
+patents = list(range(9))
+
+data = {0:{0,1,2,4}, 1:{2,4}, 2:{0,2,3,4,5,6,7,8}}
+    
+N = len(firms)
+V = len(patents)
+\end{lstlisting}
+
+Im folgenden laufen die Indizes i,j und k über die Liste der Firmen und der Index v über die Liste der Patente. in der NxV-Matrix A gibt der Koeffizient $a_{iv}$ an, ob Firma i das Patent v zitiert.
+
+\begin{lstlisting}[style=python]
+a = np.zeros((N,V))
+for i in firms:
+    for v in patents:
+        a[i,v] = 1 if v in data[i] else 0
+\end{lstlisting}
+
+\begin{lstlisting}[style=python]
+array([[1., 1., 1., 0., 1., 0., 0., 0., 0.],
+       [0., 0., 1., 0., 1., 0., 0., 0., 0.],
+       [1., 0., 1., 1., 1., 1., 1., 1., 1.]])
+\end{lstlisting}
+
+Nun kann die NxN Matrix aufgestellt werden mit den oben angesprochenen Koeffizienten $\alpha_{ij}$.
+
+\begin{lstlisting}[style=python]
+alpha = np.zeros((N,N))
+for i in firms:
+    for j in firms:
+        if i == j: 
+            alpha[i,j] = 0
+        else:
+            alpha[i,j] = np.sum([a[i,v]*a[j,v] for v in patents])/np.sum([a[i,v] for v in patents])
+\end{lstlisting}
+
+\begin{lstlisting}[style=python]
+array([[0.   , 0.5  , 0.75 ],
+       [1.   , 0.   , 1.   ],
+       [0.375, 0.25 , 0.   ]])
+\end{lstlisting}
+
+Hier ergibt sich also z.B. für den Eintrag $\alpha_{2,1} = 0.25$. Also zitiert Firma 1 25\% der Patente, die auch Firma 2 zitiert. Mithilfe der Metrik von \textcite{stuart1996local} lassen sich jetzt die Distanzen zwischen den einzelnen Firmen berechnen. 
+
+\begin{lstlisting}[style=python]
+d = np.zeros((N,N))
+for i in firms:
+    for j in firms:
+        summe = 0
+        for k in firms:
+            if k == i or k == j: continue
+            summe += (alpha[k,i]-alpha[k,j])**2 + (alpha[i,k]-alpha[j,k])**2   
+        d[i,j]=np.sqrt(summe)
+\end{lstlisting}
+
+\begin{lstlisting}[style=python]
+array([[0.       , 0.2795085, 0.25     ],
+       [0.2795085, 0.       , 0.6731456],
+       [0.25     , 0.6731456, 0.       ]])
+\end{lstlisting}
+
+D ist die Abstandsmatrix. Für die Berechnung der Distanzen in D sind zwei Terme ausschlaggebend. Der erste Term $(\alpha_{ki} - \alpha_{kj})$ beschreibt die Differenz der Patentüberschneidungen zwischen Firma i und anderen Firmen k, und der Patentüberschneidungen von Firma j und anderen Firmen k. Der zweite Term $(\alpha_{ik} - \alpha_{kj})$ beschreibt die Gegenrichtung. Er gibt an inwieweit andere Firmen k, Patente von Firmen i und j zitieren. Mithilfe von multidimensionaler Skalierung kann die Distanzmatrix in einen zweidimensionalen Raum projiziert werden, wobei die Abstände der Firmen in dem resultierenden Graph, die Werte aus der mehrdimensionalen Distanzmatrix abbilden.
+
+\begin{lstlisting}[style=python]
+from sklearn.manifold import MDS
+np.random.seed(2)
+embedding = MDS(n_components=2,dissimilarity = 'precomputed')
+m = embedding.fit_transform(d)
+plt.axis('equal')
+plt.scatter(m[:, 0], m[:, 1], color='navy') 
+for i in firms:
+    plt.annotate(i,(m[i,0] + 0.01, m[i,1]))
+\end{lstlisting}
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.6\linewidth]{files/plt01}
+\caption{Firmen in einem Technologieraum}
+\label{plt1}
+\end{figure}
+
+
+In dem Graph von Abbildung \ref{plt1} haben die absoluten Positionen der Firmen 1 bis 3 und die Achsen zunächst keine Bedeutung. Hier geht es in erster Linie um den Abstand und das Verhältnis der Firmen zueinander. Vergleicht man zwei ähnliche Datensätze miteinander werden die Aussagen des Modells anschaulicher. 
+
+\begin{lstlisting}[style=python]
+data1 = {0:{0,1,2,4}, 1:{2,4}, 2:{0,2,3,4,5,6,7,8}}
+data2 = {0:{0,1,2,4}, 1:{2,4,5}, 2:{0,2,3,4,5,6,7,8}}
+\end{lstlisting}
+
+Die Firma mit dem Index 1 zitiert im zweiten Datensatz ein Patent mehr (Patent 5), dieses Patent wird auch von Unternehmen 2 zitiert. Im zweidimensionalen Raum nähert sich Firma 1 also Firma 2 an. Da die Verhältnisse jetzt verschoben sind, verändert sich zusätzlich die Position von Firma 0. Anschaulich wird dieser Effekt in den Graphen der Abbildung \ref{plt2} und Abbildung \ref{plt3} 
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.6\linewidth]{files/plt02}
+\caption{Datensatz 1}
+\label{plt2}
+\end{figure}
+
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.6\linewidth]{files/plt03}
+\caption{Datensatz 2}
+\label{plt3}
+\end{figure}
+
+
+Im weiteren Verlauf meiner Arbeit werde ich außerdem den zeitlichen Verlauf der Patentdaten berücksichtigen. Um weitere Aussagen zu treffen, können die zeitlich bedingten Veränderungen der Patentzahlen in einem Graph zusammengefasst werden, wobei die Bewegung der Firmen und ihr Verhältnis zueinander in mehreren Zeitfenstern dargestellt werden. Einerseits lassen sich damit beispielsweise besser performende Technologien von weniger guten trennen, andererseits ist es, durch die potentiell stärkere Überschneidung der Patentmengen zweier Firmen, auch möglich, unternehmerische Allianzen zu beurteilen. Zusätzlich kann aufgrund der Varianz der Patentdaten einer Firma über den betrachteten Zeitraum ein Stabilitätsmaß berechnet werden, welches die wirtschaftliche Durabilität der einzelnen Firmen anspricht. 
+
+Um den Fokus mehr auf den Automobilhersteller Honda zu richten werde ich nach dem Vorgehen von \textcite{stuart1996local} eine \glqq egozentrische Matrix\grqq{} aufstellen. In dieser Matrix werden nur die Patentzitate berücksichtigt, die sich mit den Patentzitaten von Honda überschneiden. Mit dem resultierenden Graph kann analysiert werden, welche Firmen Honda technisch am nächsten stehen. 
+
+Durch das Einführen weiterer Indikatoren wie z.B. dem Marktanteil der jeweiligen Unternehmen, können diese in dem Technologieraum hinsichtlich ihres Entwicklungspotentials kategorisiert werden. \textcite{stuart1996local} nutzen eine Kombination aus Marktanteil, Patente und Patentzitationen um die von ihnen betrachteten Unternehmen in zwei Klassen - den Kern und die Peripherie - einzuteilen. Die Unternehmen die im Bereich des Kerns lokalisiert sind, versprechen in dieser Darstellung ein höheres Entwicklungspotential, als die Unternehmen in der Peripherie.
+
+Im Anschluss sollen weitere Ansätze entwickelt werden, wie der \glqq technology space\grqq{} beispielsweise mittels \glqq Text Mining\grqq{} aufgestellt werden kann. 
+
+
+\section{Vorläufige Struktur}
+\label{ch:expose:sec:struktur}
+\begin{enumerate}
+\item \textbf{Einleitung}
+\begin{itemize}
+\item das Thema  \glqq technology space\grqq{} anführen und motivieren
+\end{itemize}
+\item \textbf{Grundlagen eines Technologieraums}
+\begin{itemize}
+\item Modelle nach Literatur beschreiben
+\item Zielrichtungen aufzeigen
+\item Beantwortung der ersten Forschungsfrage
+\end{itemize}
+\item \textbf{Honda und Wettbewerber in einem Technologieraum darstellen}
+\begin{itemize}
+\item Datenbasis 
+\item Einteilung der Technologiebereiche
+\item Auswahl der Konkurrenzunternehmen und Begründung
+\item Durchführung des Verfahrens nach \textcite{stuart1996local}
+\item Visualisierung
+\item Interpretation der Ergebnisse
+\item eventuelle Erweiterung des Modells
+\item Beantwortung der zweiten Forschungsfrage
+\end{itemize}
+\item \textbf{Ein Technologieraum mittels maschinellem Lernen definieren}
+\begin{itemize}
+\item Begründung des Verfahrens
+\item Darstellung eines Technologieraum nach neuem Verfahren
+\item Beschreibung des Verfahrens und Durchführung
+\item Beantwortung der dritten Forschungsfrage
+\end{itemize}
+\item \textbf{Fazit}
+\end{enumerate}
+
+
+
+
+
+\section{Zeitplan}
+\label{ch:expose:sec:zeitplan}
+
+\begin{itemize}
+\item Beginn 01. Mai 2020
+\item weitere Literatur zu dem Thema Technologieraum finden (1 Woche)
+\item Auslesen der Daten und Datenaufbereitung (2 Wochen)
+\item Durchführung nach \textcite{stuart1996local} (2 Wochen)
+\item Visualisierung und Interpretation der Daten (1 Woche)
+\item Durchführung des \glqq Text Minings\grqq{} (2 Wochen)
+\item Schreiben, Literaturverzeichnis, Layout, Korrekturlesen, etc. (1 Monat)
+\end{itemize}
+
+Hinweis: aufgrund der Coronakrise habe ich leider noch drei Klausuren offen. Es ist zum jetzigen Zeitpunkt noch nicht klar, wann diese nachgeholt werden.
+
+
+%% Weitere Untergliederungen:
+%\subsection{title}
+%\subsubsection{title}

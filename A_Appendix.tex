@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Appendix %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Appendix}
+\label{ch:appendix}
+
+Hier beginnt der Anhang.
+
+\section{Weitere Erklärungen}
+\label{ch:appendix:sec:weitere}
+
+\blindtext
+
+
+\begin{figure}[ht]
+	\fbox{
+		\begin{subfigure}[t]{0.48\linewidth}
+			\begin{tikzpicture}
+				\draw[->] (0,0) -- (5,0) node[below] {$ q $};
+				\draw[->] (0,0) -- (0,4) node[left] {$ p $};
+				\draw (0.5,0.5) -- (4,3) node[right] {$ S(p) $};
+				\draw (0.5,3) -- (4,1) node[right] {$ D(p) $};
+			\end{tikzpicture}
+			\caption{Ein Markt.}
+			\label{fig:abbildung2a}
+		\end{subfigure}
+		
+		\begin{subfigure}[t]{0.48\linewidth}
+			\begin{tikzpicture}%[>=latex]
+				\draw[->] (0,0) -- (5,0) node[below] {$ q $};
+				\draw[->] (0,0) -- (0,4) node[left] {$ p $};
+				\draw (0.5,0.5) -- (4,3) node[right] {$ S(p) $};
+				\draw (0.5,2) -- (4,1) node[right] {$ D(p) $};
+			\end{tikzpicture}
+			\caption{Ein anderer Markt.}
+			\label{fig:abbildung2b}
+		\end{subfigure}
+	}
+	\caption{Abbildung mit Unterabbildungen. Eigene Darstellung.}
+	\label{fig:abbildung2}
+\end{figure}
+

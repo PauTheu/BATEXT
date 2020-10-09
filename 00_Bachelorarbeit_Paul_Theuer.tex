@@ -1,0 +1,270 @@
+% !TeX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Thesis Template WIPO                       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                                              %%
+%%  FILL IN !!!                                                                                 %%
+%%                                                                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Umlaute: \newcommand kann nicht direkt mit Umlauten umgehen. Lösung: ü = \"u etc.
+
+% Type of document
+\newcounter{Doc}
+\setcounter{Doc}{1}		% 1: Thesis
+						% 2: Seminar work
+
+% Chose Language:
+\newcounter{Language}
+\setcounter{Language}{1}		% 1: Deutsch
+								% 2: English
+% Your name:
+\newcommand{\Studierender}{Paul Theuer}
+
+% Your student number:
+\newcommand{\Matrikel}{2053912}
+
+% Thesis title (title of seminar work)
+\newcommand{\Titel}{Titel der \\ Seminar-/Abschlussarbeit}
+
+% Superviser (betreuender Mitarbeiter)
+\newcommand{\Mitarbeiter}{Name Mitarbeiter, Name Mitarbeiter 2}
+
+% Degree
+\newcounter{Degree}
+\setcounter{Degree}{1}			% 1: Bachelor
+								% 2: Master
+% Program
+\newcounter{Program}
+\setcounter{Program}{1}			% 1: WIng
+								% 2: T-VWL
+								% 3: WiMa
+
+% For seminar works: Is there a second student?
+\newcounter{SecondStud}\setcounter{SecondStud}{2}	% 1: No
+													% 2: Yes
+\newcommand{\StudierenderZwei}{Name Studierender 2}
+\newcommand{\MatrikelZwei}{87654321}
+\newcounter{DegreeZwei}\setcounter{DegreeZwei}{2}
+\newcounter{ProgramZwei}\setcounter{ProgramZwei}{2}
+
+% Time
+\newcommand{\Bearbeitungszeitraum}{01.05.2019 -- 01.11.2019}
+
+% Second Examiner
+\newcounter{Examiner2}
+\setcounter{Examiner2}{2}		% 1: No
+								% 2: Yes
+\newcommand{\Zweitgutachter}{Prof. Dr. Kay Mitusch} % fill in if Examiner2=Yes
+
+% Second Logo
+\newcounter{Logo2}
+\setcounter{Logo2}{1}			% 1: No
+								% 2: Yes
+\newcommand{\Zweitlogo}{\includegraphics[width=0.22\textwidth]{logos/AIFB}} % fill in if Logo2=Yes
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  STOPP FILLING IN!!                                                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Doc class
+\ifnum\value{Doc}=1
+	\documentclass[
+	12pt,						% Font size 
+	parskip=half, 				% 1.5 linespace
+	numbers=noenddot, 			% Numbers of sections etc. do not end with a dot
+	fleqn						% Equations aligned on the left hand side
+	]{scrreprt}					% KOMA Report
+\else
+\documentclass[12pt, parskip=half, numbers=noenddot, fleqn]{scrartcl}
+\fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Import packages etc.                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Layout
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}	% Set margins
+\usepackage{amssymb, amsmath}									        % Nicer formulas
+\usepackage{newtxtext, newtxmath}		
+\usepackage{nicematrix}							% Font etc.
+\usepackage[T1]{fontenc}												% Verbesserten Trennung für westliche Sprachen
+\usepackage[utf8]{inputenc}												% Additional characters (make sure your editor uses also UTF-8). Other options: [macce], [latin9]
+\usepackage[onehalfspacing]{setspace} 									% Line space
+\usepackage{textpos}													% Allows easier positioning
+\usepackage{xcolor}														% Colours
+\usepackage[margin=30pt,font={footnotesize},labelfont=bf]{subcaption}	% Allows subfigures
+\usepackage[margin=30pt,font={footnotesize},labelfont=bf]{caption}		% Veränderung der bildunterschriften
+\allowdisplaybreaks														% Allows page breaks in equations
+\renewcommand{\arraystretch}{1.5}										% Größerer Zeilenabstand in der Tabelle
+
+% Header
+\usepackage[automark, headsepline]{scrlayer-scrpage}
+\clearpairofpagestyles
+\renewcommand{\headfont}{\itshape}
+\cfoot[\pagemark]{\pagemark}
+\rohead{\headmark}
+\pagestyle{scrheadings}
+
+% Fancy stuff
+\usepackage{ifthen}														% Allows if-then 
+\usepackage{tikz}														% Drawing tool
+\usepackage[threshold=2]{csquotes}										% "Smart" quotations
+	\ifnum\value{Language}=1
+	\renewcommand\mkblockquote[4]{\leavevmode\llap{,,}#1#2#3``#4}
+	\else
+	\renewcommand\mkblockquote[4]{\leavevmode\llap{``}#1#2#3``#4}
+	\fi
+\usepackage{xpatch}														% Change the style of the references
+
+% Language 
+\ifnum\value{Language}=1
+\usepackage[ngerman]{babel}
+\else
+\usepackage[english]{babel}
+\fi
+\usepackage{blindtext}													% Creates random text in chosen language
+
+% Zitieren
+\usepackage[style=authoryear, backend=biber, bibencoding=utf-8, language=\ifnum\value{Language}=1 german\else english\fi, block=space, uniquename=init, giveninits=true, maxcitenames=2, maxbibnames=99, dashed=false, isbn=false, doi=false, date=year]{biblatex}
+\bibliography{Literatur}												% Name of the database file
+	% Abstand
+	\setlength{\bibitemsep}{6pt}
+	% Autor und Jahr werden im Literaturverzeichnis fett geschrieben
+	\xpretobibmacro{author}{\mkbibbold\bgroup}{}{}
+	\xapptobibmacro{author}{\egroup}{}{}
+	\xpretobibmacro{bbx:editor}{\mkbibbold\bgroup}{}{}
+	\xapptobibmacro{bbx:editor}{\egroup}{}{}
+	% Doppelpunkt statt Punkt hinter author-year
+	\renewcommand*{\labelnamepunct}{\mkbibbold{\addcolon\space}}
+	% Autoren durch Semikolon getrennt
+	\AtBeginBibliography{%
+	\renewcommand*{\multinamedelim}{\addsemicolon\space}%
+	\renewcommand*{\finalnamedelim}{\addsemicolon\space}%
+	}
+	% Keine Anführungszeichen in der Bibliographie
+	\DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]{title}{#1\isdot}
+	% Journal: Nummer in Klammern
+	\renewbibmacro*{journal+issuetitle}{
+		\usebibmacro{journal}\setunit*{\addspace}\iffieldundef{series}{}
+		{\newunit \printfield{series}\setunit{\addspace}}\printfield{volume}\iffieldundef{number}{}
+		{\mkbibparens{\printfield{number}}}\setunit{\addcomma\space}\printfield{eid}\setunit{\addspace}\usebibmacro{issue+date}\setunit{\addcolon\space}\usebibmacro{issue}\newunit
+	}
+	% In ngerman: et al. statt u.a.
+	\DefineBibliographyStrings{ngerman}{andothers = {{et\,al\adddot}}}
+
+% Formatierung Literaturverzeichnis
+\apptocmd{\UrlBreaks}{\do\f\do\m}{}{}
+\setcounter{biburllcpenalty}{9000}% Kleinbuchstaben
+\setcounter{biburlucpenalty}{9000}% Großbuchstaben
+
+\setcounter{MaxMatrixCols}{20}
+
+% Trennhinweise
+\hyphenation{Ma-na-ge-ment Netz-werk}
+
+% Include code
+\usepackage{listings}													% Include code (e.g. sql, python etc.)
+\usepackage{scrhack}													% Fixing an issue of listings with floats
+\lstset{literate=														% Umlaute fuer utf8
+	{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+	{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+	{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+	{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+	{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+	{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+	{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+	{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+	{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+	{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+	{€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+	{»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
+	}
+\definecolor{deepgreen}{rgb}{0,0.6,0}
+% SQL
+\lstdefinestyle{SQL}{language=SQL, basicstyle=\ttfamily\scriptsize, breaklines=true, keywordstyle=\bfseries\color{blue}, stringstyle=\color{red}, showstringspaces = false, commentstyle=\color{deepgreen}, numbers=left, numberstyle=\color{gray}, frame=single, backgroundcolor=\color{gray!5}}
+% Python
+\lstdefinestyle{Python}{language=Python, basicstyle=\ttfamily\scriptsize, breaklines=true, keywordstyle=\bfseries\color{blue}, otherkeywords={self}, stringstyle=\color{deepgreen}, showstringspaces = false, commentstyle=\color{gray}, numbers=left, numberstyle=\color{gray}, frame=single, backgroundcolor=\color{gray!5}, emph={print}, emphstyle=\color{violet}}
+
+% At last
+\usepackage{hyperref}													% Referencing
+
+
+\begin{document}
+
+\pagenumbering{roman}
+\include{01_Titelseite}
+\include{02_Erklaerung}
+
+\tableofcontents
+
+% Theses get a list of figures and tables
+\ifnum\value{Doc}=1
+	\newpage
+	\listoffigures
+	\addcontentsline{toc}{chapter}{\ifnum\value{Language}=1 Abbildungsverzeichnis\else List of Figures\fi}
+	\newpage
+	\listoftables
+	\addcontentsline{toc}{chapter}{\ifnum\value{Language}=1 Tabellenverzeichnis\else List of Tables\fi}
+\fi
+
+\cleardoublepage\pagenumbering{arabic}
+
+
+\ifnum\value{Doc}=2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                                              %%
+%% Seminar work                                                                                 %%
+%%
+%% If you write a seminar work, write your complete text in the file ''03_Seminar_work_main_text''
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{03a_Seminar_work_main_text}
+
+\fi
+
+
+\ifnum\value{Doc}=1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                                              %%
+%%  Thesis                                                                                      %%
+%%
+%% If you write a thesis, include your chapters here
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\include{Expose}
+\include{03_Einleitung}
+\include{04_Patente}
+\include{05_Jaffe}
+\include{06_Stuart}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Appendix                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+%\include{A_Appendix}
+
+\fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  References                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography[
+	title={\ifnum\value{Language}=1 Literaturverzeichnis \else References \fi},
+	heading=bibintoc
+	]
+
+
+\end{document}
+
+%Future work:
+%\usepackage{cleveref}
+%\usepackage{varioref}
+%\usepackage{supertab} % mehrseitige Tabellen

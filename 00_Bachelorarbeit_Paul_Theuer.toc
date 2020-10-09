@@ -1,0 +1,70 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abbildungsverzeichnis}{v}{chapter*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Tabellenverzeichnis}{vi}{chapter*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Patente}{2}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.0.1}Grundlegendes}{2}{subsection.2.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Klassifizierung}{3}{section*.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Datenbasis}{3}{section*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Jaffe}{4}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.1}Grundlagen}{4}{subsection.3.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.2}Zielsetzung}{4}{subsection.3.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.3}Bestimmung des Technologieraums}{5}{subsection.3.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.4}Clustering von Patentklassen}{6}{subsection.3.0.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.5}Übertragungseffekte und Technologische Opportunität}{7}{subsection.3.0.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.6}Firmenauswahl}{9}{subsection.3.0.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.7}Bildung der Patentvektoren und der Distanzmatrix}{11}{subsection.3.0.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.8}Multidimensionale Skalierung}{13}{subsection.3.0.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.9}Interpretation des Graphen}{14}{subsection.3.0.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.10}Zeitliche Entwicklung}{16}{subsection.3.0.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.11}Robustheit}{16}{subsection.3.0.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.0.12}Zusammenfassung}{17}{subsection.3.0.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Der Technologieraum basierend auf Patentzitaten}{18}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.1}Grundlagen der Literatur}{18}{subsection.4.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.2}Zielsetzung der Studien}{19}{subsection.4.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.3}Der Technologieraum nach \textcite {stuart1996local}}{19}{subsection.4.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.4}Die Firma Mitsubishi im Technologieraum}{21}{subsection.4.0.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.5}Strategische Allianzen}{22}{subsection.4.0.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.6}Erweiterung des Ansatzes nach \textcite {kitahara2017technology}}{23}{subsection.4.0.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.7}Ergebnis}{23}{subsection.4.0.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.8}Umsetzung}{24}{subsection.4.0.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.0.9}Datenergänzung}{24}{subsection.4.0.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Durchführung}{24}{section*.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline MDS}{24}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Ergebnisse}{24}{section*.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literaturverzeichnis }{25}{chapter*.15}%
