@@ -59,7 +59,7 @@ Um die Distanz zwischen Firmen zu zwei verschiedenen Zeitpunkten festzuhalten, w
 
 \begin{equation}
 \label{sequ2}
-d_{it_ljt_m} \equiv d_{jt_mit_l} = \bigg\{ \sum_{k=1}^{n} [(\alpha_{ikt_l} - \alpha_{jkt_m})^2 + (\alpha_{kit_l} - \alpha{_kjt_m})^2]\bigg\}^\frac{1}{2}, k \neq i, j
+d_{it_ljt_m} \equiv d_{jt_mit_l} = \bigg\{ \sum_{k=1}^{n} [(\alpha_{ikt_l} - \alpha_{jkt_m})^2 + (\alpha_{kit_l} - \alpha_{k_jt_m})^2]\bigg\}^\frac{1}{2}, k \neq i, j
 \end{equation}
 
 
@@ -82,7 +82,7 @@ Im Gegensatz zu Spillovers hat eine Firmenallianz symbiotische Eigenschaften. Au
 
 Wie oben bereits erwähnt teilen die Autoren ihren Technologieraum in zwei Bereiche ein. Dabei werden die Firmen der linken Technologieraumhälfte als \glqq core\grqq{} bezeichnet. Diese Firmen sind besonders innovativ und können hohe Marktanteile aufweisen. Dazu gehören unter anderem die Firmen Hitachi, Toshiba, NEC, Fujitsu und Mitsubishi nach ihrer Neuorientierung. Auf der anderen Seite des Technologieraums befinden sich Firmen der \glqq periphery\grqq{}. Firmen wie Sony und Sanyo, die sich auf den Konsumhandel konzentrieren. \\
 
-Firmen im \glqq core\grqq{}-Bereich des Technologieraums sind nach \textcite{stuart1996local} an insgesamt 31 der 35 Partnerschaften beteiligt. Strategische Allianzen finden sich also fast ausschließlich in die Richtungen \glqq core-to-core\grqq{}, beziehungsweise \glqq core-to-periphery\grqq{}. Mitsubishi, die Firma die sich innerhalb des Technologieraumes am extremsten bewegt hat, war in allen drei Jahren an den meisten Firmenpartnerschaften beteiligt. Im allgemeinen korreliert die Bewegungsdistanz einer Firma im Technologieraum positiv mit der Anzahl ihrer eingegangenen Partnerschaften \parencite[S. 34]{stuart1996local}. Gerade das Wechseln des Technologieclusters ist für Firmen nur in seltenen Fällen mit eigener Innovationskraft zu bewältigen. Nach \textcite{stuart1996local} besteht damit ein klarer Zusammenhang zwischen der Affinität einer Firma strategischen Allianzen einzugehen und ihrer Positionierung im Technologieraum. Auch wir konnten im vorherigen Kapitel eine Annäherung der Firma Ford und der Firma Toyota feststellen. Diese Bewegung könnte mitunter durch eine, im Jahre 2011 eingegangene Partnerschaft im Hybridsektor\footnote{Quelle: https://www.forbes.com/sites/altheachang/2011/08/31/ford-toyota-hybrid-partnership/ Stand: 09.10.2020} begründet sein.
+Firmen im \glqq core\grqq{}-Bereich des Technologieraums sind nach \textcite{stuart1996local} an insgesamt 31 der 35 Partnerschaften beteiligt. Strategische Allianzen finden sich also fast ausschließlich in die Richtungen \glqq core-to-core\grqq{}, beziehungsweise \glqq core-to-periphery\grqq{}. Mitsubishi, die Firma die sich innerhalb des Technologieraumes am extremsten bewegt hat, war in allen drei Jahren an den meisten Firmenpartnerschaften beteiligt. Im allgemeinen korreliert die Bewegungsdistanz einer Firma im Technologieraum positiv mit der Anzahl ihrer eingegangenen Partnerschaften \parencite[S. 34]{stuart1996local}. Gerade das Wechseln des Technologieclusters ist für Firmen nur in seltenen Fällen mit eigener Innovationskraft zu bewältigen. Nach \textcite{stuart1996local} besteht damit ein klarer Zusammenhang zwischen der Affinität einer Firma strategischen Allianzen einzugehen und ihrer Positionierung im Technologieraum. Auch wir konnten im vorherigen Kapitel eine Annäherung der Firma Ford und der Firma Toyota feststellen. Diese Bewegung könnte mitunter durch eine, im Jahre 2011 eingegangene Partnerschaft im Hybridsektor\footnote{Quelle: \hyperlink{https://www.forbes.com/sites/altheachang/2011/08/31/ford-toyota-hybrid-partnership/}{Forbes} Stand: 09.10.2020} begründet sein.
 
 
 %\begin{itemize}
@@ -105,37 +105,55 @@ Firmen im \glqq core\grqq{}-Bereich des Technologieraums sind nach \textcite{stu
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\linewidth]{files/kitbsp.PNG}
-\caption{Zwei Firmen und ihre jeweiligen Patentzitate}
+\caption{Patentzitate der Firma Blau (links) und Firma Rot}
 \label{kitbsp}
+\end{figure}
+
+Die Abbildung \ref{kitbsp} zeigt zwei fiktive Firmen (Rot und Blau)\footnote{Weiter: Firma R und Firma B} und ihre jeweiligen Patentzitate. So zitiert Firma R Die roten Patente 1, 2, 3 und 5 unterschiedlich oft. Analog zitiert Firma B die blauen Patente 1, 2, 4, 7 und 8. Die Patentzitate der zweiten Ebene werden durch Pfeile impliziert. So zitiert beispielsweise Patent 3, wiederum die Patente 8 und 9. \textcite{kitahara2017technology} führen vier Gleichungen ein, die alle Zitationsbeziehungen einfangen. 
+
+\begin{equation}
+\label{kitequ1}
+\omega_{ij}^1 \equiv |O(P_i, P_j)| + |O(P_j, P_i)|
+\end{equation}
+
+Sei $|P|$ die Anzahl der Patente in einer Liste $P$. Seien weiterhin $O(P_i, P_j)$, alle Patente in $P_i$, die sich mit den Patente in $P_j$ überschneiden (Wiederholungen inklusive). Wir erhalten für $P_R = \{1, 1, 1, 2, 2, 4, 4\}$ und $P_B = \{1, 1, 2, 4, 4, 4\}$, $|P_R| = 7$ und $|P_B| = 6$ . $\omega_{ij}^1$ zählt die Patente im Schnittbereich der beiden Firmen. Nach Gleichung \ref{kitequ1} erhalten wir für unsere Firmen: $\omega_{RB}^1 = \omega_{BR}^1 = 13$.  Im Unterschied zu \textcite{stuart1996local}, werden auch Mehrfachzitate in die Berechnung aufgenommen. Auch hier ist die Intuition klar. Zitiert eine Firma dasselbe Patent mehrfach, so wird es für sie eine bedeutendere technologische Rolle spielen, als ein einfach zitiertes Patent. \\
+
+Auch wenn sich Zitate nicht direkt überschneiden, könnten die Patente indirekt technologisch verknüpft sein. Seien also $\tilde{P}_{ij}$\footnote{Man beachte: $\tilde{P}_{ij}$ kann auch Wiederholungen beinhalten}, die Patente aus $P_i$, die sich nicht mit $P_j$ überschneiden (Patente außerhalb der Schnittmenge). Weiterhin seien $C_i(p)$, Patent $p$'s Zitate, mit $p \in \tilde{P}_{ij}$ . Auch hier berücksichtigen wir also nur die Patent(zitate), die noch nicht durch die Gleichung \ref{kitequ1} abgedeckt wurden. Den Elementen aus $\tilde{P}_{ij}$ wird ein positives Gewicht $k$ zugeordnet, wenn $p_k$ ein Patent in $\tilde{P}_{ij}$ zitiert oder von einem Patent in $\tilde{P}_{ji}$ zitiert wird.  Für die erste Komponente der \glqq second-order overlaps\grqq{} gilt:
+
+\begin{equation}
+\label{kitequ2}
+\omega_{ij}^{21} = \sum_{k=1}^{n_{ij}} \frac{|O(C_i(p_k), \tilde{P}_{ij})|}{|(C_i(p_k)|}
+\end{equation}
+
+Wir erhalten für $\omega_{RB}^{21} = \frac{\{|8|\}}{1} + \frac{\{|8|\}}{2} + \frac{\{|8|\}}{2} + \frac{\{|8|\}}{2} = 1 + 0.5+  0.5 + 0.5 = 2.5$, veranschaulicht in Abbildung \ref{kitbsp2}. $\omega_{ji}^{21}$ wird analog zur Gleichung \ref{kitequ2} definiert. Für unser Beispiel ist $\omega_{BR}^{21}= 1$. \\
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/kitbsp2.PNG}
+\caption{Patentzitate der zweiten Ebene, $\omega_{RB}^{21}$}
+\label{kitbsp2}
+\end{figure}
+
+Mit der zweiten Komponente der \glqq second-order overlaps\grqq{}, werden alle \glqq übrigen\grqq{} Patente verrechnet. Seien $\tilde{P}^{\prime}_{ij}$ also die Patente in $\tilde{P}_{ij}$, die nicht mit den Patente in $\tilde{P}_{ji}$ überlappen und $\tilde{n}^{\prime}_{ij}$ die Anzahl der Patente in $\tilde{P}^{\prime}_{ij}$. Es gilt:
+ 
+\begin{equation}
+\label{kitequ3}
+\omega_{ij}^{22} = \sum_{k=1}^{n^{\prime}_{ij}} \frac{|O(C_i(p_k), C_j(\tilde{P}_{ji}))|}{|C_i(p_k)|}
+\end{equation}
+
+$\omega_{ji}^{22}$ ist wieder analog definiert. Da die Menge $\tilde{P}^{\prime}_{RB}$ leer ist erhalten wir für $\omega_{RB}^{22} = 0$. Für die Gegenrichtung (Abbildung \ref{kitbsp3}) erhalten wir $\tilde{P}^{\prime}_{BR} =  \frac{|O(C_B(7), \{9\})|}{1} + \frac{|O(C_B(7), \{9\})|}{1}=  \frac{\{|9|\}}{1} + \frac{\{|9|\}}{1}= 2$. 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/kitbsp3.PNG}
+\caption{Patentzitate der zweiten Ebene, $\omega_{BR}^{22}$}
+\label{kitbsp3}
 \end{figure}
 
 
 
-\subsection{Ergebnis}	
-
-\begin{itemize}
-
-\item eine firma hat sich im technology space stark bewegt
-	
-\end{itemize}	
-	
 
 
-\subsection{Umsetzung}
 
-\subsection{Datenergänzung}
-
-\begin{itemize}
-
-\item eine firma hat sich im technology space stark bewegt
-	
-\end{itemize}	
-	
-
-\subsubsection{Durchführung}
-
-\subsubsection{MDS}
-
-\subsubsection{Ergebnisse}
 
 

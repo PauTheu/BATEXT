@@ -1,9 +1,9 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abbildungsverzeichnis}{v}{chapter*.2}%
+\contentsline {chapter}{Abbildungsverzeichnis}{iv}{chapter*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Tabellenverzeichnis}{vi}{chapter*.3}%
+\contentsline {chapter}{Tabellenverzeichnis}{v}{chapter*.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -55,16 +55,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.0.6}Erweiterung des Ansatzes nach \textcite {kitahara2017technology}}{23}{subsection.4.0.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.0.7}Ergebnis}{23}{subsection.4.0.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.0.8}Umsetzung}{24}{subsection.4.0.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.0.9}Datenergänzung}{24}{subsection.4.0.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Durchführung}{24}{section*.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline MDS}{24}{section*.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Ergebnisse}{24}{section*.14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis }{25}{chapter*.15}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis }{27}{chapter*.14}%
