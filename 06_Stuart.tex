@@ -1,7 +1,8 @@
 \chapter{Der Technologieraum basierend auf Patentzitaten}
 \label{ch:zitat}
 
-In diesem Kapitel wird ein Technologieraum auf Basis von Patentzitaten vorgestellt. Zunächst werde ich die Paper \textcite{stuart1996local} und \textcite{kitahara2017technology} zusammenfassen und anschließend die darin vorgestellten Modelle implementieren.
+
+In Kapitel \ref{ch:jaffe} haben wir den Technologieraum für die Firma Honda und ihre Konkurrenz nach dem Ansatz von \parencite{jaffe1989characterizing} dargestellt und interpretiert. Grundlage dabei war es die Firmen aufgrund von Patentklassen zu unterscheiden. Als nächstes wollen wir versuchen etwas tiefer in die Daten zu schauen und dabei die gemeinsamen Wissensgrundlagen der Firmen zu untersuchen. In diesem Kapitel wird ein Technologieraum auf Basis von Patentzitaten vorgestellt. Zunächst werde ich die Paper \textcite{stuart1996local} und \textcite{kitahara2017technology} zusammenfassen und anschließend die darin vorgestellten Modelle implementieren.
 
 \subsection{Grundlagen der Literatur}
 
@@ -12,6 +13,7 @@ In diesem Kapitel wird ein Technologieraum auf Basis von Patentzitaten vorgestel
 	
 
 \subsection{Zielsetzung der Studien}
+\label{zielstkit}
 
 Ziel der Arbeit von \textcite{stuart1996local} ist es ihren \glqq neu definierten\grqq{} Technologieraum durch ein eigenes Beispiel zu motivieren. Mithilfe des definierten Modells wir die Veränderungen der technologischen Positionen zehn japanischer Firmen in der Halbleiterindustrie über einen Zeitraum von 1982 bis 1992 in drei Zeitintervallen dargestellt. Die Darstellung erfolgt mittels multidimensionaler Skalierung. Änderung des strategischen und innovativen der Firmen Verhaltens sollen mittels der resultierenden Graphik begründet werden. So kann beispielsweise gezeigt werden, dass sich eine Firma aufgrund eines erfolgreichen Strategiewechsels im Technologieraum stark bewegt. Weiterhin versuchen die Autoren Gruppierungen von Firmen im Technologieraum zu interpretieren um möglicherweise die Formierung strategischer Allianzen zu begründen. \\
 
@@ -19,6 +21,7 @@ In \textcite{kitahara2017technology} wird ein allgemeineres Bild betrachtet. Ans
 
 
 \subsection{Der Technologieraum nach \textcite{stuart1996local}}
+\label{techstuart}
 
 Nimmt man an, dass Unternehmen ihre Forschungsrichtungen \glqq lokal suchen\grqq{}, ist die patentbasierte Definition eines Technologieraums relativ intuitiv. Haben Firmen ähnliche Wissensquellen werden sie ähnliche Technologien besitzen und in ähnlichen Technologiesektoren forschen. Demnach werden sich die Firmen im Technologieraum nahe stehen. Die technologische Distanz ist nach \textcite{stuart1996local} also ein Maß nach Gemeinsamkeiten in Wissensbasen. \\
 
@@ -67,7 +70,9 @@ Die Idee ist Analog zu \ref{sequ1}, nur werden jetzt die Differenzen der Nischen
 
 \subsection{Die Firma Mitsubishi im Technologieraum}
 
-\textcite{stuart1996local} wenden die oben beschrieben Methodik an um Positionsveränderungen zehn japanischen Firmen in der Halbleiterindustrie darzustellen. Für den Technologieraum wurden die Jahre 1982, 1987 und 1992 gewählt. Da es zehn Firmen zu je drei Zeiträumen gibt, hat der resultierende Graph 30 Punkte. \textcite{stuart1996local} teilen den Technologieraum zunächst in zwei Gruppen ein. Auf der einen Seite befinden sich Firmen, die \glqq einfache\grqq{}, auf den Mainstream-Konsum basierte Technologien produzieren. Auf der anderen Seite befinden sich Unternehmen die sich in komplexeren, industriellen Technologiesektoren aufhalten. So produzieren diese Firmen die Kerntechnologien die in einem jeden Computer stecken (beispielsweise Schaltungslogik für Prozessoren). Das Unternehmen Mitsubishi, beschloss Mitte der 80er Jahre aufgrund von Prognosen einen strategischen Wechsel von dem Konsummarkt in den Industriemarkt vorzunehmen. Maßnahmen waren dabei unter anderem eine drastische Erhöhung der Forschungs- und Entwicklungsausgaben um in den Markt für Speicherentwicklung vorzudringen, oder das Herstellen von Intel's Mikroprozessoren. Mithilfe ihrer Darstellung (siehe \ref{mitsu}) können die Autoren zeigen, dass dieser Strategiewechsel erfolgreich war. Mitsubishi bewegt sich innerhalb des betrachteten Zeitraums im Technologieraum weiter weg von Firmen wie Sony und immer näher zu innovativen Unternehmen wie Hitachi und Toshiba. 
+\textcite{stuart1996local} wenden die oben beschrieben Methodik an um Positionsveränderungen zehn japanischen Firmen in der Halbleiterindustrie darzustellen. Für den Technologieraum wurden die Jahre 1982, 1987 und 1992 gewählt. Da es zehn Firmen zu je drei Zeiträumen gibt, hat der resultierende Graph 30 Punkte. \textcite{stuart1996local} teilen den Technologieraum zunächst in zwei Gruppen ein. Auf der einen Seite befinden sich Firmen, die \glqq einfache\grqq{}, auf den Mainstream-Konsum basierte Technologien produzieren. Auf der anderen Seite befinden sich Unternehmen die sich in komplexeren, industriellen Technologiesektoren aufhalten. So produzieren diese Firmen die Kerntechnologien die in einem jeden Computer stecken (beispielsweise Schaltungslogik für Prozessoren). \\
+
+Das Unternehmen Mitsubishi, beschloss Mitte der 80er Jahre aufgrund von Prognosen einen strategischen Wechsel von dem Konsummarkt in den Industriemarkt vorzunehmen. Maßnahmen waren dabei unter anderem eine drastische Erhöhung der Forschungs- und Entwicklungsausgaben, um in den Markt für Speicherentwicklung vorzudringen, sowie die eigene Herstellung von Intel's Mikroprozessoren. Mithilfe ihrer Darstellung (siehe \ref{mitsu}) können die Autoren zeigen, dass dieser Strategiewechsel erfolgreich war. Mitsubishi bewegt sich innerhalb des betrachteten Zeitraums im Technologieraum weiter weg von Firmen wie Sony und immer näher zu innovativen Unternehmen wie Hitachi und Toshiba. 
 
 \begin{figure}[!ht]
 \centering
@@ -80,7 +85,7 @@ Die Idee ist Analog zu \ref{sequ1}, nur werden jetzt die Differenzen der Nischen
 
 Im Gegensatz zu Spillovers hat eine Firmenallianz symbiotische Eigenschaften. Austausch von Wissen und Technik, soll einen positiven Einfluss auf die Marktposition aller beteiligte Firmen haben. \textcite{stuart1996local} fanden im Rahmen ihrer Recherche 35 Fälle von Wissensaustausch zwischen den zehn Firmen. \\
 
-Wie oben bereits erwähnt teilen die Autoren ihren Technologieraum in zwei Bereiche ein. Dabei werden die Firmen der linken Technologieraumhälfte als \glqq core\grqq{} bezeichnet. Diese Firmen sind besonders innovativ und können hohe Marktanteile aufweisen. Dazu gehören unter anderem die Firmen Hitachi, Toshiba, NEC, Fujitsu und Mitsubishi nach ihrer Neuorientierung. Auf der anderen Seite des Technologieraums befinden sich Firmen der \glqq periphery\grqq{}. Firmen wie Sony und Sanyo, die sich auf den Konsumhandel konzentrieren. \\
+Wie oben bereits erwähnt teilen die Autoren ihren Technologieraum in zwei Bereiche ein. Dabei werden die Firmen der linken Technologieraumhälfte als \glqq core\grqq{} bezeichnet. Diese Firmen sind besonders innovativ und können hohe Marktanteile aufweisen. Dazu gehören unter anderem die Firmen Hitachi, Toshiba, NEC, Fujitsu und Mitsubishi nach ihrer Neuorientierung. Auf der anderen Seite des Technologieraums befinden sich Firmen der \glqq periphery\grqq{}. Darunter befinden sich Firmen wie Sony und Sanyo, die sich auf den Konsumhandel konzentrieren. \\
 
 Firmen im \glqq core\grqq{}-Bereich des Technologieraums sind nach \textcite{stuart1996local} an insgesamt 31 der 35 Partnerschaften beteiligt. Strategische Allianzen finden sich also fast ausschließlich in die Richtungen \glqq core-to-core\grqq{}, beziehungsweise \glqq core-to-periphery\grqq{}. Mitsubishi, die Firma die sich innerhalb des Technologieraumes am extremsten bewegt hat, war in allen drei Jahren an den meisten Firmenpartnerschaften beteiligt. Im allgemeinen korreliert die Bewegungsdistanz einer Firma im Technologieraum positiv mit der Anzahl ihrer eingegangenen Partnerschaften \parencite[S. 34]{stuart1996local}. Gerade das Wechseln des Technologieclusters ist für Firmen nur in seltenen Fällen mit eigener Innovationskraft zu bewältigen. Nach \textcite{stuart1996local} besteht damit ein klarer Zusammenhang zwischen der Affinität einer Firma strategischen Allianzen einzugehen und ihrer Positionierung im Technologieraum. Auch wir konnten im vorherigen Kapitel eine Annäherung der Firma Ford und der Firma Toyota feststellen. Diese Bewegung könnte mitunter durch eine, im Jahre 2011 eingegangene Partnerschaft im Hybridsektor\footnote{Quelle: \hyperlink{https://www.forbes.com/sites/altheachang/2011/08/31/ford-toyota-hybrid-partnership/}{Forbes} Stand: 09.10.2020} begründet sein.
 
@@ -116,7 +121,7 @@ Die Abbildung \ref{kitbsp} zeigt zwei fiktive Firmen (Rot und Blau)\footnote{Wei
 \omega_{ij}^1 \equiv |O(P_i, P_j)| + |O(P_j, P_i)|
 \end{equation}
 
-Sei $|P|$ die Anzahl der Patente in einer Liste $P$. Seien weiterhin $O(P_i, P_j)$, alle Patente in $P_i$, die sich mit den Patente in $P_j$ überschneiden (Wiederholungen inklusive). Wir erhalten für $P_R = \{1, 1, 1, 2, 2, 4, 4\}$ und $P_B = \{1, 1, 2, 4, 4, 4\}$, $|P_R| = 7$ und $|P_B| = 6$ . $\omega_{ij}^1$ zählt die Patente im Schnittbereich der beiden Firmen. Nach Gleichung \ref{kitequ1} erhalten wir für unsere Firmen: $\omega_{RB}^1 = \omega_{BR}^1 = 13$.  Im Unterschied zu \textcite{stuart1996local}, werden auch Mehrfachzitate in die Berechnung aufgenommen. Auch hier ist die Intuition klar. Zitiert eine Firma dasselbe Patent mehrfach, so wird es für sie eine bedeutendere technologische Rolle spielen, als ein einfach zitiertes Patent. \\
+Sei $|P|$ die Anzahl der Patente in einer Liste $P$. Seien weiterhin $O(P_i, P_j)$, alle Patente in $P_i$, die sich mit den Patente in $P_j$ überschneiden (Wiederholungen inklusive). Wir erhalten für $P_R = \{1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5\}$ und $P_B = \{1, 1, 2, 4, 4, 4, 7, 7, 9\}$, $|P_R| = 11$ und $|P_B| = 9$ . $\omega_{ij}^1$ zählt die Patente im Schnittbereich der beiden Firmen. Nach Gleichung \ref{kitequ1} erhalten wir für unsere Firmen: $\omega_{RB}^1 = \omega_{BR}^1 = 13$.  Im Unterschied zu \textcite{stuart1996local}, werden auch Mehrfachzitate in die Berechnung aufgenommen. Auch hier ist die Intuition klar. Zitiert eine Firma dasselbe Patent mehrfach, so wird es für sie eine bedeutendere technologische Rolle spielen, als ein einfach zitiertes Patent. \\
 
 Auch wenn sich Zitate nicht direkt überschneiden, könnten die Patente indirekt technologisch verknüpft sein. Seien also $\tilde{P}_{ij}$\footnote{Man beachte: $\tilde{P}_{ij}$ kann auch Wiederholungen beinhalten}, die Patente aus $P_i$, die sich nicht mit $P_j$ überschneiden (Patente außerhalb der Schnittmenge). Weiterhin seien $C_i(p)$, Patent $p$'s Zitate, mit $p \in \tilde{P}_{ij}$ . Auch hier berücksichtigen wir also nur die Patent(zitate), die noch nicht durch die Gleichung \ref{kitequ1} abgedeckt wurden. Den Elementen aus $\tilde{P}_{ij}$ wird ein positives Gewicht $k$ zugeordnet, wenn $p_k$ ein Patent in $\tilde{P}_{ij}$ zitiert oder von einem Patent in $\tilde{P}_{ji}$ zitiert wird.  Für die erste Komponente der \glqq second-order overlaps\grqq{} gilt:
 
@@ -125,7 +130,7 @@ Auch wenn sich Zitate nicht direkt überschneiden, könnten die Patente indirekt
 \omega_{ij}^{21} = \sum_{k=1}^{n_{ij}} \frac{|O(C_i(p_k), \tilde{P}_{ij})|}{|(C_i(p_k)|}
 \end{equation}
 
-Wir erhalten für $\omega_{RB}^{21} = \frac{\{|8|\}}{1} + \frac{\{|8|\}}{2} + \frac{\{|8|\}}{2} + \frac{\{|8|\}}{2} = 1 + 0.5+  0.5 + 0.5 = 2.5$, veranschaulicht in Abbildung \ref{kitbsp2}. $\omega_{ji}^{21}$ wird analog zur Gleichung \ref{kitequ2} definiert. Für unser Beispiel ist $\omega_{BR}^{21}= 1$. \\
+Wir erhalten für $\omega_{RB}^{21} = \frac{\{|8|\}}{1} + \frac{\{|8|\}}{2} + \frac{\{|8|\}}{2} + \frac{\{|8|\}}{2} = 1 + 0.5+  0.5 + 0.5 = 2.5$, veranschaulicht in Abbildung \ref{kitbsp2}. $\omega_{ji}^{21}$ wird analog zur Gleichung \ref{kitequ2} definiert. Für unser Beispiel erhalten wir $\omega_{BR}^{21}= 1$. \\
 
 \begin{figure}[!ht]
 \centering
@@ -141,7 +146,7 @@ Mit der zweiten Komponente der \glqq second-order overlaps\grqq{}, werden alle \
 \omega_{ij}^{22} = \sum_{k=1}^{n^{\prime}_{ij}} \frac{|O(C_i(p_k), C_j(\tilde{P}_{ji}))|}{|C_i(p_k)|}
 \end{equation}
 
-$\omega_{ji}^{22}$ ist wieder analog definiert. Da die Menge $\tilde{P}^{\prime}_{RB}$ leer ist erhalten wir für $\omega_{RB}^{22} = 0$. Für die Gegenrichtung (Abbildung \ref{kitbsp3}) erhalten wir $\tilde{P}^{\prime}_{BR} =  \frac{|O(C_B(7), \{9\})|}{1} + \frac{|O(C_B(7), \{9\})|}{1}=  \frac{\{|9|\}}{1} + \frac{\{|9|\}}{1}= 2$. 
+$\omega_{ji}^{22}$ ist wieder analog definiert. Da die Menge $\tilde{P}^{\prime}_{RB}$ leer ist erhalten wir für $\omega_{RB}^{22} = 0$. Für die Gegenrichtung (Abbildung \ref{kitbsp3}) erhalten wir $\omega_{BR}^{22} =  \frac{|O(C_B(7), \{9\})|}{1} + \frac{|O(C_B(7), \{9\})|}{1}=  \frac{\{|9|\}}{1} + \frac{\{|9|\}}{1}= 2$.  \\
 
 \begin{figure}[!ht]
 \centering
@@ -150,10 +155,81 @@ $\omega_{ji}^{22}$ ist wieder analog definiert. Da die Menge $\tilde{P}^{\prime}
 \label{kitbsp3}
 \end{figure}
 
+Als nächstes wird die gewichtete Summe aller $\omega$ gebildet, wobei $\eta \in (0, 1)$.
+
+\begin{equation}
+\label{kitequ4}
+\omega_{ij} = \frac{\omega^1_{ij} + \eta(\omega_{ij}^{21} + \omega_{ji}^{21}) + \eta^2(\omega_{ij}^{22} + \omega_{ji}^{22})}{|P_i| + |P_j|}
+\end{equation}
+
+$\eta$ lässt sich als Diskontierungsfaktor für die technologische Relevanz der\glqq second-order Overlaps\grqq{} interpretieren. Je niedriger $\eta$ gewählt wird, desto weniger haben die Patentzitate der zweiten Ebene einen Einfluss auf das Endergebnis. Weiterhin wird $\omega_{ij}$ im Nenner normalisiert. Es gilt also: $\omega_{ij} \in [0, 1]$. Für $\eta = 0.5$ erhalten wir: $\omega_{BR} = \omega_{RB} = \frac{13 + 0.5(2.5 + 1) + 0.5^2(0 + 2)}{11 + 9} = 0.7625$. \\
+
+Im letzten Schritt überführen \textcite{kitahara2017technology} die berechneten Indizes in eine symmetrische Distanzmatrix. 
+
+\begin{equation}
+\label{kitequ5}
+d_{ij} = -\log{(\omega_{ij})}
+\end{equation}
+
+Die resultierende Matrix kann anschließend erneut mithilfe der multidimensionalen Skalierung auf eine zweidimensionale Ebene projiziert werden.
+
+\subsection{Technologische Polarisationen}
+
+Die Polarisation eines Technologieraums ist eine Konfiguration bei der sich ein Großteil der Unternehmen an zwei, voneinander entfernten, Punkten im Technologieraum gruppieren. Wie bereits in Abschnitt \ref{zielstkit} erwähnt untersuchen \textcite{kitahara2017technology} Technologieraumformationen um durch Polarisation induzierte Innovationsaktivitäten zu begründen. Mit dem oben beschriebenen Ausgangsmodell wird die Verteilung von US-amerikanische Firmen in der Halbleiterindustrie in Zeiträumen von jeweils fünf Jahren dargestellt. \\
+
+Wo \textcite{jaffe1986technological} und \textcite{stuart1996local} Technologien auf Firmenebene untersuchen, wollen \textcite{kitahara2017technology} ein möglichst umfangreiches Bild schaffen. So betrachten die Autoren alle Firmen des Industriesektors. Um Polarisationen innerhalb der Verteilungen möglichst gut zu veranschaulichen, führen die Autoren außerdem einer Kerndichtenschätzung durch.\footnote{Verfahren: multivariate kernel desinity estimation (KDE)}. Dabei wird die Gruppen- bzw. Clusterbildung von Unternehmen durch eine Art \glqq Heatmap\grqq{} sichtbar gemacht. 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/kitbild1.PNG}
+\caption{Bewegung US-amerikanischer Firmen über die Zeit \parencite[S. 12]{kitahara2017technology}}
+\label{kitbild1}
+\end{figure}
+
+In der ersten Reihe der Abbildung \ref{kitbild1} sehen wir das Ergebnis der MDS, jedes Unternehmen wird durch einen Punkt im Raum repräsentiert. Die zweite Reihe zeigt die Konturen der Kerndichtenschätzung. Dabei suggerieren helle Punkte eine große Firmendichte. \\
+
+Im weiteren Verlauf ihrer Arbeit motivieren \textcite{kitahara2017technology} weitere Indikatoren. So wird beispielsweise die Gesamtdurchschnittsdistanz aller Firmen im Technologieraum zueinander über mehrere Jahre berechnet. Außerdem wird ein Polarisationsindex mittels zweidimensionaler KDE aufgestellt. Im Ergebnis können die Autoren zunächst durchschnittlich steigende technologische Distanzen und zunehmende Polarisationen US-amerikanischer Firmen feststellen. Zusätzlich wird eine Beziehung zwischen Polarisationen und Anzahl an Patentzitaten dargestellt. 
+So können die Autoren zeigen, dass zunehmende Polarisationen die durchschnittliche Anzahl an Patentzitaten steigert und somit Innovation induziert.  Dieser Effekt lässt sich allerdings nur für Patentdaten vor dem Jahre 1990 beobachten. Die Autoren führen diese Tatsache auf US Patentreformen in den 80er Jahren zurück.
 
 
+\subsection{Der Technologieraum für die Firma Honda und ihre Konkurrenz nach \textcite{stuart1996local}}
 
+Wir wollen das in Abschnitt \ref{techstuart} vorgestellten Modell eines Technologieraum, basierend auf Patentzitaten implementieren und das resultierende Bild anschließend mit dem aus \ref{mds} vergleichen. 
 
+Wir erweitern unsere Datenbasis (alle $Y02T\_10$-Patente) um ihre jeweiligen Zitationen. Im Durchschnitt zitiert eine Firma ca. 29000 Patente. Die Anzahl der Zitationen pro Firma wird in Abbildung \ref{anzahlzit} für die ersten 15 Unternehmen dargestellt. 
 
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/anzahlzit.PNG}
+\caption{Anzahl Zitationen pro Firma}
+\label{anzahlzit}
+\end{figure}
 
+Da wir die Technologieräume miteinander vergleichen wollen, wählen wir zunächst dieselben zehn Firmen wie in Kapitel \ref{ch:jaffe}. Die Wettbewerbskoeffizienten ($\alpha_{ij}$) berechnen wir gemäß Definition (Abschnitt \ref{techstuart}). Die gemeinsame Wissensbasis zweier Firmen erhalten wir durch Bildung der Patentschnittmenge.
 
+\vphantom{dasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd}
+
+\begin{lstlisting}[style=python]
+def getAlpha(i,j):
+    
+    # Hole Firma i und Firma j aus Liste
+    firmaI = firmenlist[i]
+    firmaJ = firmenlist[j]
+    
+    # Alle Patente, die von Firma i zitiert werden
+    dfI = df4.loc[df4.firma == firmaI]
+    patI = set(dfI.cited_family_id.unique())
+    
+    # Alle Patente, die von Firma j zitiert werden
+    dfJ = df4.loc[df4.firma == firmaJ]
+    patJ = set(dfJ.cited_family_id.unique())
+    
+    # Patente, die von Firma i und j zitiert werden
+    patSchnitt = patI & patJ 
+    
+    # Anteil der Patente, die Firma j zitiert, die auch von Firma i zitiert werden.
+    aij = len(patSchnitt) / len(patJ)
+    return aij
+\end{lstlisting}
+
+\vphantom{dasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd}

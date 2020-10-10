@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  9 OCT 2020 21:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  10 OCT 2020 20:30
 entering extended mode
 **./00_Bachelorarbeit_Paul_Theuer.tex
 (00_Bachelorarbeit_Paul_Theuer.tex
@@ -1736,7 +1736,8 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
  [3
 
 
-] (00_Bachelorarbeit_Paul_Theuer.lof
+] [4]
+(00_Bachelorarbeit_Paul_Theuer.lof
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 12.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -1745,13 +1746,14 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 \tf@lof=\write7
 \openout7 = `00_Bachelorarbeit_Paul_Theuer.lof'.
 
-[4
+ [5
 
 ] (00_Bachelorarbeit_Paul_Theuer.lot)
 \tf@lot=\write8
 \openout8 = `00_Bachelorarbeit_Paul_Theuer.lot'.
 
- [5
+
+[6
 
 ]
 \openout2 = `03_Einleitung.aux'.
@@ -1854,7 +1856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--95
  []
 
 [9]
-<files/top10.PNG, id=203, 468.24937pt x 347.04657pt>
+<files/top10.PNG, id=219, 468.24937pt x 347.04657pt>
 File: files/top10.PNG Graphic file (type png)
 <use files/top10.PNG>
 Package pdftex.def Info: files/top10.PNG  used on input line 98.
@@ -1867,7 +1869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
  []
 
 [10 <./files/top10.PNG>]
-<files/cpcnum15.PNG, id=214, 470.50781pt x 347.79938pt>
+<files/cpcnum15.PNG, id=230, 470.50781pt x 347.79938pt>
 File: files/cpcnum15.PNG Graphic file (type png)
 <use files/cpcnum15.PNG>
 Package pdftex.def Info: files/cpcnum15.PNG  used on input line 114.
@@ -1935,7 +1937,7 @@ File: t1txtt.fd 2000/12/15 v3.1
 LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <8> not available
 (Font)              Font shape `T1/txtt/bx/n' tried instead on input line 167.
 [13]
-<files/mdsjaffe1.PNG, id=245, 382.42876pt x 356.0803pt>
+<files/mdsjaffe1.PNG, id=262, 382.42876pt x 356.0803pt>
 File: files/mdsjaffe1.PNG Graphic file (type png)
 <use files/mdsjaffe1.PNG>
 Package pdftex.def Info: files/mdsjaffe1.PNG  used on input line 205.
@@ -1964,85 +1966,124 @@ LaTeX Warning: Reference `GRAFIKzwei' on page 17 undefined on input line 239.
 
  (06_Stuart.tex
 chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
 [18
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textcite' on input line 21.
+(hyperref)                removing `\textcite' on input line 23.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 [19]
-<files/bspzit.PNG, id=325, 491.58656pt x 302.63063pt>
+<files/bspzit.PNG, id=344, 491.58656pt x 302.63063pt>
 File: files/bspzit.PNG Graphic file (type png)
 <use files/bspzit.PNG>
-Package pdftex.def Info: files/bspzit.PNG  used on input line 30.
+Package pdftex.def Info: files/bspzit.PNG  used on input line 33.
 (pdftex.def)             Requested size: 364.19672pt x 224.21559pt.
  [20 <./files/bspzit.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 [21]
-<files/mitsu.PNG, id=345, 494.59781pt x 354.57469pt>
+<files/mitsu.PNG, id=363, 494.59781pt x 354.57469pt>
 File: files/mitsu.PNG Graphic file (type png)
 <use files/mitsu.PNG>
-Package pdftex.def Info: files/mitsu.PNG  used on input line 74.
+Package pdftex.def Info: files/mitsu.PNG  used on input line 79.
 (pdftex.def)             Requested size: 455.24417pt x 326.35875pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 [22 <./files/mitsu.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textcite' on input line 100.
+(hyperref)                removing `\textcite' on input line 105.
 
-<files/kitbsp.PNG, id=362, 550.30594pt x 335.75438pt>
+<files/kitbsp.PNG, id=380, 550.30594pt x 335.75438pt>
 File: files/kitbsp.PNG Graphic file (type png)
 <use files/kitbsp.PNG>
-Package pdftex.def Info: files/kitbsp.PNG  used on input line 107.
+Package pdftex.def Info: files/kitbsp.PNG  used on input line 112.
 (pdftex.def)             Requested size: 364.19672pt x 222.21335pt.
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 [24 <./files/kitbsp.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-<files/kitbsp2.PNG, id=386, 450.9347pt x 251.43938pt>
+<files/kitbsp2.PNG, id=404, 450.9347pt x 251.43938pt>
 File: files/kitbsp2.PNG Graphic file (type png)
 <use files/kitbsp2.PNG>
-Package pdftex.def Info: files/kitbsp2.PNG  used on input line 133.
+Package pdftex.def Info: files/kitbsp2.PNG  used on input line 137.
 (pdftex.def)             Requested size: 364.19672pt x 203.08543pt.
-<files/kitbsp3.PNG, id=388, 446.41782pt x 271.0125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+<files/kitbsp3.PNG, id=406, 446.41782pt x 271.0125pt>
 File: files/kitbsp3.PNG Graphic file (type png)
 <use files/kitbsp3.PNG>
-Package pdftex.def Info: files/kitbsp3.PNG  used on input line 150.
+Package pdftex.def Info: files/kitbsp3.PNG  used on input line 153.
 (pdftex.def)             Requested size: 364.19672pt x 221.0986pt.
-) [25 <./files/kitbsp2.PNG>] [26 <./files/kitbsp3.PNG>]
+[25 <./files/kitbsp2.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+[26 <./files/kitbsp3.PNG>]
+<files/kitbild1.PNG, id=429, 401.24907pt x 159.59625pt>
+File: files/kitbild1.PNG Graphic file (type png)
+<use files/kitbild1.PNG>
+Package pdftex.def Info: files/kitbild1.PNG  used on input line 184.
+(pdftex.def)             Requested size: 455.24417pt x 181.08438pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+[27 <./files/kitbild1.PNG>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\textcite' on input line 195.
+
+<files/anzahlzit.PNG, id=444, 498.36188pt x 358.33875pt>
+File: files/anzahlzit.PNG Graphic file (type png)
+<use files/anzahlzit.PNG>
+Package pdftex.def Info: files/anzahlzit.PNG  used on input line 203.
+(pdftex.def)             Requested size: 455.24417pt x 327.34636pt.
+[28 <./files/anzahlzit.PNG>]) [29]
 chapter without number
-[27
+[30
 
 
 ]
@@ -2065,10 +2106,10 @@ Package logreq Info: Writing requests to '00_Bachelorarbeit_Paul_Theuer.run.xml
 
  ) 
 Here is how much of TeX's memory you used:
- 39386 strings out of 481005
- 778523 string characters out of 2901323
- 1638032 words of memory out of 3000000
- 54345 multiletter control sequences out of 15000+200000
+ 39479 strings out of 481005
+ 779730 string characters out of 2901323
+ 1638709 words of memory out of 3000000
+ 54404 multiletter control sequences out of 15000+200000
  626264 words of font info for 139 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,20n,115p,10131b,3857s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2095,9 +2136,9 @@ x/txsys.pfb><C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /newtx/ztmb.pfb><C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/newtx/ztmr.pfb><C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/newtx/ztmri.pfb>
-Output written on 00_Bachelorarbeit_Paul_Theuer.pdf (32 pages, 563617 bytes).
+Output written on 00_Bachelorarbeit_Paul_Theuer.pdf (36 pages, 632111 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 133 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 647 PDF objects out of 1000 (max. 8388607)
+ 165 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 
