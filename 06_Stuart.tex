@@ -1,21 +1,22 @@
 \chapter{Der Technologieraum basierend auf Patentzitaten}
 \label{ch:zitat}
 
+In diesem Kapitel wird ein Technologieraum auf Basis von Patentzitaten vorgestellt. Zunächst werde ich die Paper \textcite{stuart1996local} und \textcite{kitahara2017technology} zusammenfassen und anschließend die darin vorgestellten Modelle implementieren.
+In Kapitel \ref{ch:jaffe} haben wir den Technologieraum für die Firma Honda und ihre Konkurrenz nach dem Ansatz von \parencite{jaffe1989characterizing} dargestellt und interpretiert. Grundlage dabei war es die Firmen aufgrund von Patentklassen zu unterscheiden. Als nächstes wollen wir versuchen etwas näher an den Daten zu arbeiten um gemeinsame Wissensgrundlagen von Unternehmen für die Formulierung des Technologieraums zu nutzen. 
 
-In Kapitel \ref{ch:jaffe} haben wir den Technologieraum für die Firma Honda und ihre Konkurrenz nach dem Ansatz von \parencite{jaffe1989characterizing} dargestellt und interpretiert. Grundlage dabei war es die Firmen aufgrund von Patentklassen zu unterscheiden. Als nächstes wollen wir versuchen etwas tiefer in die Daten zu schauen und dabei die gemeinsamen Wissensgrundlagen der Firmen zu untersuchen. In diesem Kapitel wird ein Technologieraum auf Basis von Patentzitaten vorgestellt. Zunächst werde ich die Paper \textcite{stuart1996local} und \textcite{kitahara2017technology} zusammenfassen und anschließend die darin vorgestellten Modelle implementieren.
+\section{Literatur}
+\subsection{Grundlagen}
 
-\subsection{Grundlagen der Literatur}
+\textcite{stuart1996local} stellen neben \textcite{jaffe1986technological} eine andere Möglichkeit vor, wie Unternehmen und deren Technologien in einem Technologieraum dargestellt werden können. Zunächst stellen die Autoren die \glqq lokale Suche\grqq{} als eine zentrale Voraussetzung für die Lokalisation von Firmen in einem Technologieraum fest. Bei der lokalen Suche geht es um die Annahme, dass Firmen ihre Forschungs- und Entwicklungskapazitäten in die Bereiche investieren, in denen sie bereits erfahren und profiliert sind. Somit ist es wahrscheinlicher, dass Daimler beispielsweise im nächsten Quartal ihre Forschungsgelder in die Weiterentwicklung des autonomen Fahrens investiert, als in Tierfutter. Ein zitatbasierter Ansatz setzt voraus, dass Unternehmen auf vergangenem Wissen aufbauen. Würden Firmen ihre Innovationsrichtungen also willkürlich wählen, wäre ein solche Herangehensweise sinnlos. Im Hauptteil ihrer Arbeit stellen die Autoren eine Methodik vor, wie sich - anhand von Überschneidungen in Patentzitaten - ein Maß für die Ähnlichkeiten verschiedener Firmen im Forschungs- und Entwicklungsbereich berechnen lassen.
 
-\textcite{stuart1996local} stellen neben \textcite{jaffe1986technological} eine andere Möglichkeit vor, wie Unternehmen und deren Technologien in einem Technologieraum dargestellt werden können. Zunächst stellen die Autoren die \glqq lokale Suche\grqq{} als eine zentrale Voraussetzung für die Lokalisation von Firmen in einem Technologieraum fest. Bei der lokalen Suche geht es um die Annahme, dass Firmen ihre Forschungs- und Entwicklungskapazitäten in die Bereiche investieren, in denen sie bereits erfahren und profiliert sind. Somit ist es wahrscheinlicher, dass Daimler beispielsweise im nächsten Quartal ihre Forschungsgelder in die Weiterentwicklung des autonomen Fahrens investiert, als in Tierfutter. Ein zitatbasierter Ansatz setzt voraus, dass Unternehmen auf vergangenem Wissen aufbauen. Würden Firmen ihre Innovationsrichtungen also willkürlich wählen, wäre ein solche Herangehensweise sinnlos. Im Hauptteil ihrer Arbeit stellen die Autoren eine Methodik vor, wie sich - anhand von Überschneidungen in Patentzitaten - ein Maß für die Ähnlichkeiten verschiedener Firmen im Forschungs- und Entwicklungsbereich mathematisch als Distanzen berechnen lassen.
-
-\textcite{kitahara2017technology} erweitern in ihrer Publikation den traditionellen Ansatz von \textcite{stuart1996local}, um Aussagen über die Entwicklung von Technologien in den Vereinigten Staaten zu treffen. Um präzisere Ergebnisse zu erzielen, berücksichtigen die Autoren dabei nicht nur \glqq first-order overlaps\grqq{} sondern auch \glqq second-order overlaps\grqq{}. Dieses Vorgehen ermöglicht es zusätzlich zu den Patentzitaten auf der ersten Ebene, die von den Patentzitaten auf der ersten Ebene wiederum zitierten Patente - die der zweiten Ebene - in das Modell aufzunehmen. 
+\textcite{kitahara2017technology} erweitern in ihrer Publikation den traditionellen Ansatz von \textcite{stuart1996local}, um Aussagen über die Entwicklung des Innovationsverhalten von Firmen in den Vereinigten Staaten zu treffen. Um präzisere Ergebnisse zu erzielen, berücksichtigen die Autoren dabei nicht nur \glqq first-order overlaps\grqq{} sondern auch \glqq second-order overlaps\grqq{}. Dieses Vorgehen ermöglicht es zusätzlich zu den Patentzitaten auf der ersten Ebene, die von den Patentzitaten auf der ersten Ebene wiederum zitierten Patente - die der zweiten Ebene - in das Modell aufzunehmen. 
 	
 	
 
 \subsection{Zielsetzung der Studien}
 \label{zielstkit}
 
-Ziel der Arbeit von \textcite{stuart1996local} ist es ihren \glqq neu definierten\grqq{} Technologieraum durch ein eigenes Beispiel zu motivieren. Mithilfe des definierten Modells wir die Veränderungen der technologischen Positionen zehn japanischer Firmen in der Halbleiterindustrie über einen Zeitraum von 1982 bis 1992 in drei Zeitintervallen dargestellt. Die Darstellung erfolgt mittels multidimensionaler Skalierung. Änderung des strategischen und innovativen der Firmen Verhaltens sollen mittels der resultierenden Graphik begründet werden. So kann beispielsweise gezeigt werden, dass sich eine Firma aufgrund eines erfolgreichen Strategiewechsels im Technologieraum stark bewegt. Weiterhin versuchen die Autoren Gruppierungen von Firmen im Technologieraum zu interpretieren um möglicherweise die Formierung strategischer Allianzen zu begründen. \\
+Ziel der Arbeit von \textcite{stuart1996local} ist es ihren \glqq neu definierten\grqq{} Technologieraum durch ein eigenes Beispiel zu motivieren. Mithilfe des definierten Modells wir die Veränderungen der technologischen Positionen zehn japanischer Firmen in der Halbleiterindustrie über einen Zeitraum von 1982 bis 1992 in drei Zeitintervallen dargestellt. Die Darstellung erfolgt mittels multidimensionaler Skalierung. Änderung des strategischen und innovativen der Firmen Verhaltens sollen mittels der resultierenden Graphik begründet werden. So kann beispielsweise der innovative Erfolg einer Firma, mit ihrer Bewegung im Technologieraum, begründet werden. Weiterhin versuchen die Autoren, Gruppierungen von Firmen im Technologieraum zu interpretieren, um möglicherweise die Formierung strategischer Allianzen aufzuzeigen. \\
 
 In \textcite{kitahara2017technology} wird ein allgemeineres Bild betrachtet. Anstatt den Effekt der technologischer Distanz auf Firmenebene zu betrachten, untersuchen die Autoren die Beziehung zwischen innovativem Output und Technologieraumformationen. Es wird versucht folgende Kernfrage zu beantworten: Welche Art von Verteilung stimuliert Innovation? Konstruiert man ein Beispiel wird die Fragestellung klarer. Wir nehmen an, alle Firmen in dem Technologieraum sind auf eine technologische Position konzentriert. Wie \textcite{jaffe1986technological} suggeriert, werden sich alle Unternehmen aufgrund von Spillovers unfreiwillig gegenseitig helfen, denn sind sich alle Unternehmen ähnlich ist es einer Firma schnell möglich innovative Technologien der anderen Firmen selbst umzusetzen. Auf der anderen Seite sind Übertragungseffekte aber gering, wenn sich die Firmen über den kompletten Technologieraum verteilen. \textcite{kitahara2017technology} untersuchen die Mitte dieser beiden Extrema. Angenommen es gibt zwei, voneinander entfernte Pole, um die sich die Firmen gruppieren. Die beiden Firmengruppen nutzen jeweils unterschiedliche Technologien und wetteifern darum, welche Technologie zum Marktstandard wird.
 
@@ -25,7 +26,7 @@ In \textcite{kitahara2017technology} wird ein allgemeineres Bild betrachtet. Ans
 
 Nimmt man an, dass Unternehmen ihre Forschungsrichtungen \glqq lokal suchen\grqq{}, ist die patentbasierte Definition eines Technologieraums relativ intuitiv. Haben Firmen ähnliche Wissensquellen werden sie ähnliche Technologien besitzen und in ähnlichen Technologiesektoren forschen. Demnach werden sich die Firmen im Technologieraum nahe stehen. Die technologische Distanz ist nach \textcite{stuart1996local} also ein Maß nach Gemeinsamkeiten in Wissensbasen. \\
 
-Der Koeffizient $\alpha_{ij}$ repräsentiert das Verhältnis, der Anzahl an Wissensquellen auf der Firma j aufbaut, die auch von Firma i genutzt werden. Werden Patentzitate als Analogien für Wissensquellen behandelt so ist der Wert $\alpha_{ij}$ der Anteil der zitierten Patente von Firma j, die auch Firma i zitiert. Die \glqq competition-coefficients\grqq{} sind Werte zwischen 0 und 1, wobei die Firmen bei $\alpha_{ij}= 0$ auf keine gemeinsamen Patente zitieren. Für ein System von N Firmen, kann eine asymmetrische $NxN$ Matrix aufgestellt werden. Die Einträge dieser \glqq community matrix\grqq{} sind die Koeffizienten $\alpha_{ij}$ und $\alpha_{ji}$ für $(j = 1,2, ..., N; i = 1, 2, ..., N; i \neq j)$.
+Der Koeffizient $\alpha_{ij}$ repräsentiert das Verhältnis, der Anzahl an Wissensquellen auf der Firma j aufbaut, die auch von Firma i genutzt werden. Werden Patentzitate als Analogien für Wissensquellen behandelt so ist der Wert $\alpha_{ij}$ der Anteil der zitierten Patente von Firma i, die auch Firma j zitiert. Die \glqq competition-coefficients\grqq{} sind Werte zwischen 0 und 1, wobei die Firmen bei $\alpha_{ij}= 0$ auf keine gemeinsamen Patente zitieren. Für ein System von N Firmen, kann eine asymmetrische $NxN$ Matrix aufgestellt werden. Die Einträge dieser \glqq community matrix\grqq{} sind die Koeffizienten $\alpha_{ij}$ und $\alpha_{ji}$ für $(j = 1,2, ..., N; i = 1, 2, ..., N; i \neq j)$.
 
 
 \begin{figure}[!ht]
@@ -35,7 +36,7 @@ Der Koeffizient $\alpha_{ij}$ repräsentiert das Verhältnis, der Anzahl an Wiss
 \label{bspzit}
 \end{figure}
 
-Die Abbildung \ref{bspzit} zeigt drei Firmen A, B und C und die Patente 1 bis 9. Der Pfeil von einer Firma zu einem Patent impliziert ein Zitat. So zitiert beispielsweise Firma A insgesamt vier Patente (1, 2, 3 und 5). Firma B zitiert lediglich zwei Patente (3 und 5). Der Koeffizient $\alpha_{AB}$, ist der Anteil der zitierten Patente von Firma B, die auch von Firma A zitiert werden. Es ergibt sich $\alpha_{AB} = \frac{2}{4} = 0.5$. Da Firma B alle Patente zitiert, die auch von Firma A zitiert werden ergibt sich umgekehrt $\alpha_{BA} = 1$. Die Werte entlang der Hauptdiagonale liefern keine Informationen und werden mit 0 besetzt. Für die Firmen A, B und C ergibt sich folgende \glqq community matrix\grqq{}:
+Die Abbildung \ref{bspzit} zeigt drei Firmen A, B und C und die Patente 1 bis 9. Der Pfeil von einer Firma zu einem Patent impliziert ein Zitat. So zitiert beispielsweise Firma A insgesamt vier Patente (1, 2, 3 und 5). Firma B zitiert lediglich zwei Patente (3 und 5). Der Koeffizient $\alpha_{AB}$, ist der Anteil der zitierten Patente von Firma A, die auch von Firma B zitiert werden. Es ergibt sich $\alpha_{AB} = \frac{2}{4} = 0.5$. Da Firma B alle Patente zitiert, die auch von Firma A zitiert werden ergibt sich umgekehrt $\alpha_{BA} = 1$. Die Werte entlang der Hauptdiagonale liefern keine Informationen und werden mit 0 besetzt. Für die Firmen A, B und C ergibt sich folgende \glqq community matrix\grqq{}:
 
 \vphantom{dasdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd}
 
@@ -177,7 +178,7 @@ Die resultierende Matrix kann anschließend erneut mithilfe der multidimensional
 
 Die Polarisation eines Technologieraums ist eine Konfiguration bei der sich ein Großteil der Unternehmen an zwei, voneinander entfernten, Punkten im Technologieraum gruppieren. Wie bereits in Abschnitt \ref{zielstkit} erwähnt untersuchen \textcite{kitahara2017technology} Technologieraumformationen um durch Polarisation induzierte Innovationsaktivitäten zu begründen. Mit dem oben beschriebenen Ausgangsmodell wird die Verteilung von US-amerikanische Firmen in der Halbleiterindustrie in Zeiträumen von jeweils fünf Jahren dargestellt. \\
 
-Wo \textcite{jaffe1986technological} und \textcite{stuart1996local} Technologien auf Firmenebene untersuchen, wollen \textcite{kitahara2017technology} ein möglichst umfangreiches Bild schaffen. So betrachten die Autoren alle Firmen des Industriesektors. Um Polarisationen innerhalb der Verteilungen möglichst gut zu veranschaulichen, führen die Autoren außerdem einer Kerndichtenschätzung durch.\footnote{Verfahren: multivariate kernel desinity estimation (KDE)}. Dabei wird die Gruppen- bzw. Clusterbildung von Unternehmen durch eine Art \glqq Heatmap\grqq{} sichtbar gemacht. 
+Wo \textcite{jaffe1986technological} und \textcite{stuart1996local} Technologien auf Firmenebene untersuchen, wollen \textcite{kitahara2017technology} ein möglichst umfangreiches Bild schaffen. So betrachten die Autoren alle Firmen des Industriesektors. Um Polarisationen innerhalb der Verteilungen möglichst gut zu veranschaulichen, führen die Autoren außerdem einer Kerndichtenschätzung durch.\footnote{Verfahren: multivariate kernel desinity estimation (KDE)}. Dabei wird die Gruppen- bzw. Clusterbildung von Unternehmen durch eine \glqq Heatmap\grqq{} sichtbar gemacht. 
 
 \begin{figure}[!ht]
 \centering
@@ -191,9 +192,10 @@ In der ersten Reihe der Abbildung \ref{kitbild1} sehen wir das Ergebnis der MDS,
 Im weiteren Verlauf ihrer Arbeit motivieren \textcite{kitahara2017technology} weitere Indikatoren. So wird beispielsweise die Gesamtdurchschnittsdistanz aller Firmen im Technologieraum zueinander über mehrere Jahre berechnet. Außerdem wird ein Polarisationsindex mittels zweidimensionaler KDE aufgestellt. Im Ergebnis können die Autoren zunächst durchschnittlich steigende technologische Distanzen und zunehmende Polarisationen US-amerikanischer Firmen feststellen. Zusätzlich wird eine Beziehung zwischen Polarisationen und Anzahl an Patentzitaten dargestellt. 
 So können die Autoren zeigen, dass zunehmende Polarisationen die durchschnittliche Anzahl an Patentzitaten steigert und somit Innovation induziert.  Dieser Effekt lässt sich allerdings nur für Patentdaten vor dem Jahre 1990 beobachten. Die Autoren führen diese Tatsache auf US Patentreformen in den 80er Jahren zurück.
 
+\section{Der Technologieraum für die Firma Honda und ihre Konkurrenz nach \textcite{stuart1996local} und \textcite{kitahara2017technology}}
 
-\subsection{Der Technologieraum für die Firma Honda und ihre Konkurrenz nach \textcite{stuart1996local}}
-
+\subsection{Umsetzung des Modells nach \textcite{stuart1996local} und Intepretation der Ergebnisse}
+\label{abs:mdsstuart}
 Wir wollen das in Abschnitt \ref{techstuart} vorgestellten Modell eines Technologieraum, basierend auf Patentzitaten implementieren und das resultierende Bild anschließend mit dem aus \ref{mds} vergleichen. 
 
 Wir erweitern unsere Datenbasis (alle $Y02T\_10$-Patente) um ihre jeweiligen Zitationen. Im Durchschnitt zitiert eine Firma ca. 29000 Patente. Die Anzahl der Zitationen pro Firma wird in Abbildung \ref{anzahlzit} für die ersten 15 Unternehmen dargestellt. 
@@ -225,11 +227,72 @@ def getAlpha(i,j):
     patJ = set(dfJ.cited_family_id.unique())
     
     # Patente, die von Firma i und j zitiert werden
-    patSchnitt = patI & patJ 
+    patSchnitt = patI & patJ
     
-    # Anteil der Patente, die Firma j zitiert, die auch von Firma i zitiert werden.
-    aij = len(patSchnitt) / len(patJ)
+    # Anteil der Patente, die Firma i zitiert, die auch von Firma j zitiert werden.
+    aij = len(patSchnitt) / len(patI)
     return aij
 \end{lstlisting}
 
 \vphantom{dasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd}
+
+Um ein möglichst Umfangreiches Bild zu schaffen betrachten wir Patentdaten für den Gesamtzeitraum (1970 - 2019). Für unsere zehn Firmen erhalten wir eine 10x10 \glqq community matrix\grqq{}. Anschließend berechnen wir die Distanzen der Firmen zueinander nach der oben definierten Metrik \ref{sequ1}. Im letzten Schritt wenden wir wie die multidimensionale Skalierung auf unsere Distanzmatrix an.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/mdsstuart1.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Patentzitaten}
+\label{mdsstuart1}
+\end{figure}
+
+Der Graph in Abbildung \ref{mdsstuart1} zeigt den Technologieraum nach \textcite{stuart1996local} für unsere zehn Firmen. Auf den ersten Blick erkennen wir große Unterschiede zu unserem Graphen in Kapitel \ref{ch:jaffe}. So sehen wir auf der einen Seite des Raumes die Firma Toyota. Auf der anderen Seite befinden sich alle restlichen neun Unternehmen eng gruppiert. Trotz der offensichtlichen Unterschiede erkennen wir kleinere Gemeinsamkeiten zu unserem Technologieraum nach \textcite{jaffe1989technological}. Um diese Gemeinsamkeiten besser aufzuzeigen, betrachten wir in Abbildung \ref{mdsstuart2} den Technologieraum ohne Toyota. Wir können diese Änderung im MDS-Graphen relativ bedenkenlos durchführen, da sich alle anderen Firmen zu Toyota ähnlich verhalten.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/mdsstuart2.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Patentzitaten ohne die Firma Toyota}
+\label{mdsstuart2}
+\end{figure}
+
+Die Gesamtkonstellation fällt etwas anders aus, die Gruppierungen bleiben aber fast gleich. Wir sehen sowohl die Firmengruppierung der Automobilzulieferer Denso und Bosch, als auch die Gruppierung der Konkurrenten Honda und Nissan. Die Firma Mazda befindet sich wieder am Rand des Technologieraums. \\
+
+Wir wollen versuchen die Position von Toyota zu begründen. Wie in Kapitel \ref{ch:jaffe} bereits gezeigt wurde nimmt die Firma Toyota eine Sonderstellung ein. Die Firma besitzt in der von uns betrachteten Patentklasse mit Abstand die meisten Patente. Eine große Patentzahl impliziert indirekt eine hohe absolute Zahl an Patentzitationen. Abbildung \ref{anzahlzit} bestätigt diese Annahme. Diese Tatsache wiederum führt dazu, dass Toyota eine sehr breite technologische Nische einnimmt. Da die restlichen Unternehmen nur einen geringen Teil dieser technologischen Nische besetzen werden die Wettbewerbskoeffizienten ($\alpha_{ij}$) dieser Unternehmen im Vergleich zu Toyota relativ klein ausfallen. Zusätzlich ist die von \textcite{stuart1996local} definierte Metrik, eine euklidische Distanzmetrik. Die Vektorlängen der neun Unternehmen sind sehr klein, die Länge des Vektors der Firma Toyota jedoch relativ groß. Im Ergebnis erhalten wir schließlich die ausfallende Position von Toyota im Technologieraum. \\
+
+Um diese Annahme zu untermauern nehmen wir zusätzlich eine Firma in die Berechnung auf, bei der wir davon ausgehen können, dass diese nur einen sehr geringen Teil der technologischen Nischen aller anderen Firmen einnehmen wird. Mit knapp 13000 Patentzitaten in der $Y02T\_10$ Klasse ist die Firma LG Electronics nicht weit hinter der Firma Mazda (18000). Allerdings handelt es sich bei LG keineswegs um ein Unternehmen in der Automobilbranche. Somit sollte die Firma nur einen geringen Teil der technologischen Nischen unsere zehn Firmen einnehmen können. Wir gehen also davon aus, dass sich LG am anderen Ende des Technologieraums befinden wird. Der Graph der Abbildung \ref{mdsstuart3} bestätigt diese Annahme. \\
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/mdsstuart3.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Patentzitaten mit der Firma LG}
+\label{mdsstuart3}
+\end{figure}
+
+\subsection{Umsetzung des Modells nach \parencite{kitahara2017technology} und Intepretation der Ergebnisse}
+
+Wir wollen sehen wie sich unser Technologieraum verändert wenn wir Patentzitate auf der zweiten Ebene zulassen. In diesem Kontext erwies sich die algorithmische Umsetzung für die Berechnung der $\omega$-Werte als Herausforderung (Code siehe Anhang \ref{appendix:omega}). Um Laufzeitprobleme zu vermeiden haben wir sowohl die Hin- als auch die Rückrichtung aller second-order Zitate in je einem \glqq dictionary\grqq{} gespeichert (Zugriff in $O(1)$). Wir führen die Berechnung in zwei Schritten durch. Im ersten Schritt lokalisieren wir die Patente anhand der Zugehörigkeit in den verschiedenen $\omega$-Klassen und speichern zusätzlich deren Gewichte. Die Gewichtungen hängen davon ab in welcher $\omega$-Klasse sie sich befinden. Im zweiten Schritt berechnen wir die verschiedenen $\omega$-Werte anhand ihrer Gewichtungen und die Distanz der Firmen nach den Formeln \ref{kitequ4} und \ref{kitequ5}. \\
+
+Abbildung \ref{mdskit1} zeigt den Graph der multidimensionalen Skalierung nach Patentzitaten inklusive Patentzitaten der zweiten Ebene für einen Diskontierungsfaktor von 0.6. Wir beobachten eine Veränderung des Technologieraums im Vergleich zu Abschnitt \ref{abs:mdsstuart}. Das Zulassen der second-order Zitate \glqq glättet\grqq{} das Ergebnis in dem Sinne, als dass es jetzt zu deutlich mehr Überschneidungen in Patentzitaten kommt. Je höher wir $\eta$ wählen desto größer ist der Einfluss der second-order Zitate. Das Verhältnis der Firmen zueinander ändert sich dabei wenig, allerdings rücken die Firmen näher zusammen (Die Achsen des MDS-Graphen werden kleiner). \\
+
+Für diesen Ansatz sind die Ergebnisse relativ konsistent zu den Ergebnissen in Kapitel \ref{ch:jaffe}. Wir beobachten Mazda weit entfernt von anderen Firmen am Rand des Technologieraums. Die Firmen Bosch und Denso stehen sich wiederum nahe. Weiterhin finden wir Toyta, Nissan und Honda im selben Quadranten des Technologieraums. Auch die Positionen der Firmen GM, Ford und Hyundai verhalten sich ähnlich zu deren Positionen in Kapitel \ref{ch:jaffe}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/mdskit1.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Patentzitaten inklusive second-order Zitate $\eta = 0.6$}
+\label{mdskit1}
+\end{figure}
+
+In \parencite{kitahara2017technology} wird die gesamte Technologieraumformation für einen Wirtschaftszweig betrachtet. Wir wollen versuchen eine größere Anzahl an Firmen zu betrachten um möglicherweise eine Polarisation im Innovationssektor der Automobilbranche festzustellen. Um die Übersichtlichkeit des Graphen zu gewährleisten wählen wir die Top 31\footnote{Top 30 Unternehmen und die Firma Porsche (Platz 31)} Unternehmen (nach Patentzahl) und schauen wie sie sich in unserem Technologieraum anordnen (Abbildung \ref{mdskit2}). 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/mdskit2.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Patentzitaten inklusive second-order Zitate für 31 Firmen}
+\label{mdskit2}
+\end{figure}
+
+Wir erkennen einen Pol um den sich die etablierten OEM's verteilen. An der Peripherie des Pols befinden sich weniger etablierte Automarken und Unternehmen aus der Elektronik- und Halbleiterbranche. Intuitiv ergibt dieses Bild Sinn. Auch wenn nicht-Automobilunternehmen einige Patente der $Y02T\_10$-Kategorie halten, werden sich ihre Wissensgrundlagen weniger mit den Unternehmen der Automobilindustrie decken. Zudem vernetzten sich die Unternehmen der Automobilindustrie gerade bei der Suche nach nicht-fossilen Fortbewegungsmitteln in den letzten Jahren kontinuierlich.
+
+\subsection{Zusammenfassung}

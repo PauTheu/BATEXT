@@ -1,0 +1,46 @@
+\chapter{Der Technologieraum auf Basis eines Themenmodells}
+\label{ch:tm}
+
+In Kapitel \ref{ch:jaffe} wurde ein Technologieraum auf der Basis von Patentklassen vorgestellt. Im nächstens Schritt haben wir einen engeren Datenbezug vorausgesetzt und Überschneidungen in Patentzitaten genutzt um einen weiteren Technologieraum für die Firma Honda und ihre Konkurrenz zu formulieren. Als letztes wollen wir noch eine Datenebene tiefer gehen. Dabei sollen die Auszüge und die Titel der Patente als Grundlage für den Technologieraum dienen. Mithilfe von \glqq Topic Modeling\grqq{}, wollen wir den einzelnen Patente Themen zuordnen und anschließend nach unseren Firmen gruppieren. Im ersten Teil des Kapitels werde ich die Funktionsweise des Topic Modelings zusammenfassen und das Themenmodell im Anschluss auf unsere Patenttexte anwenden.
+
+
+\section{Latent Dirichlet allocation}
+
+\subsection{Das Problem}
+Angenommen wir wollen fünf Zeitungsartikel nach Inhalt klassifizieren. Dazu betrachten wir beispielsweise die drei Themenbereiche Sport, Politik und Wissenschaft. Wir lesen uns die Artikel durch und weisen den Artikeln jeweils ein Thema oder eine Mischung aus Themen zu, je nachdem in welchem Themenbereich wir den Artikel sehen. Angenommen wir haben keine fünf Artikel sondern eine Millionen Dokumente. Die algorithmische Umsetzung dieser Zuweisung ist das Problem der latent Dirichlet allocation
+
+
+\subsection{Grundlagen}
+
+
+Angenommen wir wollen verschiedene Zeitungsartikel nach Inhalt klassifizieren. Dazu betrachten wir beispielsweise die drei Themenbereiche Sport, Politik und Wissenschaft. Wir lesen uns die Artikel durch und weisen den Artikeln jeweils ein Thema oder eine Mischung aus Themen zu, je nachdem in welchem Themenbereich wir den Artikel sehen. Diese Zuweisung ist das Problem der \glqq latent Dirichlet allocation\grqq{}. \\
+
+Die \glqq latent Dirichlet allocation\grqq{} (LDA) ist ein iteratives stochastisches Model für eine Sammlung diskreter Daten (z.B. eines Textkorpus) und wird in \parencite{blei2003latent} als das moderne Themenmodell vorgestellt. LDA basiert auf einem dreistufigen Bayes'schen Model. Dabei wird jedes Dokument einer Kollektion aus einer endliche Mischung verschiedener Themen modelliert. Jedes Thema entspricht wiederum einer endlichen Mischung verschiedener Wörter \parencite{blei2003latent}.\\
+
+Mit der \glqq unsupervised machine learning\grqq{} Technik lässt sich eine beliebige Anzahl an Dokumenten anhand von Themen sortieren, ohne deren wahre Verteilung vorher zu kennen. So eignet sich das Modell primär für die Klassifizierung großer Textdaten. Abstrakt lässt sich die LDA als eine Maschine, die Dokumente produziert, beschreiben. Mit einer sehr geringen Wahrscheinlichkeit wird also beispielsweise der Text der Bibel oder der, der Unabhängigkeitserklärung produziert. Diese \glqq Maschine\grqq{} hat verschiedene Einstellungen. Der Algorithmus sucht iterativ die Einstellungen der Maschine, die unser Dokument am wahrscheinlichsten produziert.
+
+\subsection{Definition}
+
+Behandeln wir die LDA weiterhin analog einer Maschine, so ergibt sich für den Entwurf dieser Maschine folgendes Bild.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/tmschab.PNG}
+\caption{Graphisches Modell der LDA \parencite[S. 997]{blei2003latent}}
+\label{tmschab}
+\end{figure}
+
+Dabei sind $\alpha$ und $\beta$ Dirichletverteilungen $\Theta$ ist eine Multinomialverteilung. Aus der Multinomialverteilung entstehen die Themen $z$ und die Wörter $w$. Aus den $N$ Wörtern erhalten wir den aus $M$ Dokumente bestehenden Textkorpus. Gegeben den Parametern $\alpha$ und $\beta$ ergibt sich folgende Wahrscheinlichkeit für die Maschine ein Dokument zu produzieren. %$\alpha$ und $\beta$, ergibt sich für die Themenverteilung $\Theta$, einer Menge an $N$ Themen und Wörtern, folgende Wahrscheinlichkeit für die Maschine ein Dokument zu produzieren. 
+
+\begin{equation}
+\label{tmequ1}
+P(W, Z, \Theta, \phi; \alpha, \beta) = \prod_{j=1}^{M} P(\Theta; \alpha) \prod_{i=1}^{K} P(\phi; \beta) \prod_{t=1}^{N} P(Z_{jt} | \Theta_j) P(W_{jt} | \phi_{z_{jt}})
+\end{equation}
+
+Die ersten zwei Terme sind Dirichletverteilungen, der dritte und der vierte Term sind Multinomialverteilung. Beide Verteilungen geben uns jeweils die Themen und die Wörter des Dokumentes. In den nächsten zwei Abschnitten werde ich genauer auf die beiden Verteilungen eingehen.
+
+
+
+\subsection{Die Dirichletverteilung im Kontext des Topic Modelings}
+%
+%Grundsätzlich handelt es sich bei LDA um einen geometrischen Ansatz. Nehmen wir wieder das Beispiel mit drei Themen: Sport, Politik und Wissenschaft. Zusätzlich existiert ein Dreieck, wobei ein Thema jeweils einer Ecke im Dreiecks zugeordnet wird. LDA versucht jetzt die Dokumente je nach Inhalt in das Dreieck einzuordnen. Nehmen wir also ein Artikel mit Thema Sport und Politik. Das Dokument wird entsprechend Abbildung \ref dem Dreieck zugeordnet. 
