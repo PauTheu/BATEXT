@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  12 OCT 2020 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  13 OCT 2020 18:06
 entering extended mode
 **./00_Bachelorarbeit_Paul_Theuer.tex
 (00_Bachelorarbeit_Paul_Theuer.tex
@@ -1445,13 +1445,15 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-
-No file 00_Bachelorarbeit_Paul_Theuer.aux.
+ (00_Bachelorarbeit_Paul_Theuer.aux (01_Titelseite.aux)
+(02_Erklaerung.aux) (03_Einleitung.aux) (04_Patente.aux) (05_Jaffe.aux)
+(06_Stuart.aux) (07_TopicModeling.aux) (A_Appendix.aux))
 \openout1 = `00_Bachelorarbeit_Paul_Theuer.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 198.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
  198.
+
 ("C:\Users\Paul\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\omlntxmi.fd"
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
@@ -1725,35 +1727,34 @@ ogo_de_rgb.pdf> <./logos/ECON.png (PNG copy)>])
 [2
 
 
-]
+] (00_Bachelorarbeit_Paul_Theuer.toc
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 66.
+ [3
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
 
+])
 \tf@toc=\write6
 \openout6 = `00_Bachelorarbeit_Paul_Theuer.toc'.
 
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 208.
-[3
-
-
-]
-
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
-
+ [4]
+(00_Bachelorarbeit_Paul_Theuer.lof
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 12.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 12.
+)
 \tf@lof=\write7
 \openout7 = `00_Bachelorarbeit_Paul_Theuer.lof'.
 
-[4
+ [5
 
-]
-
-Package hyperref Warning: old lot file detected, not used; run LaTeX again.
-
+] (00_Bachelorarbeit_Paul_Theuer.lot)
 \tf@lot=\write8
 \openout8 = `00_Bachelorarbeit_Paul_Theuer.lot'.
 
-[5
+
+[6
 
 ]
 \openout2 = `03_Einleitung.aux'.
@@ -1786,8 +1787,6 @@ chapter 2.
 
  (05_Jaffe.tex
 chapter 3.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 16.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 16.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -1833,16 +1832,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
  []
 
 [7]
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 74.
-
-
-LaTeX Warning: Reference `spillequ' on page 8 undefined on input line 74.
-
-
-LaTeX Warning: Reference `patequ' on page 8 undefined on input line 74.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
@@ -1851,9 +1840,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
-
-
-LaTeX Warning: Reference `spillequ' on page 8 undefined on input line 80.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
@@ -1866,21 +1852,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
  []
 
 
-LaTeX Warning: Reference `patequ' on page 9 undefined on input line 87.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\textcite' on input line 91.
 
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 94.
 
 Underfull \hbox (badness 10000) in paragraph at lines 94--96
 
  []
 
 [9]
-<files/top10.PNG, id=139, 468.24937pt x 347.04657pt>
+<files/top10.PNG, id=278, 468.24937pt x 347.04657pt>
 File: files/top10.PNG Graphic file (type png)
 <use files/top10.PNG>
 Package pdftex.def Info: files/top10.PNG  used on input line 99.
@@ -1888,37 +1869,19 @@ Package pdftex.def Info: files/top10.PNG  used on input line 99.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 100.
 
-
-LaTeX Warning: Reference `top10' on page 10 undefined on input line 104.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-
-LaTeX Warning: Reference `besttech' on page 10 undefined on input line 111.
-
 [10]
-<files/cpcnum15.PNG, id=148, 470.50781pt x 347.79938pt>
+<files/cpcnum15.PNG, id=287, 470.50781pt x 347.79938pt>
 File: files/cpcnum15.PNG Graphic file (type png)
 <use files/cpcnum15.PNG>
 Package pdftex.def Info: files/cpcnum15.PNG  used on input line 115.
 (pdftex.def)             Requested size: 455.24417pt x 336.52118pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 116.
-
-
-LaTeX Warning: Reference `cpcnum15' on page 11 undefined on input line 120.
-
-
-LaTeX Warning: Reference `cpcnum15' on page 11 undefined on input line 122.
-
-[11 <./files/top10.PNG>]
-
-LaTeX Warning: Reference `cosequ' on page 12 undefined on input line 128.
-
-
+ [11 <./files/top10.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
@@ -1979,7 +1942,7 @@ File: t1txtt.fd 2000/12/15 v3.1
 LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <8> not available
 (Font)              Font shape `T1/txtt/bx/n' tried instead on input line 168.
 [14]
-<files/mdsjaffe1.PNG, id=214, 382.42876pt x 356.0803pt>
+<files/mdsjaffe1.PNG, id=353, 382.42876pt x 356.0803pt>
 File: files/mdsjaffe1.PNG Graphic file (type png)
 <use files/mdsjaffe1.PNG>
 Package pdftex.def Info: files/mdsjaffe1.PNG  used on input line 206.
@@ -1995,11 +1958,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--222
  []
 
 [16]
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 223.
+
 
 LaTeX Warning: Reference `plot2' on page 17 undefined on input line 223.
-
-
-LaTeX Warning: Reference `mincequ' on page 17 undefined on input line 240.
 
 
 LaTeX Warning: Reference `GRAFIKzwei' on page 17 undefined on input line 240.
@@ -2009,9 +1972,6 @@ LaTeX Warning: Reference `GRAFIKzwei' on page 17 undefined on input line 240.
 
  (06_Stuart.tex
 chapter 4.
-
-LaTeX Warning: Reference `ch:jaffe' on page 19 undefined on input line 5.
-
 [19
 
 
@@ -2031,25 +1991,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
  []
 
 [20]
-<files/bspzit.PNG, id=278, 491.58656pt x 302.63063pt>
+<files/bspzit.PNG, id=407, 491.58656pt x 302.63063pt>
 File: files/bspzit.PNG Graphic file (type png)
 <use files/bspzit.PNG>
 Package pdftex.def Info: files/bspzit.PNG  used on input line 34.
 (pdftex.def)             Requested size: 364.19672pt x 224.21559pt.
-
-
-LaTeX Warning: Reference `bspzit' on page 21 undefined on input line 39.
-
-[21 <./files/bspzit.PNG>]
+ [21 <./files/bspzit.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
-
-
-LaTeX Warning: Reference `sequ1' on page 22 undefined on input line 70.
-
-
-LaTeX Warning: Reference `mds' on page 22 undefined on input line 70.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
@@ -2057,10 +2007,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
  []
 
 [22]
-
-LaTeX Warning: Reference `mitsu' on page 23 undefined on input line 76.
-
-<files/mitsu.PNG, id=294, 494.59781pt x 354.57469pt>
+<files/mitsu.PNG, id=426, 494.59781pt x 354.57469pt>
 File: files/mitsu.PNG Graphic file (type png)
 <use files/mitsu.PNG>
 Package pdftex.def Info: files/mitsu.PNG  used on input line 80.
@@ -2081,53 +2028,32 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\textcite' on input line 106.
 
 [24 <./files/mitsu.PNG>]
-<files/kitbsp.PNG, id=320, 550.30594pt x 335.75438pt>
+<files/kitbsp.PNG, id=449, 550.30594pt x 335.75438pt>
 File: files/kitbsp.PNG Graphic file (type png)
 <use files/kitbsp.PNG>
 Package pdftex.def Info: files/kitbsp.PNG  used on input line 113.
 (pdftex.def)             Requested size: 364.19672pt x 222.21335pt.
-
-
-LaTeX Warning: Reference `kitbsp' on page 25 undefined on input line 118.
-
-
-LaTeX Warning: Reference `kitequ1' on page 25 undefined on input line 125.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 [25 <./files/kitbsp.PNG>]
-
-LaTeX Warning: Reference `kitequ1' on page 26 undefined on input line 127.
-
-
-LaTeX Warning: Reference `kitbsp2' on page 26 undefined on input line 134.
-
-
-LaTeX Warning: Reference `kitequ2' on page 26 undefined on input line 134.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-<files/kitbsp2.PNG, id=334, 450.9347pt x 251.43938pt>
+<files/kitbsp2.PNG, id=467, 450.9347pt x 251.43938pt>
 File: files/kitbsp2.PNG Graphic file (type png)
 <use files/kitbsp2.PNG>
 Package pdftex.def Info: files/kitbsp2.PNG  used on input line 138.
 (pdftex.def)             Requested size: 364.19672pt x 203.08543pt.
 [26 <./files/kitbsp2.PNG>]
-
-LaTeX Warning: Reference `kitbsp3' on page 27 undefined on input line 150.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-<files/kitbsp3.PNG, id=344, 446.41782pt x 271.0125pt>
+<files/kitbsp3.PNG, id=476, 446.41782pt x 271.0125pt>
 File: files/kitbsp3.PNG Graphic file (type png)
 <use files/kitbsp3.PNG>
 Package pdftex.def Info: files/kitbsp3.PNG  used on input line 154.
@@ -2138,22 +2064,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
  []
 
 [27 <./files/kitbsp3.PNG>]
-
-LaTeX Warning: Reference `zielstkit' on page 28 undefined on input line 179.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-<files/kitbild1.PNG, id=359, 401.24907pt x 159.59625pt>
+<files/kitbild1.PNG, id=491, 401.24907pt x 159.59625pt>
 File: files/kitbild1.PNG Graphic file (type png)
 <use files/kitbild1.PNG>
 Package pdftex.def Info: files/kitbild1.PNG  used on input line 185.
 (pdftex.def)             Requested size: 455.24417pt x 181.08438pt.
-
-LaTeX Warning: Reference `kitbild1' on page 28 undefined on input line 190.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
@@ -2172,47 +2091,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\textcite' on input line 197.
 
-
-LaTeX Warning: Reference `techstuart' on page 29 undefined on input line 199.
-
-
-LaTeX Warning: Reference `mds' on page 29 undefined on input line 199.
-
-
-LaTeX Warning: Reference `anzahlzit' on page 29 undefined on input line 201.
-
-<files/anzahlzit.PNG, id=373, 498.36188pt x 358.33875pt>
+<files/anzahlzit.PNG, id=508, 498.36188pt x 358.33875pt>
 File: files/anzahlzit.PNG Graphic file (type png)
 <use files/anzahlzit.PNG>
 Package pdftex.def Info: files/anzahlzit.PNG  used on input line 205.
 (pdftex.def)             Requested size: 455.24417pt x 327.34636pt.
-
-LaTeX Warning: Reference `ch:jaffe' on page 29 undefined on input line 210.
-
-
-LaTeX Warning: Reference `techstuart' on page 29 undefined on input line 210.
-
-[29 <./files/kitbild1.PNG>]
-
-LaTeX Warning: Reference `sequ1' on page 30 undefined on input line 239.
-
-[30 <./files/anzahlzit.PNG>]
-<files/mdsstuart1.PNG, id=409, 417.81094pt x 358.33875pt>
+[29 <./files/kitbild1.PNG>] [30 <./files/anzahlzit.PNG>]
+<files/mdsstuart1.PNG, id=543, 417.81094pt x 358.33875pt>
 File: files/mdsstuart1.PNG Graphic file (type png)
 <use files/mdsstuart1.PNG>
 Package pdftex.def Info: files/mdsstuart1.PNG  used on input line 243.
 (pdftex.def)             Requested size: 455.24417pt x 390.46667pt.
-
-
-LaTeX Warning: Reference `mdsstuart1' on page 31 undefined on input line 248.
-
-
-LaTeX Warning: Reference `ch:jaffe' on page 31 undefined on input line 248.
-
-
-LaTeX Warning: Reference `mdsstuart2' on page 31 undefined on input line 248.
-
-<files/mdsstuart2.PNG, id=411, 395.22656pt x 363.60844pt>
+<files/mdsstuart2.PNG, id=548, 395.22656pt x 363.60844pt>
 File: files/mdsstuart2.PNG Graphic file (type png)
 <use files/mdsstuart2.PNG>
 Package pdftex.def Info: files/mdsstuart2.PNG  used on input line 253.
@@ -2223,27 +2113,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--259
  []
 
 [31 <./files/mdsstuart1.PNG>]
-
-LaTeX Warning: Reference `ch:jaffe' on page 32 undefined on input line 260.
-
-
-LaTeX Warning: Reference `anzahlzit' on page 32 undefined on input line 260.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
 [32 <./files/mdsstuart2.PNG>]
-
-LaTeX Warning: Reference `mdsstuart3' on page 33 undefined on input line 262.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
-<files/mdsstuart3.PNG, id=426, 386.94562pt x 353.06906pt>
+<files/mdsstuart3.PNG, id=564, 386.94562pt x 353.06906pt>
 File: files/mdsstuart3.PNG Graphic file (type png)
 <use files/mdsstuart3.PNG>
 Package pdftex.def Info: files/mdsstuart3.PNG  used on input line 267.
@@ -2253,48 +2132,21 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\parencite' on input line 272.
 
 
-LaTeX Warning: Reference `appendix:omega' on page 33 undefined on input line 27
-4.
-
-
-LaTeX Warning: Reference `kitequ4' on page 33 undefined on input line 274.
-
-
-LaTeX Warning: Reference `kitequ5' on page 33 undefined on input line 274.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
 [33 <./files/mdsstuart3.PNG>]
-
-LaTeX Warning: Reference `mdskit1' on page 34 undefined on input line 276.
-
-
-LaTeX Warning: Reference `abs:mdsstuart' on page 34 undefined on input line 276
-.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-
-LaTeX Warning: Reference `ch:jaffe' on page 34 undefined on input line 278.
-
-
-LaTeX Warning: Reference `ch:jaffe' on page 34 undefined on input line 278.
-
-<files/mdskit1.PNG, id=434, 391.4625pt x 356.83313pt>
+<files/mdskit1.PNG, id=578, 391.4625pt x 356.83313pt>
 File: files/mdskit1.PNG Graphic file (type png)
 <use files/mdskit1.PNG>
 Package pdftex.def Info: files/mdskit1.PNG  used on input line 282.
 (pdftex.def)             Requested size: 455.24417pt x 414.9939pt.
-
-LaTeX Warning: Reference `mdskit2' on page 34 undefined on input line 287.
-
-<files/mdskit2.PNG, id=437, 382.42876pt x 348.55219pt>
+<files/mdskit2.PNG, id=582, 382.42876pt x 348.55219pt>
 File: files/mdskit2.PNG Graphic file (type png)
 <use files/mdskit2.PNG>
 Package pdftex.def Info: files/mdskit2.PNG  used on input line 291.
@@ -2306,10 +2158,7 @@ Package pdftex.def Info: files/mdskit2.PNG  used on input line 291.
 (07_TopicModeling.tex
 chapter 5.
 
-LaTeX Warning: Reference `ch:jaffe' on page 37 undefined on input line 4.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
@@ -2318,16 +2167,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+<files/tmschab.PNG, id=606, 312.41719pt x 124.21407pt>
+File: files/tmschab.PNG Graphic file (type png)
+<use files/tmschab.PNG>
+Package pdftex.def Info: files/tmschab.PNG  used on input line 25.
+(pdftex.def)             Requested size: 364.19672pt x 144.80484pt.
+ [38 <./files/tmschab.PNG>]
+<files/tmbsp1.PNG, id=618, 450.9347pt x 353.82187pt>
+File: files/tmbsp1.PNG Graphic file (type png)
+<use files/tmbsp1.PNG>
+Package pdftex.def Info: files/tmbsp1.PNG  used on input line 47.
+(pdftex.def)             Requested size: 364.19672pt x 285.7789pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-<files/tmschab.PNG, id=467, 312.41719pt x 124.21407pt>
-File: files/tmschab.PNG Graphic file (type png)
-<use files/tmschab.PNG>
-Package pdftex.def Info: files/tmschab.PNG  used on input line 28.
-(pdftex.def)             Requested size: 455.24417pt x 181.00604pt.
-[38 <./files/tmschab.PNG>]) [39]
+[39 <./files/tmbsp1.PNG>]
+<files/tmschab2.PNG, id=627, 660.21657pt x 273.27094pt>
+File: files/tmschab2.PNG Graphic file (type png)
+<use files/tmschab2.PNG>
+Package pdftex.def Info: files/tmschab2.PNG  used on input line 58.
+(pdftex.def)             Requested size: 455.24417pt x 188.4362pt.
+) [40 <./files/tmschab2.PNG>]
 \openout2 = `A_Appendix.aux'.
 
  (A_Appendix.tex
@@ -2336,13 +2198,13 @@ chapter A.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\textcite' on input line 9.
 
-[40
+[41
 
 
 
-]) [41]
+]) [42]
 chapter without number
-[42
+[43
 
 
 ]
@@ -2360,24 +2222,16 @@ hanged.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                00_Bachelorarbeit_Paul_Theuer
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to '00_Bachelorarbeit_Paul_Theuer.run.xml
 '.
 \openout1 = `00_Bachelorarbeit_Paul_Theuer.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39650 strings out of 481005
- 782026 string characters out of 2901323
- 1743437 words of memory out of 3000000
- 54455 multiletter control sequences out of 15000+200000
+ 39442 strings out of 481005
+ 777679 string characters out of 2901323
+ 1777196 words of memory out of 3000000
+ 54214 multiletter control sequences out of 15000+200000
  626472 words of font info for 140 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,20n,115p,10131b,3689s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2386,9 +2240,9 @@ pdfTeX warning (dest): name{https://www.forbes.com/sites/altheachang/2011/08/
 laced by a fixed one
 
 {C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec-t
-lf.enc}{C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/newtx/n
-tx-ot1-tlf.enc}{C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
-/tex-gyre/q-ts1.enc}{C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
+lf.enc}{C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gyr
+e/q-ts1.enc}{C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/ne
+wtx/ntx-ot1-tlf.enc}{C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
 dvips/tex-gyre/q-ec.enc}<C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/newtx/NewTXMI.pfb><C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/Paul/AppData/Local/Programs/Mi
@@ -2404,9 +2258,9 @@ x/txsys.pfb><C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /newtx/ztmb.pfb><C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/newtx/ztmr.pfb><C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/newtx/ztmri.pfb>
-Output written on 00_Bachelorarbeit_Paul_Theuer.pdf (47 pages, 730795 bytes).
+Output written on 00_Bachelorarbeit_Paul_Theuer.pdf (49 pages, 793739 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 288 named destinations out of 1000 (max. 500000)
- 431 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 979 PDF objects out of 1000 (max. 8388607)
+ 295 named destinations out of 1000 (max. 500000)
+ 457 words of extra memory for PDF output out of 10000 (max. 10000000)
 

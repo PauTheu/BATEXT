@@ -7,13 +7,10 @@ In Kapitel \ref{ch:jaffe} wurde ein Technologieraum auf der Basis von Patentklas
 \section{Latent Dirichlet allocation}
 
 \subsection{Das Problem}
-Angenommen wir wollen fünf Zeitungsartikel nach Inhalt klassifizieren. Dazu betrachten wir beispielsweise die drei Themenbereiche Sport, Politik und Wissenschaft. Wir lesen uns die Artikel durch und weisen den Artikeln jeweils ein Thema oder eine Mischung aus Themen zu, je nachdem in welchem Themenbereich wir den Artikel sehen. Angenommen wir haben keine fünf Artikel sondern eine Millionen Dokumente. Die algorithmische Umsetzung dieser Zuweisung ist das Problem der latent Dirichlet allocation
+Angenommen wir wollen fünf Zeitungsartikel nach Inhalt klassifizieren. Dazu betrachten wir beispielsweise die drei Themenbereiche Sport, Politik und Wissenschaft. Wir lesen uns die Artikel durch und weisen den Artikeln jeweils ein Thema oder eine Mischung aus Themen zu, je nachdem in welchem Themenbereich wir den Artikel sehen. Angenommen wir haben keine fünf Artikel sondern eine Millionen Dokumente. Die algorithmische Umsetzung der Themenzuweisung auf die Dokumente ist das Problem der \glqq latent Dirichlet allocation\grqq{}.
 
 
 \subsection{Grundlagen}
-
-
-Angenommen wir wollen verschiedene Zeitungsartikel nach Inhalt klassifizieren. Dazu betrachten wir beispielsweise die drei Themenbereiche Sport, Politik und Wissenschaft. Wir lesen uns die Artikel durch und weisen den Artikeln jeweils ein Thema oder eine Mischung aus Themen zu, je nachdem in welchem Themenbereich wir den Artikel sehen. Diese Zuweisung ist das Problem der \glqq latent Dirichlet allocation\grqq{}. \\
 
 Die \glqq latent Dirichlet allocation\grqq{} (LDA) ist ein iteratives stochastisches Model für eine Sammlung diskreter Daten (z.B. eines Textkorpus) und wird in \parencite{blei2003latent} als das moderne Themenmodell vorgestellt. LDA basiert auf einem dreistufigen Bayes'schen Model. Dabei wird jedes Dokument einer Kollektion aus einer endliche Mischung verschiedener Themen modelliert. Jedes Thema entspricht wiederum einer endlichen Mischung verschiedener Wörter \parencite{blei2003latent}.\\
 
@@ -25,22 +22,44 @@ Behandeln wir die LDA weiterhin analog einer Maschine, so ergibt sich für den E
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1.0\linewidth]{files/tmschab.PNG}
+\includegraphics[width=0.8\linewidth]{files/tmschab.PNG}
 \caption{Graphisches Modell der LDA \parencite[S. 997]{blei2003latent}}
 \label{tmschab}
 \end{figure}
 
-Dabei sind $\alpha$ und $\beta$ Dirichletverteilungen $\Theta$ ist eine Multinomialverteilung. Aus der Multinomialverteilung entstehen die Themen $z$ und die Wörter $w$. Aus den $N$ Wörtern erhalten wir den aus $M$ Dokumente bestehenden Textkorpus. Gegeben den Parametern $\alpha$ und $\beta$ ergibt sich folgende Wahrscheinlichkeit für die Maschine ein Dokument zu produzieren. %$\alpha$ und $\beta$, ergibt sich für die Themenverteilung $\Theta$, einer Menge an $N$ Themen und Wörtern, folgende Wahrscheinlichkeit für die Maschine ein Dokument zu produzieren. 
+Dabei sind $\alpha$ und $\beta$ Parameter von Dirichletverteilungen, $\Theta$ ist eine Multinomialverteilung. Aus der Multinomialverteilung entstehen die Themen $z$ und die Wörter $w$. Aus den $N$ Wörtern erhalten wir den aus $M$ Dokumente bestehenden Textkorpus. Gegeben den Parametern $\alpha$ und $\beta$ ergibt sich folgende Wahrscheinlichkeit für die Maschine ein Dokument zu produzieren. %$\alpha$ und $\beta$, ergibt sich für die Themenverteilung $\Theta$, einer Menge an $N$ Themen und Wörtern, folgende Wahrscheinlichkeit für die Maschine ein Dokument zu produzieren. 
 
 \begin{equation}
 \label{tmequ1}
 P(W, Z, \Theta, \phi; \alpha, \beta) = \prod_{j=1}^{M} P(\Theta; \alpha) \prod_{i=1}^{K} P(\phi; \beta) \prod_{t=1}^{N} P(Z_{jt} | \Theta_j) P(W_{jt} | \phi_{z_{jt}})
 \end{equation}
 
-Die ersten zwei Terme sind Dirichletverteilungen, der dritte und der vierte Term sind Multinomialverteilung. Beide Verteilungen geben uns jeweils die Themen und die Wörter des Dokumentes. In den nächsten zwei Abschnitten werde ich genauer auf die beiden Verteilungen eingehen.
+Die ersten zwei Terme sind Dirichletverteilungen, der dritte und der vierte Term sind wiederum Multinomialverteilungen. Beide Verteilungen behandeln jeweils Themen und Wörter des Dokumentes. In den nächsten zwei Abschnitten werde ich genauer auf die beiden Verteilungen eingehen. Dabei werde ich die LDA weiterhin analog einer Maschine beschreiben.\footnote{Idee: \href{https://www.youtube.com/watch?v=T05t-SqKArY&ab_channel=LuisSerrano}{Latent Dirichlet Allocation} Stand: 12.10.2020}
 
 
 
-\subsection{Die Dirichletverteilung im Kontext des Topic Modelings}
-%
-%Grundsätzlich handelt es sich bei LDA um einen geometrischen Ansatz. Nehmen wir wieder das Beispiel mit drei Themen: Sport, Politik und Wissenschaft. Zusätzlich existiert ein Dreieck, wobei ein Thema jeweils einer Ecke im Dreiecks zugeordnet wird. LDA versucht jetzt die Dokumente je nach Inhalt in das Dreieck einzuordnen. Nehmen wir also ein Artikel mit Thema Sport und Politik. Das Dokument wird entsprechend Abbildung \ref dem Dreieck zugeordnet. 
+\subsection{Die Einstellungen der Maschine}
+
+Wir betrachten zunächst den ersten Term: $\prod_{j=1}^{M} P(\Theta; \alpha)$. Grundsätzlich lässt sich die Dirichletverteilung als eine geometrischen Dichtefunktion verstehen. Gegeben drei Themen: Sport, Politik und Wissenschaft. Zusätzlich existiert ein Dreieck, wobei ein Thema jeweils einer Ecke des Dreiecks zugeordnet wird. Die Dokumente/Artikel sind Punkte in diesem Dreieck. Diese Punkte unterliegen, abhängig von ihrer Position, ebenfalls einer Verteilung. So könnte man für den linken Punkt in Abbildung \ref{tmbsp1} von einer Verteilung aus 40\% Sport, 40\% Wissenschaft und 10\% Politik ausgehen. Das andere Dokument könnte einer Verteilung von 90\% Politik, 5\% Wissenschaft und 5\% Sport entsprechen. Für drei Themen erhalten wir ein Dreieck. Für $N$-Themen positionieren sich die Punkte der Verteilung im Raum eines $N$-Dimensionalen simplex. Analog gibt der Term: $\prod_{i=1}^{K} P(\phi; \beta)$, die Verteilung der Themen an. Dabei entsprechen die Ecken des Simplex den Wörtern der Themen. So erhalten wir einmal eine Assoziation zwischen Dokumenten und deren Themen und zusätzliche eine Beziehung zwischen Themen und Wörtern. Beide Verteilungen zusammen sind die \glqq Einstellungen\grqq{} der LDA.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/tmbsp1.PNG}
+\caption{Verteilung zweier Artikel auf Themen in einer Dirichletverteilung}
+\label{tmbsp1}
+\end{figure}
+
+\subsection{Die Zahnräder der Maschine}
+
+Die Multinomialverteilungen sind im Kontext der LDA, die Verteilungen, die auf Basis der Dirichletverteilungen, Dokumente \glqq produzieren\grqq{}. So werden für den Term $P(Z_{jt} | \Theta_j)$, nach der zugrundeliegenden Verteilung der Dokumente in den Themen $P(\Theta; \alpha)$, für jedes der Dokumente eine Anzahl von Themen gewählt. Für das Beispiel in Abbildung \ref{tmbsp1} erhält man für das linke Dokument, eine Anzahl an Themen entsprechend der Wahrscheinlichkeitsverteilung aus 40\% Sport, 40\% Wissenschaft und 10\% Politik. Jedes Thema repräsentiert eine Verteilung von Wörtern. Für jedes der gewählten Themen aus $P(Z_{jt} | \Theta_j)$, werden für den Term $P(W_{jt} | \phi_{z_{jt}})$ wiederum Wörter nach der zugrundeliegenden Wörter-Themen Wahrscheinlichkeitsverteilung $P(\phi; \beta)$ gewählt (Abbildung \ref{tmschab2}). Die resultierenden Wortgruppen der jeweiligen Themen ist letztlich das Dokument der Maschine. \\
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/tmschab2.PNG}
+\caption{Zusammenhang der Verteilungen}
+\label{tmschab2}
+\end{figure}
+
+Der Term \ref{tmequ1}, berechnet mit welcher Wahrscheinlichkeit, dieses Dokument dem Dokument der Eingabe entspricht. In der Realität wird diese Wahrscheinlichkeit sehr gering sein. Entsprechen jedoch die Einstellungen, beziehungsweise die zugrundeliegenden Dokument-Themen und Themen-Wörter Verteilungen: $\prod_{j=1}^{M} P(\Theta; \alpha) \prod_{i=1}^{K} P(\phi; \beta)$, nicht den Verteilungen der Eingabe, wird die resultierende Wahrscheinlichkeit noch geringer ausfallen. 
+
+Der Algorithmus der LDA maximiert also - durch Veränderung der Einstellungen - iterativ die Wahrscheinlichkeit, mit der das resultierende Dokument dem Text der Eingabe entspricht.
