@@ -118,4 +118,13 @@
   pages     = {100--108},
 }
 
+@InProceedings{syed2017full,
+  author       = {Syed, Shaheen and Spruit, Marco},
+  booktitle    = {2017 IEEE International conference on data science and advanced analytics (DSAA)},
+  title        = {Full-text or abstract? Examining topic coherence scores using latent dirichlet allocation},
+  year         = {2017},
+  organization = {IEEE},
+  pages        = {165--174},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

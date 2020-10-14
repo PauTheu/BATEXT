@@ -2268,7 +2268,10 @@
     <bcf:citekey order="94">blei2003latent</bcf:citekey>
     <bcf:citekey order="95">blei2003latent</bcf:citekey>
     <bcf:citekey order="96">blei2003latent</bcf:citekey>
-    <bcf:citekey order="97">kitahara2017technology</bcf:citekey>
+    <bcf:citekey order="97">newman2010automatic</bcf:citekey>
+    <bcf:citekey order="98">newman2010automatic</bcf:citekey>
+    <bcf:citekey order="99">syed2017full</bcf:citekey>
+    <bcf:citekey order="100">kitahara2017technology</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

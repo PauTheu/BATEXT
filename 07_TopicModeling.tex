@@ -1,4 +1,4 @@
-\chapter{Der Technologieraum auf Basis eines Themenmodells}
+\chapter{Der Technologieraum auf Basis von Patentauszügen}
 \label{ch:tm}
 
 In Kapitel \ref{ch:jaffe} wurde ein Technologieraum auf der Basis von Patentklassen vorgestellt. Im nächstens Schritt haben wir einen engeren Datenbezug vorausgesetzt und Überschneidungen in Patentzitaten genutzt um einen weiteren Technologieraum für die Firma Honda und ihre Konkurrenz zu formulieren. Als letztes wollen wir noch eine Datenebene tiefer gehen. Dabei sollen die Auszüge und die Titel der Patente als Grundlage für den Technologieraum dienen. Mithilfe von \glqq Topic Modeling\grqq{}, wollen wir den einzelnen Patente Themen zuordnen und anschließend nach unseren Firmen gruppieren. Im ersten Teil des Kapitels werde ich die Funktionsweise des Topic Modelings zusammenfassen und das Themenmodell im Anschluss auf unsere Patenttexte anwenden.
@@ -7,14 +7,14 @@ In Kapitel \ref{ch:jaffe} wurde ein Technologieraum auf der Basis von Patentklas
 \section{Latent Dirichlet allocation}
 
 \subsection{Das Problem}
-Angenommen wir wollen fünf Zeitungsartikel nach Inhalt klassifizieren. Dazu betrachten wir beispielsweise die drei Themenbereiche Sport, Politik und Wissenschaft. Wir lesen uns die Artikel durch und weisen den Artikeln jeweils ein Thema oder eine Mischung aus Themen zu, je nachdem in welchem Themenbereich wir den Artikel sehen. Angenommen wir haben keine fünf Artikel sondern eine Millionen Dokumente. Die algorithmische Umsetzung der Themenzuweisung auf die Dokumente ist das Problem der \glqq latent Dirichlet allocation\grqq{}.
+Die Methode des Topic Modeling bietet die Möglichkeit Textsammlungen thematisch zu explorieren. Ein Thema stellt dabei eine Gruppe gewichteter Wörter dar. Der Sinnzusammenhang der Wörter soll dabei im Idealfall auf ein bestimmtes Thema rückschließen lassen. Angenommen wir wollen also fünf Zeitungsartikel nach Inhalt klassifizieren. Für den Menschen erfolgt diese Einteilung während des Leseprozesses meist intuitiv. So könnte man annehmen, dass die Artikel die Themen Sport, Politik und Wissenschaft behandeln.  Für den Menschen erfolgt die Themeneinteilung während des Leseprozesses meist intuitiv. Angenommen wir haben keine fünf Artikel, sondern eine Millionen Dokumente. Die algorithmische Umsetzung der Themenzuweisung auf die Dokumente ist das Problem der \glqq latent Dirichlet allocation\grqq{}.
 
 
 \subsection{Grundlagen}
 
 Die \glqq latent Dirichlet allocation\grqq{} (LDA) ist ein iteratives stochastisches Model für eine Sammlung diskreter Daten (z.B. eines Textkorpus) und wird in \parencite{blei2003latent} als das moderne Themenmodell vorgestellt. LDA basiert auf einem dreistufigen Bayes'schen Model. Dabei wird jedes Dokument einer Kollektion aus einer endliche Mischung verschiedener Themen modelliert. Jedes Thema entspricht wiederum einer endlichen Mischung verschiedener Wörter \parencite{blei2003latent}.\\
 
-Mit der \glqq unsupervised machine learning\grqq{} Technik lässt sich eine beliebige Anzahl an Dokumenten anhand von Themen sortieren, ohne deren wahre Verteilung vorher zu kennen. So eignet sich das Modell primär für die Klassifizierung großer Textdaten. Abstrakt lässt sich die LDA als eine Maschine, die Dokumente produziert, beschreiben. Mit einer sehr geringen Wahrscheinlichkeit wird also beispielsweise der Text der Bibel oder der, der Unabhängigkeitserklärung produziert. Diese \glqq Maschine\grqq{} hat verschiedene Einstellungen. Der Algorithmus sucht iterativ die Einstellungen der Maschine, die unser Dokument am wahrscheinlichsten produziert.
+Mit der \glqq unsupervised machine learning\grqq{} Technik lässt sich eine beliebige Anzahl an Dokumenten anhand von Themen sortieren, ohne deren wahre Verteilung vorher zu kennen. So eignet sich das Modell primär für die Klassifizierung großer Textdaten. Abstrakt lässt sich die LDA als eine Maschine, die Dokumente produziert, beschreiben. Mit einer sehr geringen Wahrscheinlichkeit wird also beispielsweise der Text der Bibel oder der, der Unabhängigkeitserklärung produziert. Diese \glqq Maschine\grqq{} hat verschiedene Einstellungen. Der Algorithmus sucht iterativ die Einstellungen der Maschine, die das zugrundeliegende Dokument (Textinput) am wahrscheinlichsten produziert.
 
 \subsection{Definition}
 
@@ -63,3 +63,75 @@ Die Multinomialverteilungen sind im Kontext der LDA, die Verteilungen, die auf B
 Der Term \ref{tmequ1}, berechnet mit welcher Wahrscheinlichkeit, dieses Dokument dem Dokument der Eingabe entspricht. In der Realität wird diese Wahrscheinlichkeit sehr gering sein. Entsprechen jedoch die Einstellungen, beziehungsweise die zugrundeliegenden Dokument-Themen und Themen-Wörter Verteilungen: $\prod_{j=1}^{M} P(\Theta; \alpha) \prod_{i=1}^{K} P(\phi; \beta)$, nicht den Verteilungen der Eingabe, wird die resultierende Wahrscheinlichkeit noch geringer ausfallen. 
 
 Der Algorithmus der LDA maximiert also - durch Veränderung der Einstellungen - iterativ die Wahrscheinlichkeit, mit der das resultierende Dokument dem Text der Eingabe entspricht.
+
+\section{Topic Modeling der Patentauszüge}
+
+\subsection{Datenvorverarbeitung}
+
+Zunächst holen wir uns die Texte aller englischen $Y02T\_10$-Patente aus der Datenbank. Da die einzelnen Titel der Patente weitere Informationen enthalten fügen wir sie den Textauszügen hinzu. Bevor die Patenttexte verarbeitet werden können müssen die Daten bereinigt werden. Im ersten Schritt der Datenvorverarbeitung entfernen wir alle \glqq stopwords\grqq{} aus den Texten. Bei den Stopwörtern handelt es sich um Wörter, die für das Ergebnis des Themenmodells unwichtig sind, da sie keine Informationen beinhalten. Dabei geht es beispielsweise um Konjunktionen wie \glqq and\grqq{} oder den Artikel \glqq the\grqq{}. Patentspezifische Wörter, wie \glqq Problem\grqq{} und \glqq Solution\grqq{}, die in fast jedem Textauszug vorkommen, fügen wir der Liste manuell hinzu. Insgesamt enthält die Liste der \glqq stopwords\grqq{} 185 Einträge (Liste siehe Anhang \ref{appendix:stop}). \\
+
+Im zweiten Schritt werden die Daten lemmatisiert. Wörter des selben Wortstamms werden dabei auf ihre Grundform zurückgeführt. So wird beispielsweise aus dem Wort \glqq measuring\grqq{}, das Wort \glqq measure\grqq{}, oder aus dem Wort \glqq detected\grqq{}, \glqq detect\grqq{}. Ohne Berücksichtigung der Orthographie werden dabei zusätzlich sämtliche Wörter in Kleinschreibung überführt. Sinn der Lemmatisierung ist es, inhaltsgleiche Wortgruppen für den Algorithmus \glqq sichtbar\grqq{} zu machen. Die Lemmatisierung und die Entfernung der Stopwörter wurde mit Hilfe der Open-Source Softwarebibliothek \glqq spaCy\grqq{} durchgeführt (Anhang \ref{appenidx:spacy}) \\
+
+Im letzten Schritt der Datenvorverarbeitung, filtern wir die Extremwörter. Wörter, die im gesamten Textkorpus zu selten beziehungsweise zu häufig vorkommen, können das Ergebnis des Themenmodells negativ beeinflussen. So wollen wir beispielsweise Rechtschreibfehler ausschließen. Wie in vielen Teilen des Modellierungsprozesses, gibt es für die Parameter des Extremwortfilters keine allgemeingültigen Werte. Die Wahl der Parameter hängt letztendlich immer von den zugrundeliegenden Textdaten ab. In unserem Fall hat sich eine Wahl von: nicht weniger als fünf und nicht mehr als 50\% als sinnvoll ergeben. So werden Wörter die weniger als fünf mal vorkommen nicht berücksichtigt. Weiter werden auch Wörter gefiltert, die in mehr als 50\% der Patentauszüge vorkommen. Für die 205713 betrachteten Patente erhalten wir im Ergebnis 12427 verschiedene Wörter in unserem Wörterbuch. \\
+
+Wir betrachten den Textauszug mit Titel eines zufälliges Patents vor und nach Bearbeitung: \\
+
+\begin{center}
+\begin{table}[!ht]
+\begin{tabular}{|p{\linewidth}|}
+A battery capacity measuring device in accordance with the present invention has a fully-charged state detector (80e), a detected current integrator (80a), a divider (80b), and a corrector (80c) incorporated in a microcomputer (80). The fully-charged state detector detects that a battery is fully charged. The detected current integrator integrates current values that are detected by a current sensor during a period from the instant the battery is fully charged to the instant it is fully charged next. The divider divides the integrated value of detected current values by the length of the period. The corrector corrects a detected current using the quotient provided by the divider as an offset. Furthermore, a remaining battery capacity calculating system comprises a voltage detecting unit (50), a current detecting unit (40), an index calculating unit, a control unit, and a calculating unit. The voltage detecting unit detects the voltage at the terminals of a battery. The current detecting unit detects a current flowing through the battery. The index calculating unit calculates the index of polarization in the battery according to the detected current. The control unit controls the output voltage of an alternator so that the index of polarization will remain within a predetermined range which permits limitation of the effect of polarization on the charged state of the battery. When the index of polarization remains within the predetermined range, the calculating unit calculates the remaining capacity of the battery according to the terminal voltage of the battery, that is, the open-circuit voltage of the battery. APPARATUS FOR BATTERY CAPACITY MEASUREMENT AND FOR REMAINING CAPACITY CALCULATION.
+\end{tabular}
+\caption{Ein Patent vor der Datenvorverabeitung}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[!ht]
+\begin{tabular}{|p{\linewidth}|}
+'battery', 'capacity', 'measure', 'device', 'accordance', 'present', 'invention', 'fully', 'charge', 'state', 'detect', 'current', 'integrator', 'divider', 'corrector', 'incorporate', 'fully', 'charge', 'state', 'detector', 'detect', 'battery', 'fully', 'charge', 'detect', 'current', 'integrator', 'integrate', 'current', 'value', 'detect', 'current', 'sensor', 'period', 'instant', 'battery', 'fully', 'charge', 'instant', 'fully', 'charge', 'next', 'divider', 'divide', 'integrate', 'value', 'detect', 'current', 'value', 'length', 'period', 'corrector', 'correct', 'detect', 'current', 'use', 'quotient', 'provide', 'divider', 'offset', 'remain', 'battery', 'capacity', 'calculate', 'system', 'comprise', 'voltage', 'detecting', 'unit', 'current', 'detect', 'unit', 'index', 'calculate', 'unit', 'unit', 'calculate', 'unit', 'voltage', 'detecting', 'unit', 'detect', 'voltage', 'terminal', 'battery', 'current', 'detect', 'unit', 'detect', 'current', 'flow', 'battery', 'index', 'calculate', 'unit', 'calculate', 'index', 'polarization', 'battery', 'accord', 'detect', 'current', 'control', 'unit', 'control', 'index', 'polarization', 'remain', 'predetermine', 'range', 'permit', 'limitation', 'effect', 'polarization', 'charge', 'index', 'polarization', 'remain', 'predetermine', 'range', 'calculate', 'unit', 'calculate', 'remain', 'capacity', 'battery', 'accord', 'terminal', 'voltage', 'battery', 'open', 'circuit', 'voltage', 'battery', 'measurement', 'remain', 'capacity', 'calculation'
+\end{tabular}
+\caption{Das Patent nach Datenvorverabeitung}
+\end{table}
+\end{center}
+
+\subsection{Anzahl der Themen}
+
+Wie bereits erwähnt ist die Wahl sinnvoller Parameter im Verlauf des Modellierungsprozesses essenziell für die spätere Interpretierbarkeit der Ergebnisse. Dabei stellte für uns die Wahl der Themenanzahl eine besondere Herausforderung dar. Eine große Anzahl an Themen wird dazu führen, dass die Granularität der Themen zunimmt. Allerdings kann dabei auch der Sinnzusammenhang der einzelnen Wortgruppen an Präzision verlieren. Einzelne Themen lassen sich, aufgrund repetitiver Wortsammlungen nicht mehr sinnvoll voneinander unterscheiden. Auf der anderen Seite führt die Wahl einer niedrigen Themenzahl möglicherweise zu Informationsverlusten. \\
+
+Die richtige Wahl der Themenanzahl kann durch die Berechnung von Kohärenzwerten unterstützt werden. Dabei sollte man allerdings beachten, dass es sich dabei um kein absolutes Maße handelt. Ob das gewählte Themenmodell aussagekräftig ist, bleibt letztendlich der Erfahrung des Bearbeiters überlassen. Allgemein wird die Kohärenz eines Themas wie folgt definiert. 
+
+\begin{equation}
+\label{coequ1}
+Coherence = \sum_{i < j} score(w_i, w_j)
+\end{equation}
+
+Nach Gleichung \ref{coequ1} ist die Kohärenz die Summe der paarweisen \glqq word scores\grqq{} für die Wörter $w_1, ... w_n$ . Im Prinzip ist die Kohärenz ein Maß, für die Qualität des berechneten Themas, oder genauer: wie gut die einzelnen Wörter des Themas zueinander passen. Die Kohärenz des gesamten Themenmodells ergibt sich nach der durchschnittlichen Kohärenz aller Themen. Für die \glqq scores\grqq{} gibt es verschiedene Metriken (UMASS, CV, CLI). Beispielsweise wird die CLI-Metrik wird nach \textcite{newman2010automatic} wie folgt definiert.
+
+\begin{equation}
+\label{coequ1}
+score_{CLI}(w_i, w_j) = \log \frac{p(w_i, w_j)}{p(w_i), p(w_j)}
+\end{equation}
+
+$p(w_i)$ ist die Wahrscheinlichkeit, für das Wort $w_i$ in einem zufälligen Dokument gefunden zu werden. Analog gibt $p(w_i, w_j)$ die Wahrscheinlichkeit an, beide Wörter $w_i, w_j$ in demselben, zufälligen Dokument zu finden. Die Wahrscheinlichkeiten werden aufgrund eines externen Datensatzes, basierend auf Wikipedia Einträgen, berechnet \parencite{newman2010automatic} . \\
+
+Für die Berechnung der Kohärenzen unserer Themenmodelle verwenden wir den etwas komplexeren \glqq cv-score\grqq{} basierend auf \glqq normalized pointwise mutual information (NPMI)\grqq{} \parencite{syed2017full}. Dabei ergeben sich Kohärenzwerte zwischen 0 und 1. Wobei die beiden betrachteten Wörter eines Themas bei einem Wert von 1 identisch sind. In der Regel werden Werte zwischen 0.5 und 0.7 als \glqq gut\grqq{} angesehen.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/coplot1.PNG}
+\caption{Kohärenzwerte pro Themenzahl}
+\label{coplot1}
+\end{figure}
+
+Der Graph in Abbildung \ref{coplot1} stellt die Kohärenzen in Relation zu den jeweiligen Anzahlen an Themen (Punkte im Graph). Mit steigender Themenzahl lässt sich ein klarer Abwärtstrend für die Kohärenzwerte erkennen, wobei sich das Maximum bei einer Anzahl von $K = 10$ Themen befindet. Wie oben aber bereits erwähnt dient die Kohärenz lediglich der Orientierung. Für die weitere Evaluationen haben wir uns zunächst auf drei Themenmodelle fokussiert ($K = 10$, $K = 30$ und $K = 80$). Sinn dieser Auswahl war ein Modell für jeweils eine Themengröße genauer zu betrachten. Durch die Anpassung einiger Parameter\footnote{Namentlich eine Erhöhung der \glqq chunksize\grqq{} und der \glqq passes\grqq{}} gelang es uns die Kohärenzwerte der drei Themenmodelle etwas zu erhöhen (siehe Abbildung \ref{coplot2}).
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/coplot2.PNG}
+\caption{Kohärenzwerte pro Themenzahl K ($K = 10$, $K = 30$ und $K = 80$)}
+\label{coplot2}
+\end{figure}
+
+\subsection{Das Themenmodell mit $K=30$ Themen}
+
+In diesem Abschnitt soll das Topic Model für eine Anzahl von 30 Themen vorgestellt werden. Dabei haben wir einige, zufällig gewählte Patente betrachtet und die Sinnhaftigkeit der Zuordnung, auf die Themen überprüft. 

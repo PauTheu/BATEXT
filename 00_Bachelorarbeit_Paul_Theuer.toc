@@ -71,22 +71,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.3}Zusammenfassung}{35}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Der Technologieraum auf Basis eines Themenmodells}{37}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Der Technologieraum auf Basis von Patentauszügen}{37}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Latent Dirichlet allocation}{37}{section.5.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.1}Das Problem}{37}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Grundlagen}{37}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Grundlagen}{38}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.3}Definition}{38}{subsection.5.1.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.4}Die Einstellungen der Maschine}{39}{subsection.5.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Die Zahnräder der Maschine}{40}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.5}Die Zahnräder der Maschine}{39}{subsection.5.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{41}{appendix.A}%
+\contentsline {section}{\numberline {5.2}Topic Modeling der Patentauszüge}{41}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Berechnung der Distanzen nach \textcite {kitahara2017technology}}{41}{section.A.1}%
+\contentsline {subsection}{\numberline {5.2.1}Datenvorverarbeitung}{41}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis }{43}{chapter*.24}%
+\contentsline {subsection}{\numberline {5.2.2}Anzahl der Themen}{43}{subsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Das Themenmodell mit $K=30$ Themen}{44}{subsection.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendix}{46}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Berechnung der Distanzen nach \textcite {kitahara2017technology}}{46}{section.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Stopwords}{48}{section.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}spaCy}{48}{section.A.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literaturverzeichnis }{49}{chapter*.28}%

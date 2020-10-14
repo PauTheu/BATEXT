@@ -375,6 +375,51 @@
       \field{title}{Multidimensional scaling}
       \field{year}{1978}
     \endentry
+    \entry{newman2010automatic}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c6e083f47bda3beece2d206379d5135b}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01616f375f1c7073a12392b1bcb27b9a}{%
+           family={Lau},
+           familyi={L\bibinitperiod},
+           given={Jey\bibnamedelima Han},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43db5383aa77f0e16ba5de80313899bd}{%
+           family={Grieser},
+           familyi={G\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73eda808e90683df3ed357e4549e09f3}{%
+           family={Baldwin},
+           familyi={B\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d0e1e6913586430f6dbbe7a4e270e322}
+      \strng{fullhash}{a49e4a738e9fd51eb9f1321a47c0cd1c}
+      \strng{bibnamehash}{a49e4a738e9fd51eb9f1321a47c0cd1c}
+      \strng{authorbibnamehash}{a49e4a738e9fd51eb9f1321a47c0cd1c}
+      \strng{authornamehash}{d0e1e6913586430f6dbbe7a4e270e322}
+      \strng{authorfullhash}{a49e4a738e9fd51eb9f1321a47c0cd1c}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Human language technologies: The 2010 annual conference of the North American chapter of the association for computational linguistics}
+      \field{title}{Automatic evaluation of topic coherence}
+      \field{year}{2010}
+      \field{pages}{100\bibrangedash 108}
+      \range{pages}{9}
+    \endentry
     \entry{stuart1996local}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=09672da8e02272d0a4c16a35f7cd3da5}{%
