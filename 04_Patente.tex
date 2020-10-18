@@ -3,43 +3,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Patente}
+
+In diesem Kapitel sollen die grundlegenden Eigenschaften von Patenten erläutert werden, welchen nutzen sie haben und inwiefern sie unsere Datenbasis darstellen. 
 \label{ch:Patente}	% This allows later to reference the chapter 
 
 
-\begin{itemize}
-
-           \item in diesem Abschnitt Funktion von Patenten erklären, da diese Basis für weitere Evaluationen darstellt
-	\item Ein Patent gewährt dem Anmelder ein Besitz- und Verfügungsrecht für die kommerzielle Nutzung einer Erfindung
-	\item Erfindung muss neu und nichttrivial sein (Def. aus PatG nutzen); Stand der Technik erläutern
-	\item PatG: was keine Erfindung darstellt
-	\item Wird ein Patent gewährt, wird ein für die Öffentlichkeit einsehbares Dokument erstellt.
-	\item Dokument beinhaltet eine Reihe von Informationen: Erfinder, Arbeitgeber, etc., hier wichtig: Referenzen bzw. Zitationen
-	\item Besitzen eine rechtliche Funktion: Begrenzen den Umfang der Verfügungsrechte ausgehend von dem Patent
-	\item Sicherstellen, dass das gewährte Patent einen nichttrivialen Wissensbeitrag im Vergleich zu dessen Vorgängern erreicht.
-	\item Im Kontext hier bedeutet: Wenn Patent Y Patent X zitiert, wird Patent Y auf dem Wissen von Patent X aufbauen.
-	\item Kritik nach  \parencite{karki1997patent}
-	\item propensity der Patentklassen
-\end{itemize}
-
 %% Weitere Untergliederungen:
-\subsection{Grundlegendes}
+\section{Patente als Innovationsindikatoren}
 
-In diesem Abschnitt soll die grundlegende Funktion von Patenten erklärt werden, da diese unsere Datenbasis sein werden und damit die Grundlage für alle kommenden Evaluationen darstellen. Ein Patent gewährt dem Anmelder ein Besitz- und Verfügungsrecht für die kommerzielle Nutzung einer Erfindung. 
+Ein Patent gewährt dem Anmelder ein Besitz- und Verfügungsrecht für die kommerzielle Nutzung einer Erfindung. Nach \S 4 PatG gilt eine Erfindung als \glqq auf einer erfinderischen Tätigkeit beruhend, wenn sie sich für den Fachmann nicht in naheliegender Weise aus dem Stand der Technik ergibt\grqq{}. Dabei umfasst der Stand der Technik alle öffentlich zugänglichen Informationen (\S 3 Abs. 1 PatG). Innovation beruht letztlich auf neu aggregiertem Wissen. Da das Patent, rechtlich gesehen, einen nichttrivialen Wissensbeitrag leisten muss, bietet es in dieser Hinsicht einen guten Innovationsindikator. Zusätzlich sind die Patentinformationen für jedermann zugänglich, denn wird ein Patent gewährt, so wird ein für die Öffentlichkeit einsehbares Dokument erstellt. Dieses Dokument beinhaltet eine Reihe von Informationen wie z.B. über den Erfinder, das Unternehmen oder Referenzen bzw. Zitationen. Viele dieser Daten können weitere wichtige Innovationsindikatoren darstellen. Der Wert einer wissenschaftlichen Arbeit, wird vielmals durch die Menge der ausgehenden Zitate determiniert. Analog zu Zitaten in wissenschaftlichen Arbeiten, können Patentzitate genutzt werden um Aussagen über die technologische Qualität einer Erfindungen zu treffen. 
+
+\section{Klassifizierung}
+
+\glqq Patente werden für Erfindungen auf allen Gebieten der Technik erteilt\grqq{} (\S 1 Abs. 1 PatG). Es existieren zwei wesentliche Patentklassifikationen die Patente weltweit nach ihrem technischem Inhalt kategorisieren. Die internationale Patentklassifkation (IPC) und die gemeinsame Patentklassifkation (CPC). Die gemeinsame Patentklassifikation ist eine Erweiterung der internationalen Patentklassifikation. Darin werden Patente des europäischen Patentamts und Patente des Patent- und Markenamtes der Vereinigten Staaten verwaltet. Die Einteilung erfolgt in neun Sektionen A bis H und Y, wobei die Sektionen ihrerseits in Klassen, Unterklassen, Haupt- und Untergruppen gegliedert werden. So steht beispielsweise die Klasse G für Physik, oder H für Patente im Bereich der Elektrotechnik. Insgesamt gibt es rund 250000 Klassifikationssymbole.\footnote{Quelle: \href{https://www.epo.org/searching-for-patents/helpful-resources/first-time-here/classification/cpc_de.html}{epo.org} Stand 16.10.2020} Die Y Klasse ist keine alleinstehende Patentklasse, sie gibt eine allgemeine Kennzeichnung für neu entstehende Technologien. So ist jedes Patent der Y-Klasse auch in einer anderen Sektion klassifiziert.
 
 
-\subsubsection{Klassifizierung}
 
-\begin{itemize}
+\section{Datenbasis}
 
-\item ipc und cpc
+Wir nutzen die Sortierung der Y Klasse um innovative Technologien zu finden. Die Grundlage für alle kommenden Evaluationen sind Patente der Hauptklasse $Y02T\_10$. Patente dieser Klasse sind \glqq climate change mitigation\grqq{} Technologien im Bereich des Personenverkehrs. So beinhaltet diese Klasse beispielsweise Technologien für Elektro- und Hybridfahrzeuge, alternative Energieträger und innovative Methoden zur Datenverarbeitung. Die Relevanz der Patentklasse ist durch die Präsenz der Klimathematik ersichtlich und wird durch eine steigende Anzahl an Patentanmeldungen über die letzten Jahre qualitativ verdeutlicht (Abbildung \ref{numyears}). \\
+ 
+ \begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/numyears.PNG}
+\caption{Anzahl der Patentanmeldungen in der Patentklasse $Y02T\_10$ pro Jahr}
+\label{numyears}
+\end{figure}
 
-\end{itemize}
+Die Patentdaten werden von der Patentdatenbank PatStat mittels SQL abgerufen. EPO's \glqq PatStat Global\grqq{} Bibliothek enthält Daten zu über 100 Millionen Patenten aller führenden Industrie- und Schwellenländern.\footnote{Quelle: \href{https://www.epo.org/searching-for-patents/business/patstat.html}{epo.org} Stand 16.10.2020}. Wir selektieren alle Patentanträge, deren CPC Hauptklassen mit $Y02T\_10$ beginnen und filtern diese nach Patenten die international genehmigt wurden. Verschieden Patentanträge können demselben Patent zugeordnet sein. Jedes Patent ist zudem einer Patentfamilie zugeordnet. Um potentielle Duplikate zu entfernen, selektiere wir repräsentativ den älteste Patentantrag der jeweiligen Patentfamilie (SQL Code siehe Anhang). Für unsere Datenbasis erhalten wir insgesamt 288210 Patente im Zeitraum der Jahre 1970 bis 2018. 
 
-\subsubsection{Datenbasis}
-
-\begin{itemize}
-
-\item panda dataframes
-\item plots
-
-\end{itemize}

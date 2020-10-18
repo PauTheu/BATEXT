@@ -2,7 +2,7 @@
 %% Kapitel 1 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Jaffe}
+\chapter{Der Technologieraum auf Basis von Patentklassen}
 \label{ch:jaffe}
 
 Im ersten Teil dieses Kapitels werden die Papiere \parencite{jaffe1986technological} und \parencite{jaffe1989characterizing} zusammengefasst. Im zweiten Teil soll ein Technologieraum, nach der Definition des Autors, für die Firma Honda und ihre Konkurrenz nachgebildet und analysiert werden.
@@ -204,29 +204,34 @@ def mds(anzahl=30, random_sate = 42):
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1.0\linewidth]{files/mdsjaffe1.PNG}
-\caption{Graph der multidimensionalen Skalierung nach Patentvektoren}
+\caption{Graph der multidimensionalen Skalierung nach Patentvektoren, gesamter Zeitraum (1970-2018)}
 \label{mdsjaffe1}
 \end{figure}
 
 
 \subsection{Interpretation des Graphen}
 
-Bei der Interpretation eines MDS-Graphen ist es immer wichtig zu beachten, dass sowohl die Achsen, als auch die absoluten Positionen der Firmen keine Rolle spielen. Es geht lediglich um das Verhältnis der Firmen zueinander. Würde man beispielsweise eine weitere Firma in die Berechnung aufnehmen, werden alle Firmen ihre Positionen ändern, je nachdem in welchem Verhältnis diese zu der neuen, und den anderen, Firmen stehen. \\
+Bei der Interpretation eines MDS-Graphen gilt es stets zu beachten, dass sowohl die Achsen, als auch die absoluten Positionen der Firmen keine Rolle spielen. Es geht lediglich um das Verhältnis der Firmen zueinander. Würde man beispielsweise eine weitere Firma in die Berechnung aufnehmen, werden alle Firmen ihre Positionen ändern, je nachdem in welchem Verhältnis diese zu der neuen, und den anderen, Firmen stehen. \\
 
-Wir erkennen zunächst ein kleineres Firmencluster, bestehend aus Ford, Bosch und Denso. Da Bosch und Denso Automobilzulieferer sind, könnte man davon ausgehen, dass beide Unternehmen in ähnlichen technologische Sektoren aktiv sind. So stellen Automobilzulieferer oft Einzelteile wie z.B. Zündkerzen und Schrauben her. Das Cluster Ford, Bosch, Denso (und GM) unterscheidet sich primär durch starke Aktivität in der Patentklassen\footnote{Wir betrachten die Patentklassen in Relation zu der jeweilige Gesamtpatentanzahl} F02D (Verbrennungsmotor) und vergleichsweise schwache Aktivitäten in der Patentklasse mit Hauptfokus auf Elektromobilität (B60L). Als zweite Gruppe beobachten wir die drei größten japanischen Automobilhersteller: Toyota, Honda und Nissan. Mit 32\% aller Neuzulassungen in Japan liegt Toyota an der Spitze, gefolgt von Honda und Nissan zu je 15\%.\footnote{Quelle: https://www.autoscout24.de/auto/japanische-automarken/ Stand: 6.10.2020}. Die Graphik legt nahe, dass das Patentierverhalten der drei Firmen ähnlich sein muss. Tatsächlich sind die Unternehmen, bis auf kleinere Abweichungen, in denselben Patentklassen aktiv. Primär beobachten wir überdurchschnittliche Aktivitäten in der CPC-Klassen B60L (Elektromobilität). Am interessantesten jedoch ist die Position von Mazda. Während alle anderen Unternehmen mehr oder weniger nahe zueinander stehen, fällt Mazda gänzlich aus dem Muster. Grund dafür ist eine beachtliche Patentzahl in der CPC-Klasse F02D. Genauer handelt es dabei um die Patente der Klassen F02B53/00 und F02B2053/005. Die zugrundeliegende Technologie dieser Patente ist der Wankelmotor. "Mazda hat in Japan einen außergewöhnlichen Hybrid-Antrieb mit Wankelmotor patentieren lassen. Das System arbeitet mit ingesamt drei E-Motoren und soll laut Mazda vor allem leichter sein als aktuelle elektrische Allradantriebe."\footnote{Quelle: https://www.electrive.net/2020/04/20/ Stand: 06.10.2020}. Um Aussagen über die Entwicklung der Technologien zu machen und mögliche Zielrichtung der Unternehmen festzustellen wäre es interessant zu sehen, wie sich die Position der Firmen über mehrere Zeiträume hinweg verändern.
+Wir erkennen zunächst ein kleineres Firmencluster, bestehend aus Ford, Bosch und Denso. Da Bosch und Denso Automobilzulieferer sind, könnte man davon ausgehen, dass beide Unternehmen in ähnlichen technologische Sektoren aktiv sind. So stellen Automobilzulieferer oft Einzelteile wie z.B. Zündkerzen und Schrauben her. Das Cluster bestehend aus Bosch und Denso unterscheidet sich primär durch starke Aktivität in der Patentklassen\footnote{Wir betrachten die Patentklassen in Relation zu der jeweilige Gesamtpatentanzahl} F02D (Verbrennungsmotor) und vergleichsweise schwache Aktivitäten in der Patentklasse mit Hauptfokus auf Elektromobilität (B60L). Als zweite Gruppe beobachten wir die drei größten japanischen Automobilhersteller: Toyota, Honda und Nissan. Mit 32\% aller Neuzulassungen in Japan liegt Toyota an der Spitze, gefolgt von Honda und Nissan zu je 15\%.\footnote{Quelle: https://www.autoscout24.de/auto/japanische-automarken/ Stand: 6.10.2020}. Die Graphik legt nahe, dass das Patentierverhalten der drei Firmen ähnlich sein muss. Tatsächlich sind die Unternehmen, bis auf kleinere Abweichungen, in denselben Patentklassen aktiv. Primär beobachten wir überdurchschnittliche Aktivitäten in der CPC-Klassen B60L (Elektromobilität). Am interessantesten jedoch ist die Position von Mazda. Während alle anderen Unternehmen mehr oder weniger nahe zueinander stehen, fällt Mazda gänzlich aus dem Muster. Grund dafür ist eine beachtliche Patentzahl in der CPC-Klasse F02D. Genauer handelt es dabei um die Patente der Klassen F02B53/00 und F02B2053/005. Die zugrundeliegende Technologie dieser Patente ist der Wankelmotor. "Mazda hat in Japan einen außergewöhnlichen Hybrid-Antrieb mit Wankelmotor patentieren lassen. Das System arbeitet mit ingesamt drei E-Motoren und soll laut Mazda vor allem leichter sein als aktuelle elektrische Allradantriebe."\footnote{Quelle: https://www.electrive.net/2020/04/20/ Stand: 06.10.2020}. Um Aussagen über die Entwicklung der Technologien zu machen und mögliche Zielrichtung der Unternehmen festzustellen wäre es interessant zu sehen, wie sich die Position der Firmen über mehrere Zeiträume hinweg verändern.
 
 
 \subsection{Zeitliche Entwicklung}
+\ref{jaffe:zeit}
 
 In \textcite{jaffe1986technological} wird untersucht welche Technologiecluster über die Zeit an Mitglieder \glqq gewinnen\grqq{}. Wir wollen zeigen in welche Richtungen sich die Firmen in unserem MDS Plot über zwei Zeiträume hinweg bewegen. Dabei ergibt sich jedoch folgendes Problem: Die Abstände der Firmen zueinander ist immer eindeutig, allerdings können die Firmen im resultierende MDS Graph rotieren. Für dieselbe Lösung gibt es also eine Vielzahl unterschiedlicher Graphen. Das macht es für uns zunächst unmöglich zwei Graphen miteinander zu vergleichen, beziehungsweise die Bewegungsrichtung einer Firma aufzuzeigen. Mithilfe des setzen einer \glqq random\_state\grqq{}-Variable, lassen sich zwar Graphen genau reproduzieren, allerdings verändern sich unseren Ausgangsdaten für den zweiten Zeitraum, damit besteht das Problem also weiterhin. Wir schlagen folgende Lösung vor: wir berechnen den Graphen für den ersten Zeitraum und merken uns die Koordinaten der Punkte. Für den zweiten Graphen berechnen wir den Abstand der resultierenden Koordinaten zu den Koordinaten des ersten Graphen für (beispielsweise) 10000 verschiedene \glqq random\_states\grqq{}. Wir verwenden schließlich die Koordinaten, die den geringsten Abstand zu den Koordinaten des ersten Graphen aufweisen. Damit garantieren wir, dass sich die beiden Graphen sinnvoll vergleichen lassen, ohne dabei falsch implizierte Bewegung der Firmen, durch Rotation des Graphen aufgrund der MDS zu erhalten.\\
 
-Wir betrachten die Zeiträume der Jahre 2000 bis 2010 und 2011 bis 2018. Daraus ergeben sich die Graphen \ref{plot2}
+Wir betrachten die Zeiträume der Jahre 2000 bis 2010 und 2011 bis 2018. Daraus ergeben sich die beiden Graphen der Abbildung \ref{mdsjaffe2}. Die Bewegung der Firma Mazda wird bei einem Vergleich der beiden Zeiträume deutlich. Im ersten Zeitraum befindet sich das Unternehmen am Rande des Technologieraums, allerdings ist eine Nähe zu den beiden Technologieclustern festzustellen. Im zweiten Zeitraum gleicht sich das Innovationsverhalten der Firmen Hyundai, Ford, GM, Denso und Bosch dem der anderen Firmen an, wobei Mazda eine andere Richtung einschlägt.
 
-\begin{itemize}
 
-         \item Plot
-         
-\end{itemize}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/mdsjaffe2.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Patentvektoren, Zeitraum: 2000-2010 (links); 2011-2018 (rechts)}
+\label{mdsjaffe2}
+\end{figure}
+
+
 
 \subsection{Robustheit}
 
@@ -237,6 +242,14 @@ Um die Robustheit der Ergebnisse zu garantieren wurden folgende Maßnahmen durch
 P_ij= 1 - \sum_{k = 1}^K \min\{p_{ik}, p_{jk}\}
 \end{equation}
 
-Die Motivation hinter der wohldefinierten Metrik ist es irrelevante Patentklassen für die Berechnung der Distanzen zwischen den Firmen i und j nicht zu berücksichtigen. Irrelevante Patentklassen gelten als solche, wenn eine Firma in dieser Patentklasse keine Patente hält. \textcite{bar2012measure} behauptet, dass die technologische Distanz zwischen zwei Firmen, von den Patentklassen abhängen sollte, in denen beide Firmen aktiv sind. In Gleichung \ref{mincequ} werden jeweils die Minima der Patentzahlen pro Klasse und Firma betrachtet. Ergibt sich für den Term $\min\{p_{ik}, p_{jk}\} = 0$, hat das keinen Einfluss auf die Summe. Im Kontext der Robustheitsprüfung ergab das Anwenden der \glqq min-complement distance\grqq{}, die größte Veränderung (siehe \ref{GRAFIKzwei}). Allerdings bleiben die oben angesprochenen Gruppierungen der Firmen weiterhin bestehen. Letztendlich lässt sich also sagen, dass der Graph der MDS und unser Technologieraum nach \textcite{jaffe1986technological} in seinem Ergebnis robust ist.
+Die Motivation hinter der wohldefinierten Metrik ist es irrelevante Patentklassen für die Berechnung der Distanzen zwischen den Firmen i und j nicht zu berücksichtigen. Irrelevante Patentklassen gelten als solche, wenn eine Firma in dieser Patentklasse keine Patente hält. \textcite{bar2012measure} behauptet, dass die technologische Distanz zwischen zwei Firmen, von den Patentklassen abhängen sollte, in denen beide Firmen aktiv sind. In Gleichung \ref{mincequ} werden jeweils die Minima der Patentzahlen pro Klasse und Firma betrachtet. Ergibt sich für den Term $\min\{p_{ik}, p_{jk}\} = 0$, hat das keinen Einfluss auf die Summe. Im Kontext der Robustheitsprüfung ergab das Anwenden der \glqq min-complement distance\grqq{}, die größte Veränderung (siehe \ref{mdsjaffe3}). Allerdings bleiben die oben angesprochenen Gruppierungen der Firmen weiterhin bestehen. Letztendlich lässt sich also sagen, dass der Graph der MDS und unser Technologieraum nach \textcite{jaffe1986technological} in seinem Ergebnis robust ist.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/mdsjaffe3.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Patentvektoren, zwei Distanzmetriken, \glqq min-complement distance\grqq{} (links), Kosinus-Ähnlichkeit (rechts)}
+\label{mdsjaffe3}
+\end{figure}
 
 \subsection{Zusammenfassung}

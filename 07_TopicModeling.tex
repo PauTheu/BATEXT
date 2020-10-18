@@ -7,7 +7,7 @@ In Kapitel \ref{ch:jaffe} wurde ein Technologieraum auf der Basis von Patentklas
 \section{Latent Dirichlet allocation}
 
 \subsection{Das Problem}
-Die Methode des Topic Modeling bietet die Möglichkeit Textsammlungen thematisch zu explorieren. Ein Thema stellt dabei eine Gruppe gewichteter Wörter dar. Der Sinnzusammenhang der Wörter soll dabei im Idealfall auf ein bestimmtes Thema rückschließen lassen. Angenommen wir wollen also fünf Zeitungsartikel nach Inhalt klassifizieren. Für den Menschen erfolgt diese Einteilung während des Leseprozesses meist intuitiv. So könnte man annehmen, dass die Artikel die Themen Sport, Politik und Wissenschaft behandeln.  Für den Menschen erfolgt die Themeneinteilung während des Leseprozesses meist intuitiv. Angenommen wir haben keine fünf Artikel, sondern eine Millionen Dokumente. Die algorithmische Umsetzung der Themenzuweisung auf die Dokumente ist das Problem der \glqq latent Dirichlet allocation\grqq{}.
+Die Methode des Topic Modeling bietet die Möglichkeit Textsammlungen thematisch zu explorieren. Ein Thema stellt dabei eine Gruppe gewichteter Wörter dar. Der Sinnzusammenhang der Wörter soll dabei im Idealfall auf ein bestimmtes Thema rückschließen lassen. Angenommen wir wollen also fünf Zeitungsartikel nach Inhalt klassifizieren.  So könnte man annehmen, dass die Artikel die Themen Sport, Politik und Wissenschaft behandeln. Für den Menschen erfolgt die Themeneinteilung während des Leseprozesses meist intuitiv. Angenommen wir haben keine fünf Artikel, sondern eine Millionen Dokumente. Die algorithmische Umsetzung der Themenzuweisung auf die Dokumente ist das Problem der \glqq latent Dirichlet allocation\grqq{}.
 
 
 \subsection{Grundlagen}
@@ -64,7 +64,7 @@ Der Term \ref{tmequ1}, berechnet mit welcher Wahrscheinlichkeit, dieses Dokument
 
 Der Algorithmus der LDA maximiert also - durch Veränderung der Einstellungen - iterativ die Wahrscheinlichkeit, mit der das resultierende Dokument dem Text der Eingabe entspricht.
 
-\section{Topic Modeling der Patentauszüge}
+\section{Das Topic Model der Patentauszüge}
 
 \subsection{Datenvorverarbeitung}
 
@@ -90,7 +90,7 @@ A battery capacity measuring device in accordance with the present invention has
 \begin{tabular}{|p{\linewidth}|}
 'battery', 'capacity', 'measure', 'device', 'accordance', 'present', 'invention', 'fully', 'charge', 'state', 'detect', 'current', 'integrator', 'divider', 'corrector', 'incorporate', 'fully', 'charge', 'state', 'detector', 'detect', 'battery', 'fully', 'charge', 'detect', 'current', 'integrator', 'integrate', 'current', 'value', 'detect', 'current', 'sensor', 'period', 'instant', 'battery', 'fully', 'charge', 'instant', 'fully', 'charge', 'next', 'divider', 'divide', 'integrate', 'value', 'detect', 'current', 'value', 'length', 'period', 'corrector', 'correct', 'detect', 'current', 'use', 'quotient', 'provide', 'divider', 'offset', 'remain', 'battery', 'capacity', 'calculate', 'system', 'comprise', 'voltage', 'detecting', 'unit', 'current', 'detect', 'unit', 'index', 'calculate', 'unit', 'unit', 'calculate', 'unit', 'voltage', 'detecting', 'unit', 'detect', 'voltage', 'terminal', 'battery', 'current', 'detect', 'unit', 'detect', 'current', 'flow', 'battery', 'index', 'calculate', 'unit', 'calculate', 'index', 'polarization', 'battery', 'accord', 'detect', 'current', 'control', 'unit', 'control', 'index', 'polarization', 'remain', 'predetermine', 'range', 'permit', 'limitation', 'effect', 'polarization', 'charge', 'index', 'polarization', 'remain', 'predetermine', 'range', 'calculate', 'unit', 'calculate', 'remain', 'capacity', 'battery', 'accord', 'terminal', 'voltage', 'battery', 'open', 'circuit', 'voltage', 'battery', 'measurement', 'remain', 'capacity', 'calculation'
 \end{tabular}
-\caption{Das Patent nach Datenvorverabeitung}
+\caption{Das Patent nach der Datenvorverabeitung}
 \end{table}
 \end{center}
 
@@ -105,7 +105,7 @@ Die richtige Wahl der Themenanzahl kann durch die Berechnung von Kohärenzwerten
 Coherence = \sum_{i < j} score(w_i, w_j)
 \end{equation}
 
-Nach Gleichung \ref{coequ1} ist die Kohärenz die Summe der paarweisen \glqq word scores\grqq{} für die Wörter $w_1, ... w_n$ . Im Prinzip ist die Kohärenz ein Maß, für die Qualität des berechneten Themas, oder genauer: wie gut die einzelnen Wörter des Themas zueinander passen. Die Kohärenz des gesamten Themenmodells ergibt sich nach der durchschnittlichen Kohärenz aller Themen. Für die \glqq scores\grqq{} gibt es verschiedene Metriken (UMASS, CV, CLI). Beispielsweise wird die CLI-Metrik wird nach \textcite{newman2010automatic} wie folgt definiert.
+Nach Gleichung \ref{coequ1} ist die Kohärenz die Summe der paarweisen \glqq word scores\grqq{} für die Wörter $w_1, ... w_n$ . Im Prinzip ist die Kohärenz ein Maß, für die Qualität des berechneten Themas, oder genauer: wie gut die einzelnen Wörter des Themas zueinander passen. Die Kohärenz des gesamten Themenmodells ergibt sich nach der durchschnittlichen Kohärenz aller Themen. Für die \glqq scores\grqq{} gibt es verschiedene Metriken (UMASS, CV, CLI). Beispielsweise wird die CLI-Metrik nach \textcite{newman2010automatic} wie folgt definiert.
 
 \begin{equation}
 \label{coequ1}
@@ -114,7 +114,7 @@ score_{CLI}(w_i, w_j) = \log \frac{p(w_i, w_j)}{p(w_i), p(w_j)}
 
 $p(w_i)$ ist die Wahrscheinlichkeit, für das Wort $w_i$ in einem zufälligen Dokument gefunden zu werden. Analog gibt $p(w_i, w_j)$ die Wahrscheinlichkeit an, beide Wörter $w_i, w_j$ in demselben, zufälligen Dokument zu finden. Die Wahrscheinlichkeiten werden aufgrund eines externen Datensatzes, basierend auf Wikipedia Einträgen, berechnet \parencite{newman2010automatic} . \\
 
-Für die Berechnung der Kohärenzen unserer Themenmodelle verwenden wir den etwas komplexeren \glqq cv-score\grqq{} basierend auf \glqq normalized pointwise mutual information (NPMI)\grqq{} \parencite{syed2017full}. Dabei ergeben sich Kohärenzwerte zwischen 0 und 1. Wobei die beiden betrachteten Wörter eines Themas bei einem Wert von 1 identisch sind. In der Regel werden Werte zwischen 0.5 und 0.7 als \glqq gut\grqq{} angesehen.
+Für die Berechnung der Kohärenzen unserer Themenmodelle verwenden wir den etwas komplexeren \glqq CV-score\grqq{} basierend auf \glqq normalized pointwise mutual information (NPMI)\grqq{} \parencite{syed2017full}. Dabei ergeben sich Kohärenzwerte zwischen 0 und 1. Wobei die beiden betrachteten Wörter eines Themas bei einem Wert von 1 identisch sind. In der Regel werden Werte zwischen 0.5 und 0.7 als \glqq gut\grqq{} angesehen.
 
 \begin{figure}[!ht]
 \centering
@@ -123,7 +123,7 @@ Für die Berechnung der Kohärenzen unserer Themenmodelle verwenden wir den etwa
 \label{coplot1}
 \end{figure}
 
-Der Graph in Abbildung \ref{coplot1} stellt die Kohärenzen in Relation zu den jeweiligen Anzahlen an Themen (Punkte im Graph). Mit steigender Themenzahl lässt sich ein klarer Abwärtstrend für die Kohärenzwerte erkennen, wobei sich das Maximum bei einer Anzahl von $K = 10$ Themen befindet. Wie oben aber bereits erwähnt dient die Kohärenz lediglich der Orientierung. Für die weitere Evaluationen haben wir uns zunächst auf drei Themenmodelle fokussiert ($K = 10$, $K = 30$ und $K = 80$). Sinn dieser Auswahl war ein Modell für jeweils eine Themengröße genauer zu betrachten. Durch die Anpassung einiger Parameter\footnote{Namentlich eine Erhöhung der \glqq chunksize\grqq{} und der \glqq passes\grqq{}} gelang es uns die Kohärenzwerte der drei Themenmodelle etwas zu erhöhen (siehe Abbildung \ref{coplot2}).
+Der Graph in Abbildung \ref{coplot1} stellt die Kohärenzen in Relation zu den jeweiligen Anzahlen an Themen (Punkte im Graph). Mit steigender Themenzahl lässt sich ein klarer Abwärtstrend für die Kohärenzwerte erkennen, wobei sich das Maximum bei einer Anzahl von $K = 10$ Themen befindet. Wie oben aber bereits erwähnt dient die Kohärenz lediglich der Orientierung. Für die weitere Evaluationen haben wir uns zunächst auf drei Themenmodelle fokussiert ($K = 10$, $K = 30$ und $K = 80$). Sinn dieser Auswahl war es, ein Modell für jeweils eine Themengröße genauer zu betrachten. Durch die Anpassung einiger Parameter\footnote{Namentlich eine Erhöhung der \glqq chunksize\grqq{} und der \glqq passes\grqq{}} gelang es uns die Kohärenzwerte der drei Themenmodelle etwas zu erhöhen (siehe Abbildung \ref{coplot2}).
 
 \begin{figure}[!ht]
 \centering
@@ -134,4 +134,104 @@ Der Graph in Abbildung \ref{coplot1} stellt die Kohärenzen in Relation zu den j
 
 \subsection{Das Themenmodell mit $K=30$ Themen}
 
-In diesem Abschnitt soll das Topic Model für eine Anzahl von 30 Themen vorgestellt werden. Dabei haben wir einige, zufällig gewählte Patente betrachtet und die Sinnhaftigkeit der Zuordnung, auf die Themen überprüft. 
+In diesem Abschnitt soll das Topic Model für eine Anzahl von 30 Themen vorgestellt werden. Das Ergebnis des Themenmodells ist sowohl eine gewichtete Zuordnung von Wörtern auf Themen als auch eine gewichtete Zuordnung der einzelnen Dokumente (Patente) in die jeweiligen Themen. Wir betrachten ein zufälliges Patent und überprüfen die Sinnhaftigkeit dieser Zuordnungen.
+
+\begin{center}
+\begin{table}[!ht]
+\begin{tabular}{|p{\linewidth}|}
+POWER DEVICE FOR MOTOR FOR CAR PROBLEM TO BE SOLVED: To effectively use cooling of a superconducting battery by a cooling medium to cool the inside of a car room, by feeding fuel to a hydrogen engine generator and supplying the cooling medium to the superconducting battery efficiently and reducing the consumption of liquid hydrogen, and besides putting the comparatively large superconducting battery in the lower part of the car room where the superconducting battery does not make any hindrance. SOLUTION: In a power device for a motor for cars which uses as a power device, a superconducting battery to be charged by power generated by a hydrogen engine generator, generation by the hydrogen engine generator is performed by hydrogen evaporated by cooling the superconducting battery. After the superconducting battery to which the cooling medium is supplied is housed in an adiabatic case provided with opening/closing parts, the adiabatic case is arranged in the lower part of the car room. By opening the opening/closing parts of the adiabatic case, the inside of the car room is cooled.
+\end{tabular}
+\caption{Ein zufälliges Patent}
+\end{table}
+\end{center}
+
+Das Patent wurde primär drei Themen zugeordnet: Thema 4 mit einer Gewichtung von 0.1992, Thema 11 (0.2292) und Thema 20 (0.1910). Wir visualisieren die drei Themen mit Hilfe einer \glqq Wordcloud\grqq{}. Dabei impliziert die Größe der Wörter, die Gewichtung der Wörter in dem jeweiligen Thema. \\
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/topic4.PNG}
+\caption{Wordcloud Thema 4: Temperatur}
+\label{wc4}
+\end{figure}
+
+Die Wortgruppierungen innerhalb des Themas (Abbildung \ref{wc4}) erscheinen sinnvoll, da die meisten Wörter das Thema \glqq Temperatur\grqq{} aufgreifen. Der Text des Patents impliziert einen Zusammenhang mit dieser Thematik. Die Erfindung soll dabei helfen eine \glqq superconducting battery\grqq{} effektiv zu kühlen. Die Zuordnung passt somit gut. 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/topic11.PNG}
+\caption{Wordcloud Thema 11: Batterie}
+\label{wc11}
+\end{figure}
+
+Mit einem Gewicht von 0.2292 ist das Thema 11 (Abbildung \ref{wc11}) für unser Patent, das am stärksten gewichtete Thema. Intuitiv ist auch die Überschrift dieses Themas ersichtlich. Offensichtlich geht es um Batterien, ein fundamentale Thematik im Bereich der Elektromobilität. Der Sinnzusammenhang zwischen unserem Patent und diesem Thema wird bereits durch den Titel des Patents deutlich: \glqq POWER DEVICE FOR MOTOR FOR CAR\grqq{}. Da das Patent eine effektive Kühlmethode für Batterien motiviert, ist der Zusammenhang erfüllt.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/topic20.PNG}
+\caption{Wordcloud Thema 20: Auffangthema}
+\label{wc20}
+\end{figure}
+
+Thema 20 (Abbildung \ref{wc20}) scheint eine Art \glqq Auffangthema\grqq{} zu sein. Hier finden sich Wortgruppen die keine wirkliche Aussagekraft haben, jedoch häufig vorkommen und auf fast jedes Dokument passen. Das Auftreten dieser Themen im Themenmodell ist normal und zu erwarten, kann aber durch eine gute Wahl der \glqq stopwords\grqq{} minimiert werden. Der Zusammenhang ist trivialerweise erfüllt.
+
+Im Laufe des Modellierungsprozesses wurde diese Art der Stichprobenanalyse für einige Patente durchgeführt. Im Ergebnis lässt sich sagen, dass das Model aussagekräftig ist, jedoch noch weiter optimiert werden könnte.
+
+\subsection{Der Technologieraum nach Themenvektoren}
+
+Für die Modellierung des Technologieraums bedienen wir uns einer ähnlichen Methodik wie \textcite{jaffe1989characterizing}. Wo die Forschungsvektoren bei \textcite{jaffe1989characterizing} aufgrund von Patenten in Patentklassen gebildet werden, bilden wir unseren Vektoren aufgrund der Themenzuordnung. So erhält jedes Patent einen Vektor der Länge $K=30$. Ein Eintrag des Vektors $p_k$ ist das Gewicht des Patents in Thema $k$, wobei $\sum_{k = 0}^{K-1} p_k = 1$. Im nächsten Schritt werden die Themenvektoren für alle Patente der jeweiligen Firmen aufsummiert. Abbildung \ref{hondav} zeigt eine graphische Darstellung des Themenvektors für die Firma Honda.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/hondavektor.PNG}
+\caption{Verteilung der Patente der Firma Honda auf die Themen 0-29}
+\label{hondav}
+\end{figure}
+
+Wir wenden wieder die Distanzmetrik der Kosinus-Ähnlichkeit auf die Vektoren unserer zehn Firmen an und skalieren die Firmenabstände mittels MDS in einen zweidimensionale Raum. 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/tmmds1.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Themenvektoren, gesamter Zeitraum}
+\label{tmmds1}
+\end{figure}
+
+Der Graph der Abbildung \ref{tmmds1} zeigt das Ergebnis der multidimensionalen Skalierung unserer zehn Firmen für den gesamten Zeitraum. Wir erkennen die drei Firmengruppen Ford und GM, Bosch und Hyundai und Honda, Toyota, Nissan, Denso und Hitachi. Die einzelnen Firmencluster scheinen, mit Ausnahme von Bosch und Hyundai, von der Nationalität der Firmen abzuhängen. So wäre es möglich, dass die einzelnen Länder verschiedene Wortgruppen bei der Formulierung ihrer Patente bevorzugen. Besonders auffällig ist der große Abstand zwischen den Firmen Denso und Bosch, da wir sowohl in Kapitel \ref{ch_jaffe}, als auch in Kapitel \ref{ch:zitat}, eine technologische Nähe der Automobilzulieferer feststellen konnten. Dennoch bleiben einige Zusammenhänge zu den anderen Technologieräumen bestehen. Beispielsweise fällt die Firma Mazda weiterhin aus dem Muster, auch die Firmen Toyota, Nissan und Honda weisen eine gewisse technologische Ähnlichkeit zueinander auf. \\
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/tmmds2.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Themenvektoren, Zeitraum: 2000-2010 (links); 2011-2018 (rechts)}
+\label{tmmds2}
+\end{figure}
+
+Um die Bewegung der Firmen innerhalb von zwei Zeiträumen zu vergleichen wenden wir die Methodik aus \ref{jaffe:zeit} an.  Der Graph der Abbildung \ref{tmmds2} zeigt die Bewegung der Firmen innerhalb der Jahre 2000-2010 und 2011-2018. Honda scheint sich im zweiten Zeitraum etwas von Toyota zu entfernen. Die Bewegung von GM hin zu Ford und Bosch ist die deutlichste. Für die anderen Firmen lassen sich keine absoluten Aussagen treffen. 
+
+Um die Aussagekraft des Graphen zu steigern, nehmen wir mehr Firmen in die Berechnung auf. Wir betrachten die ersten 20 Firmen nach ihrer Anzahl an Patenten in der $Y02T\_10$ Klasse. 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/tmmds3.PNG}
+\caption{Graph der multidimensionalen Skalierung nach Themenvektoren, gesamter Zeitraum, 20 Firmen}
+\label{tmmds3}
+\end{figure}
+
+Der Graph der Abbildung \ref{tmmds3} zeichnet ein klares Bild ab. Ausgenommen die Firma Hyundai, befinden sich alle Automobilunternehmen der westlichen Hemisphäre in einem Cluster. Die Firmen östlichen Ursprungs befinden sich auf der anderen Seite des Technologieraums. Wir gehen davon aus, dass dieses Ergebnis eine Mischung aus unterschiedlichem Sprachgebrauch und einem unterschiedlichen Technologiefokus zwischen den beiden Firmenclustern ist.
+
+Um die Technologiethese zu stützen wählen wir einen Repräsentanten aus jeweils einem Firmencluster und untersuchen die Unterschiede der Themenvektoren. So erkennen wir zwischen den Firmen VW und Toyota große Unterschiede in den jeweiligen Auffangthemen. Die Gruppierung der Patente in diesen Themen lässt sich allerdings nicht ohne weiteres auf ein gemeinsame Technologie zurückführen. Dennoch sind auch Unterschiede in sinnvollen Themen zu erkennen. So hat Toyota besonders viele Patente mit dem Thema \glqq Elektromobilität und Hybridtechnik\grqq{topict} (siehe Abbildung). Auf der anderen Seite hält der Volkswagen Konzern die meisten Patente mit der Thematik \glqq Emissionsreduktion\grqq{} (siehe Abbildung \ref{topicvw}). 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/topictoyota.PNG}
+\caption{Relevantes Thema der Firma Toyota}
+\label{topict}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\linewidth]{files/topicvw.PNG}
+\caption{Relevantes Thema der Firma VW}
+\label{topicvw}
+\end{figure}
+
+Eine interessante Erkenntnis, da beide Themen dasselbe Ziel verfolgen. Allerdings scheint die Herangehensweise an das Klimaproblem unterschiedlich auszufallen. Dabei setzt der eine Konzern darauf, die konventionelle Verbrennungsmotoren klimaneutraler zu gestalten, beispielsweise durch die Stickstoffreduktion mittels Harnstoff und das andere Unternehmen auf neue Energieträger, namentlich Hybrid- und Elektrofahrzeuge.
