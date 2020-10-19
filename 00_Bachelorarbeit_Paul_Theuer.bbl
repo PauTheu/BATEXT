@@ -19,6 +19,56 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{alstott2017mapping}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=6fb2022bd2b68617f700518b8377776d}{%
+           family={Alstott},
+           familyi={A\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c5f87b6b9d8a61e4957f3242d582dcb}{%
+           family={Triulzi},
+           familyi={T\bibinitperiod},
+           given={Giorgio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df73a1bfbd30d2921f1214eb8f4ec2a6}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Bowen},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4f32739f9e25d9e9c7fc9e1271c2afe}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Jianxi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a7906d742e4aea7e39aa150a0cc4a689}
+      \strng{fullhash}{33bec1a7cefcbc72fdb7a38efa379070}
+      \strng{bibnamehash}{33bec1a7cefcbc72fdb7a38efa379070}
+      \strng{authorbibnamehash}{33bec1a7cefcbc72fdb7a38efa379070}
+      \strng{authornamehash}{a7906d742e4aea7e39aa150a0cc4a689}
+      \strng{authorfullhash}{33bec1a7cefcbc72fdb7a38efa379070}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientometrics}
+      \field{number}{1}
+      \field{title}{Mapping technology space by normalizing patent networks}
+      \field{volume}{110}
+      \field{year}{2017}
+      \field{pages}{443\bibrangedash 479}
+      \range{pages}{37}
+    \endentry
     \entry{bar2012measure}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=a37974071e9d77a84da33ef71cc2caa4}{%
@@ -458,7 +508,68 @@
       \field{pages}{21\bibrangedash 38}
       \range{pages}{18}
     \endentry
+    \entry{syed2017full}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=58babdcf6b30161ec799561ee9ef8e88}{%
+           family={Syed},
+           familyi={S\bibinitperiod},
+           given={Shaheen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fda28c211a8e336888e122c1d3eac47f}{%
+           family={Spruit},
+           familyi={S\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0fc6127457f29f33a4eb6137fc107d1d}
+      \strng{fullhash}{0fc6127457f29f33a4eb6137fc107d1d}
+      \strng{bibnamehash}{0fc6127457f29f33a4eb6137fc107d1d}
+      \strng{authorbibnamehash}{0fc6127457f29f33a4eb6137fc107d1d}
+      \strng{authornamehash}{0fc6127457f29f33a4eb6137fc107d1d}
+      \strng{authorfullhash}{0fc6127457f29f33a4eb6137fc107d1d}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE International conference on data science and advanced analytics (DSAA)}
+      \field{title}{Full-text or abstract? Examining topic coherence scores using latent dirichlet allocation}
+      \field{year}{2017}
+      \field{pages}{165\bibrangedash 174}
+      \range{pages}{10}
+    \endentry
+    \entry{zehtabchi2019measuring}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fb0ce35858c9836c49f1b03799c075c6}{%
+           family={Zehtabchi},
+           familyi={Z\bibinitperiod},
+           given={Maryam},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb0ce35858c9836c49f1b03799c075c6}
+      \strng{fullhash}{fb0ce35858c9836c49f1b03799c075c6}
+      \strng{bibnamehash}{fb0ce35858c9836c49f1b03799c075c6}
+      \strng{authorbibnamehash}{fb0ce35858c9836c49f1b03799c075c6}
+      \strng{authornamehash}{fb0ce35858c9836c49f1b03799c075c6}
+      \strng{authorfullhash}{fb0ce35858c9836c49f1b03799c075c6}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Measuring Innovation in Autonomous Vehicle Technology}
+      \field{year}{2019}
+    \endentry
   \enddatalist
+  \missing{almeida1997exploration}
   \missing{jaffe1989technological}
 \endrefsection
 \endinput

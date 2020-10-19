@@ -2277,7 +2277,10 @@
     <bcf:citekey order="103">syed2017full</bcf:citekey>
     <bcf:citekey order="104">jaffe1989characterizing</bcf:citekey>
     <bcf:citekey order="105">jaffe1989characterizing</bcf:citekey>
-    <bcf:citekey order="106">kitahara2017technology</bcf:citekey>
+    <bcf:citekey order="106">berndt2014nicht</bcf:citekey>
+    <bcf:citekey order="107">berndt2014nicht</bcf:citekey>
+    <bcf:citekey order="108">karki1997patent</bcf:citekey>
+    <bcf:citekey order="109">kitahara2017technology</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

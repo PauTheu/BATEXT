@@ -95,12 +95,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.4}Der Technologieraum nach Themenvektoren}{49}{subsection.5.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{54}{appendix.A}%
+\contentsline {chapter}{\numberline {6}Zusammenfassung}{54}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Berechnung der Distanzen nach \textcite {kitahara2017technology}}{54}{section.A.1}%
+\contentsline {chapter}{\numberline {7}Ausblick}{56}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Stopwords}{56}{section.A.2}%
+\contentsline {chapter}{\numberline {A}Appendix}{57}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}spaCy}{56}{section.A.3}%
+\contentsline {section}{\numberline {A.1}Berechnung der Distanzen nach \textcite {kitahara2017technology}}{57}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis }{57}{chapter*.39}%
+\contentsline {section}{\numberline {A.2}Stopwords}{59}{section.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}spaCy}{59}{section.A.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literaturverzeichnis }{60}{chapter*.39}%
