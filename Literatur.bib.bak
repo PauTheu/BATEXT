@@ -144,4 +144,13 @@
   publisher = {Springer},
 }
 
+@InCollection{berndt2014nicht,
+  author    = {Berndt, Enno},
+  booktitle = {Automotive Management},
+  publisher = {Springer},
+  title     = {Nicht-konventionelle Antriebe--Kommerzialisierung durch japanische Automobilhersteller},
+  year      = {2014},
+  pages     = {121--132},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

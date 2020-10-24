@@ -2,7 +2,7 @@
 %% Einleitung %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Patente}
+\chapter{Datenbasis}
 \label{ch:pat}
 
 In diesem Kapitel wird erläutert inwiefern Patente als Innovationsindikatoren gelten, in welche Klassen sie eingeteilt werden können und welche Patente unsere Datenbasis darstellen. 
@@ -16,13 +16,13 @@ Ein Patent gewährt dem Anmelder ein Besitz- und Verfügungsrecht für die komme
 
 \section{Klassifizierung}
 
-\glqq Patente werden für Erfindungen auf allen Gebieten der Technik erteilt\grqq{} (\S 1 Abs. 1 PatG). Es existieren zwei wesentliche Patentklassifikationen die Patente weltweit nach ihrem technischem Inhalt kategorisieren. Die internationale Patentklassifkation (IPC) und die gemeinsame Patentklassifkation (CPC). Die gemeinsame Patentklassifikation ist eine Erweiterung der internationalen Patentklassifikation. Darin werden Patente des europäischen Patentamts und Patente des Patent- und Markenamtes der Vereinigten Staaten verwaltet. Die Einteilung erfolgt in neun Sektionen A bis H und Y, wobei die Sektionen ihrerseits in Klassen, Unterklassen, Haupt- und Untergruppen gegliedert werden. So steht beispielsweise die Klasse G für Physik, oder H für Patente im Bereich der Elektrotechnik. Insgesamt gibt es rund 250000 Klassifikationssymbole.\footnote{Quelle: \href{https://www.epo.org/searching-for-patents/helpful-resources/first-time-here/classification/cpc_de.html}{epo.org} Stand 16.10.2020} Die Y Klasse ist keine alleinstehende Patentklasse, sie gibt eine allgemeine Kennzeichnung für neu entstehende Technologien. So ist jedes Patent der Y-Klasse auch in einer anderen Sektion klassifiziert.
+\glqq Patente werden für Erfindungen auf allen Gebieten der Technik erteilt\grqq{} (\S 1 Abs. 1 PatG). Es existieren zwei wesentliche Patentklassifikationen die Patente weltweit nach ihrem technischem Inhalt kategorisieren. Die internationale Patentklassifkation (IPC) und die gemeinsame Patentklassifkation (CPC). Die gemeinsame Patentklassifikation ist eine Erweiterung der internationalen Patentklassifikation. Darin werden Patente des europäischen Patentamts und Patente des Patent- und Markenamtes der Vereinigten Staaten verwaltet. Die Einteilung erfolgt in neun Sektionen A bis H und Y, wobei die Sektionen ihrerseits in Klassen, Unterklassen, Haupt- und Untergruppen gegliedert werden. So steht beispielsweise die Klasse G für Physik, oder H für Patente im Bereich der Elektrotechnik. Insgesamt gibt es rund 250000 Klassifikationssymbole.\footnote{Quelle: \href{https://www.epo.org/searching-for-patents/helpful-resources/first-time-here/classification/cpc_de.html}{epo.org} Stand 16.10.2020.} Die Y Klasse ist keine alleinstehende Patentklasse, sie gibt eine allgemeine Kennzeichnung für neu entstehende Technologien. So ist jedes Patent der Y-Klasse auch in einer anderen Sektion klassifiziert.
 
 
 
-\section{Datenbasis}
+\section{Klimaschonende Technologien}
 
-Wir nutzen die Sortierung der Y Klasse um innovative Technologien zu finden. Die Grundlage für alle kommenden Evaluationen sind Patente der Hauptklasse $Y02T\_10$. Patente dieser Klasse sind \glqq climate change mitigation\grqq{} Technologien im Bereich des Personenverkehrs. So beinhaltet diese Klasse beispielsweise Technologien für Elektro- und Hybridfahrzeuge, alternative Energieträger und innovative Methoden zur Datenverarbeitung. Die Relevanz der Patentklasse ist durch die Präsenz der Klimathematik ersichtlich und wird durch eine steigende Anzahl an Patentanmeldungen über die letzten Jahre qualitativ verdeutlicht (Abbildung \ref{numyears}). \\
+Wir nutzen die Sortierung der Y Klasse um innovative Technologien zu finden. Die Grundlage für alle kommenden Evaluationen sind die Patente der Hauptklasse $Y02T\_10$. In dieser Klasse werden klimaschonende Technologien im Bereich des Personenverkehrs zusammengefasst. So beinhaltet diese Klasse beispielsweise Technologien für Elektro- und Hybridfahrzeuge, alternative Energieträger und innovative Methoden zur Datenverarbeitung. Die Relevanz der Patentklasse ist durch die Präsenz der Klimathematik ersichtlich und wird durch eine steigende Anzahl an Patentanmeldungen über die letzten Jahre qualitativ verdeutlicht (Abbildung \ref{numyears}). \\
  
  \begin{figure}[!ht]
 \centering
@@ -31,5 +31,19 @@ Wir nutzen die Sortierung der Y Klasse um innovative Technologien zu finden. Die
 \label{numyears}
 \end{figure}
 
-Die Patentdaten werden von der Patentdatenbank PatStat mittels SQL abgerufen. EPO's \glqq PatStat Global\grqq{} Bibliothek enthält Daten zu über 100 Millionen Patenten aller führenden Industrie- und Schwellenländern.\footnote{Quelle: \href{https://www.epo.org/searching-for-patents/business/patstat.html}{epo.org} Stand 16.10.2020}. Wir selektieren alle Patentanträge, deren CPC Hauptklassen mit $Y02T\_10$ beginnen und filtern diese nach Patenten die international genehmigt wurden. Verschieden Patentanträge können demselben Patent zugeordnet sein. Jedes Patent ist zudem einer Patentfamilie zugeordnet. Um potentielle Duplikate zu entfernen, selektiere wir repräsentativ den älteste Patentantrag der jeweiligen Patentfamilie (SQL Code siehe Anhang). Für unsere Datenbasis erhalten wir insgesamt 288210 Patente im Zeitraum der Jahre 1970 bis 2018. 
+Die Patentdaten werden von der Patentdatenbank PatStat mittels SQL abgerufen. EPO's \glqq PatStat Global\grqq{} Bibliothek enthält Daten zu über 100 Millionen Patenten aller führenden Industrie- und Schwellenländern.\footnote{Quelle: \href{https://www.epo.org/searching-for-patents/business/patstat.html}{epo.org} Stand 16.10.2020.}. Wir selektieren alle Patentanträge, deren CPC Hauptklassen mit $Y02T\_10$ beginnen und filtern diese nach Patenten die international genehmigt wurden. Verschiedene Patentanträge können demselben Patent zugeordnet sein. Jedes Patent ist zudem einer Patentfamilie zugeordnet. Um potentielle Duplikate zu entfernen, selektiere wir repräsentativ den älteste Patentantrag der jeweiligen Patentfamilie (SQL-Code siehe \ref{appendix:daten}). Für unsere Datenbasis erhalten wir insgesamt 288210 Patente für einen Zeitraum von 1970 bis 2018. 
+
+Im nächsten Schritt wählen wir die Firmen aus, die wir mit Honda in einem Technologieraum abbilden wollen. Wir halten uns uns zunächst an die einschlägige Literatur und treffen eine Auswahl von zehn Firmen \parencite{jaffe1989characterizing}. Damit erhalten wir einen übersichtlichen, aber gleichzeitig aussagekräftigen Technologieraum. Wir strukturieren die Datenerhebung so, dass diese Zahl in künftigen Evaluationen noch erhöht werden kann. Wir wollen versuchen die Position der Firma Honda und ihrer Konkurrenten möglichst realistisch darzustellen, dafür suchen wir uns zunächst die aktivsten Unternehmen in diesem Sektor. Aktivität definieren wir dabei als die Anzahl der Patente, die eine Firma in der Klasse $Y02T\_10$ besitzt.. In \textcite{benner2008close} wird gezeigt, dass eine geringe Datenmenge zu sehr unpräzisen, teilweise widersprüchlichen, Ergebnissen führen kann. Da wir unsere Datenmenge mit dieser Auswahl für unsere zehn Firmen maximieren kann also außerdem garantiert werden, dass der patent bias, möglichst gering gehalten wird. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/top10.PNG}
+\caption{Patentzahl Top 10 Unternehmen}
+\label{top10}
+\end{figure}
+
+In der Abbildung \ref{top10}, werden die zehn aktivsten Firmen mit ihren jeweiligen Patentzahlen abgebildet. Wir betrachten insgesamt sechs japanische Unternehmen (Toyota, Nissan, Honda, Denso, Mazda und Hitachi), zwei Unternehmen mit amerikanischem Ursprung (Ford und GM), ein deutsches Unternehmen (Bosch) und Hyundai aus Südkorea. Bosch und Denso sind Automobilzulieferer, Hitachi ein Mischkonzern, die restlichen Unternehmen sind Automobilhersteller im klassischen Sinne. Mit über 30000 angemeldeten Patenten, fällt der japanische Automobilhersteller Toyota klar aus dem Muster. Die neun anderen Firmen befinden sich alle in einem Intervall von $(4000, 10000)$ Patenten. Honda liegt mit knapp über 7000 angemeldeten Patenten in der $Y02T\_10$ Klasse, auf dem vierten Platz hinter Toyota, Nissan und Bosch (Code siehe\ref{appendix:stat}).
+
+Patente, die von verschiedenen Unternehmen angemeldet wurden, dennoch demselben Konzern angehören dürfen nicht vergessen werden. So haben wir beispielsweise die Unternehmen \glqq Toyota Motor Corporation\grqq{}, \glqq Toyota Industries Corporation\grqq{} und \glqq Toyota Central Research \& Development Lab\grqq{} zusammengefasst (Code siehe \ref{appendix:daten}).
+
 

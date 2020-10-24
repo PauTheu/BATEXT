@@ -1,7 +1,7 @@
-\chapter{Der Technologieraum auf Basis von Patentauszügen}
+\chapter{Der Technologieraum auf Basis von Patenttexten}
 \label{ch:tm}
 
-In Kapitel \ref{ch:jaffe} wurde ein Technologieraum auf der Basis von Patentklassen vorgestellt. Im nächstens Schritt haben wir einen engeren Datenbezug vorausgesetzt und Überschneidungen in Patentzitaten genutzt um einen weiteren Technologieraum für die Firma Honda und ihre Konkurrenz zu formulieren. Als letztes wollen wir noch eine Datenebene tiefer gehen. Dabei sollen die Auszüge und die Titel der Patente als Grundlage für den Technologieraum dienen. Mithilfe von \glqq Topic Modeling\grqq{}, wollen wir den einzelnen Patente Themen zuordnen und anschließend nach unseren Firmen gruppieren. Im ersten Teil des Kapitels werde ich die Funktionsweise des Topic Modelings zusammenfassen und das Themenmodell im Anschluss auf unsere Patenttexte anwenden.
+In Kapitel \ref{ch:jaffe} wurde ein Technologieraum auf der Basis von Patentklassen vorgestellt. Im nächstens Schritt haben wir einen engeren Datenbezug vorausgesetzt und Überschneidungen in Patentzitaten genutzt um einen weiteren Technologieraum für die Firma Honda und ihre Konkurrenz zu formulieren. Als letztes wollen wir noch eine Datenebene tiefer gehen. Dabei sollen die Kurzbeschreibungen und die Titel der Patente als Grundlage für den Technologieraum dienen. Mithilfe von \glqq Topic Modeling\grqq{}, wollen wir den einzelnen Patente Themen zuordnen und anschließend nach unseren Firmen gruppieren. Im ersten Teil des Kapitels werde ich die Funktionsweise des Topic Modelings zusammenfassen und das Themenmodell im Anschluss auf unsere Patenttexte anwenden.
 
 
 \section{Latent Dirichlet allocation}
@@ -12,9 +12,9 @@ Die Methode des Topic Modeling bietet die Möglichkeit Textsammlungen thematisch
 
 \subsection{Grundlagen}
 
-Die \glqq latent Dirichlet allocation\grqq{} (LDA) ist ein iteratives stochastisches Model für eine Sammlung diskreter Daten (z.B. eines Textkorpus) und wird in \parencite{blei2003latent} als das moderne Themenmodell vorgestellt. LDA basiert auf einem dreistufigen Bayes'schen Model. Dabei wird jedes Dokument einer Kollektion aus einer endliche Mischung verschiedener Themen modelliert. Jedes Thema entspricht wiederum einer endlichen Mischung verschiedener Wörter \parencite{blei2003latent}.\\
+Die latent Dirichlet allocation (LDA) ist ein iteratives stochastisches Model für eine Sammlung diskreter Daten (z.B. eines Textkorpus) und wird in \parencite{blei2003latent} als das moderne Themenmodell vorgestellt. LDA basiert auf einem dreistufigen Bayes'schen Model. Dabei wird jedes Dokument einer Kollektion aus einer endliche Mischung verschiedener Themen modelliert. Jedes Thema entspricht wiederum einer endlichen Mischung verschiedener Wörter \parencite{blei2003latent}.
 
-Mit der \glqq unsupervised machine learning\grqq{} Technik lässt sich eine beliebige Anzahl an Dokumenten anhand von Themen sortieren, ohne deren wahre Verteilung vorher zu kennen. So eignet sich das Modell primär für die Klassifizierung großer Textdaten. Abstrakt lässt sich die LDA als eine Maschine, die Dokumente produziert, beschreiben. Mit einer sehr geringen Wahrscheinlichkeit wird also beispielsweise der Text der Bibel oder der, der Unabhängigkeitserklärung produziert. Diese \glqq Maschine\grqq{} hat verschiedene Einstellungen. Der Algorithmus sucht iterativ die Einstellungen der Maschine, die das zugrundeliegende Dokument (Textinput) am wahrscheinlichsten produziert.
+Die unsupervised machine learning Technik hilft dabei eine beliebige Anzahl an Dokumenten anhand von Themen sortieren, ohne deren wahre Verteilung vorher zu kennen. So eignet sich das Modell primär für die Klassifizierung großer Textdaten. Abstrakt lässt sich die LDA als eine Maschine, die Dokumente produziert, beschreiben. Mit einer sehr geringen Wahrscheinlichkeit wird also beispielsweise der Text der Bibel oder der, der Unabhängigkeitserklärung produziert. Diese \glqq Maschine\grqq{} hat verschiedene Einstellungen. Der Algorithmus sucht iterativ die Einstellungen der Maschine, die das zugrundeliegende Dokument (Textinput) am wahrscheinlichsten produziert.
 
 \subsection{Definition}
 
@@ -23,7 +23,7 @@ Behandeln wir die LDA weiterhin analog einer Maschine, so ergibt sich für den E
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\linewidth]{files/tmschab.PNG}
-\caption{Graphisches Modell der LDA \parencite[S. 997]{blei2003latent}}
+\caption[Modell der LDA]{Graphisches Modell der LDA \parencite[S. 997]{blei2003latent}}
 \label{tmschab}
 \end{figure}
 
@@ -34,7 +34,7 @@ Dabei sind $\alpha$ und $\beta$ Parameter von Dirichletverteilungen, $\Theta$ is
 P(W, Z, \Theta, \phi; \alpha, \beta) = \prod_{j=1}^{M} P(\Theta; \alpha) \prod_{i=1}^{K} P(\phi; \beta) \prod_{t=1}^{N} P(Z_{jt} | \Theta_j) P(W_{jt} | \phi_{z_{jt}})
 \end{equation}
 
-Die ersten zwei Terme sind Dirichletverteilungen, der dritte und der vierte Term sind wiederum Multinomialverteilungen. Beide Verteilungen behandeln jeweils Themen und Wörter des Dokumentes. In den nächsten zwei Abschnitten werde ich genauer auf die beiden Verteilungen eingehen. Dabei werde ich die LDA weiterhin analog einer Maschine beschreiben.\footnote{Idee: \href{https://www.youtube.com/watch?v=T05t-SqKArY&ab_channel=LuisSerrano}{Latent Dirichlet Allocation} Stand: 12.10.2020}
+Die ersten zwei Terme sind Dirichletverteilungen, der dritte und der vierte Term sind wiederum Multinomialverteilungen. Beide Verteilungen behandeln jeweils Themen und Wörter des Dokumentes. In den nächsten zwei Abschnitten werde ich genauer auf die beiden Verteilungen eingehen. Dabei werde ich die LDA weiterhin analog einer Maschine beschreiben.\footnote{Idee: \href{https://www.youtube.com/watch?v=T05t-SqKArY&ab_channel=LuisSerrano}{Latent Dirichlet Allocation} Stand: 12.10.2020.}
 
 
 
@@ -51,7 +51,7 @@ Wir betrachten zunächst den ersten Term: $\prod_{j=1}^{M} P(\Theta; \alpha)$. G
 
 \subsection{Die Zahnräder der Maschine}
 
-Die Multinomialverteilungen sind im Kontext der LDA, die Verteilungen, die auf Basis der Dirichletverteilungen, Dokumente \glqq produzieren\grqq{}. So werden für den Term $P(Z_{jt} | \Theta_j)$, nach der zugrundeliegenden Verteilung der Dokumente in den Themen $P(\Theta; \alpha)$, für jedes der Dokumente eine Anzahl von Themen gewählt. Für das Beispiel in Abbildung \ref{tmbsp1} erhält man für das linke Dokument, eine Anzahl an Themen entsprechend der Wahrscheinlichkeitsverteilung aus 40\% Sport, 40\% Wissenschaft und 10\% Politik. Jedes Thema repräsentiert eine Verteilung von Wörtern. Für jedes der gewählten Themen aus $P(Z_{jt} | \Theta_j)$, werden für den Term $P(W_{jt} | \phi_{z_{jt}})$ wiederum Wörter nach der zugrundeliegenden Wörter-Themen Wahrscheinlichkeitsverteilung $P(\phi; \beta)$ gewählt (Abbildung \ref{tmschab2}). Die resultierenden Wortgruppen der jeweiligen Themen ist letztlich das Dokument der Maschine. \\
+Die Multinomialverteilungen sind im Kontext der LDA, die Verteilungen, die auf Basis der Dirichletverteilungen, Dokumente \glqq produzieren\grqq{}. So werden für den Term $P(Z_{jt} | \Theta_j)$, nach der zugrundeliegenden Verteilung der Dokumente in den Themen $P(\Theta; \alpha)$, für jedes der Dokumente eine Anzahl von Themen gewählt. Für das Beispiel in Abbildung \ref{tmbsp1} erhält man für das linke Dokument, eine Anzahl an Themen entsprechend der Wahrscheinlichkeitsverteilung aus 40\% Sport, 40\% Wissenschaft und 10\% Politik. Jedes Thema repräsentiert eine Verteilung von Wörtern. Für jedes der gewählten Themen aus $P(Z_{jt} | \Theta_j)$, werden für den Term $P(W_{jt} | \phi_{z_{jt}})$ wiederum Wörter nach der zugrundeliegenden Wörter-Themen Wahrscheinlichkeitsverteilung $P(\phi; \beta)$ gewählt (Abbildung \ref{tmschab2}). Die resultierenden Wortgruppen der jeweiligen Themen ist letztlich das Dokument der Maschine. 
 
 \begin{figure}[!ht]
 \centering
@@ -64,17 +64,17 @@ Der Term \ref{tmequ1}, berechnet mit welcher Wahrscheinlichkeit, dieses Dokument
 
 Der Algorithmus der LDA maximiert also - durch Veränderung der Einstellungen - iterativ die Wahrscheinlichkeit, mit der das resultierende Dokument dem Text der Eingabe entspricht.
 
-\section{Das Topic Model der Patentauszüge}
+\section{Das Topic Model der Patenttexte}
 
 \subsection{Datenvorverarbeitung}
 
-Zunächst holen wir uns die Texte aller englischen $Y02T\_10$-Patente aus der Datenbank. Da die einzelnen Titel der Patente weitere Informationen enthalten fügen wir sie den Textauszügen hinzu. Bevor die Patenttexte verarbeitet werden können müssen die Daten bereinigt werden. Im ersten Schritt der Datenvorverarbeitung entfernen wir alle \glqq stopwords\grqq{} aus den Texten. Bei den Stopwörtern handelt es sich um Wörter, die für das Ergebnis des Themenmodells unwichtig sind, da sie keine Informationen beinhalten. Dabei geht es beispielsweise um Konjunktionen wie \glqq and\grqq{} oder den Artikel \glqq the\grqq{}. Patentspezifische Wörter, wie \glqq Problem\grqq{} und \glqq Solution\grqq{}, die in fast jedem Textauszug vorkommen, fügen wir der Liste manuell hinzu. Insgesamt enthält die Liste der \glqq stopwords\grqq{} 185 Einträge (Liste siehe Anhang \ref{appendix:stop}). \\
+Zunächst holen wir uns die Texte aller englischen $Y02T\_10$-Patente aus der Datenbank. Da die einzelnen Titel der Patente weitere Informationen enthalten fügen wir sie den Textauszügen hinzu. Bevor die Patenttexte verarbeitet werden können müssen die Daten bereinigt werden. Im ersten Schritt der Datenvorverarbeitung entfernen wir alle stopwords aus den Texten. Bei den Stopwörtern handelt es sich um Wörter, die für das Ergebnis des Themenmodells unwichtig sind, da sie keine Informationen beinhalten. Dabei geht es beispielsweise um Konjunktionen wie \glqq and\grqq{} oder den Artikel \glqq the\grqq{}. Patentspezifische Wörter, wie \glqq Problem\grqq{} und \glqq Solution\grqq{}, die in fast jedem Textauszug vorkommen, fügen wir der Liste manuell hinzu. Insgesamt enthält die Liste der \glqq stopwords\grqq{} 185 Einträge (Liste siehe Anhang \ref{appendix:stop}). 
 
-Im zweiten Schritt werden die Daten lemmatisiert. Wörter des selben Wortstamms werden dabei auf ihre Grundform zurückgeführt. So wird beispielsweise aus dem Wort \glqq measuring\grqq{}, das Wort \glqq measure\grqq{}, oder aus dem Wort \glqq detected\grqq{}, \glqq detect\grqq{}. Ohne Berücksichtigung der Orthographie werden dabei zusätzlich sämtliche Wörter in Kleinschreibung überführt. Sinn der Lemmatisierung ist es, inhaltsgleiche Wortgruppen für den Algorithmus \glqq sichtbar\grqq{} zu machen. Die Lemmatisierung und die Entfernung der Stopwörter wurde mit Hilfe der Open-Source Softwarebibliothek \glqq spaCy\grqq{} durchgeführt (Anhang \ref{appenidx:spacy}) \\
+Im zweiten Schritt werden die Daten lemmatisiert. Wörter des selben Wortstamms werden dabei auf ihre Grundform zurückgeführt. So wird beispielsweise aus dem Wort \glqq measuring\grqq{}, das Wort \glqq measure\grqq{}, oder aus dem Wort \glqq detected\grqq{}, \glqq detect\grqq{}. Ohne Berücksichtigung der Orthographie werden dabei zusätzlich sämtliche Wörter in Kleinschreibung überführt. Sinn der Lemmatisierung ist es, inhaltsgleiche Wortgruppen für den Algorithmus \glqq sichtbar\grqq{} zu machen. Die Lemmatisierung und die Entfernung der Stopwörter wurde mit Hilfe der Open-Source Softwarebibliothek \glqq spaCy\grqq{} durchgeführt (Anhang \ref{appenidx:spacy}) 
 
-Im letzten Schritt der Datenvorverarbeitung, filtern wir die Extremwörter. Wörter, die im gesamten Textkorpus zu selten beziehungsweise zu häufig vorkommen, können das Ergebnis des Themenmodells negativ beeinflussen. So wollen wir beispielsweise Rechtschreibfehler ausschließen. Wie in vielen Teilen des Modellierungsprozesses, gibt es für die Parameter des Extremwortfilters keine allgemeingültigen Werte. Die Wahl der Parameter hängt letztendlich immer von den zugrundeliegenden Textdaten ab. In unserem Fall hat sich eine Wahl von: nicht weniger als fünf und nicht mehr als 50\% als sinnvoll ergeben. So werden Wörter die weniger als fünf mal vorkommen nicht berücksichtigt. Weiter werden auch Wörter gefiltert, die in mehr als 50\% der Patentauszüge vorkommen. Für die 205713 betrachteten Patente erhalten wir im Ergebnis 12427 verschiedene Wörter in unserem Wörterbuch. \\
+Im letzten Schritt der Datenvorverarbeitung, filtern wir die Extremwörter. Wörter, die im gesamten Textkorpus zu selten beziehungsweise zu häufig vorkommen, können das Ergebnis des Themenmodells negativ beeinflussen. So wollen wir beispielsweise Rechtschreibfehler ausschließen. Wie in vielen Teilen des Modellierungsprozesses, gibt es für die Parameter des Extremwortfilters keine allgemeingültigen Werte. Die Wahl der Parameter hängt letztendlich immer von den zugrundeliegenden Textdaten ab. In unserem Fall hat sich eine Wahl von: nicht weniger als fünf und nicht mehr als 50\% als sinnvoll ergeben. So werden Wörter die weniger als fünf mal vorkommen nicht berücksichtigt. Weiter werden auch Wörter gefiltert, die in mehr als 50\% der Patentauszüge vorkommen. Für die 205713 betrachteten Patente erhalten wir im Ergebnis 12427 verschiedene Wörter in unserem Wörterbuch. 
 
-Wir betrachten den Textauszug mit Titel eines zufälliges Patents vor und nach Bearbeitung: \\
+Wir betrachten den Textauszug mit Titel eines zufälliges Patents vor und nach Bearbeitung: 
 
 \begin{center}
 \begin{table}[!ht]
@@ -96,7 +96,7 @@ A battery capacity measuring device in accordance with the present invention has
 
 \subsection{Anzahl der Themen}
 
-Wie bereits erwähnt ist die Wahl sinnvoller Parameter im Verlauf des Modellierungsprozesses essenziell für die spätere Interpretierbarkeit der Ergebnisse. Dabei stellte für uns die Wahl der Themenanzahl eine besondere Herausforderung dar. Eine große Anzahl an Themen wird dazu führen, dass die Granularität der Themen zunimmt. Allerdings kann dabei auch der Sinnzusammenhang der einzelnen Wortgruppen an Präzision verlieren. Einzelne Themen lassen sich, aufgrund repetitiver Wortsammlungen nicht mehr sinnvoll voneinander unterscheiden. Auf der anderen Seite führt die Wahl einer niedrigen Themenzahl möglicherweise zu Informationsverlusten. \\
+Wie bereits erwähnt ist die Wahl sinnvoller Parameter im Verlauf des Modellierungsprozesses essenziell für die spätere Interpretierbarkeit der Ergebnisse. Dabei stellte für uns die Wahl der Themenanzahl eine besondere Herausforderung dar. Eine große Anzahl an Themen wird dazu führen, dass die Granularität der Themen zunimmt. Allerdings kann dabei auch der Sinnzusammenhang der einzelnen Wortgruppen an Präzision verlieren. Einzelne Themen lassen sich, aufgrund repetitiver Wortsammlungen nicht mehr sinnvoll voneinander unterscheiden. Auf der anderen Seite führt die Wahl einer niedrigen Themenzahl möglicherweise zu Informationsverlusten. 
 
 Die richtige Wahl der Themenanzahl kann durch die Berechnung von Kohärenzwerten unterstützt werden. Dabei sollte man allerdings beachten, dass es sich dabei um kein absolutes Maße handelt. Ob das gewählte Themenmodell aussagekräftig ist, bleibt letztendlich der Erfahrung des Bearbeiters überlassen. Allgemein wird die Kohärenz eines Themas wie folgt definiert. 
 
@@ -112,7 +112,7 @@ Nach Gleichung \ref{coequ1} ist die Kohärenz die Summe der paarweisen \glqq wor
 score_{CLI}(w_i, w_j) = \log \frac{p(w_i, w_j)}{p(w_i), p(w_j)}
 \end{equation}
 
-$p(w_i)$ ist die Wahrscheinlichkeit, für das Wort $w_i$ in einem zufälligen Dokument gefunden zu werden. Analog gibt $p(w_i, w_j)$ die Wahrscheinlichkeit an, beide Wörter $w_i, w_j$ in demselben, zufälligen Dokument zu finden. Die Wahrscheinlichkeiten werden aufgrund eines externen Datensatzes, basierend auf Wikipedia Einträgen, berechnet \parencite{newman2010automatic} . \\
+$p(w_i)$ ist die Wahrscheinlichkeit, für das Wort $w_i$ in einem zufälligen Dokument gefunden zu werden. Analog gibt $p(w_i, w_j)$ die Wahrscheinlichkeit an, beide Wörter $w_i, w_j$ in demselben, zufälligen Dokument zu finden. Die Wahrscheinlichkeiten werden aufgrund eines externen Datensatzes, basierend auf Wikipedia Einträgen, berechnet \parencite{newman2010automatic} . 
 
 Für die Berechnung der Kohärenzen unserer Themenmodelle verwenden wir den etwas komplexeren \glqq CV-score\grqq{} basierend auf \glqq normalized pointwise mutual information (NPMI)\grqq{} \parencite{syed2017full}. Dabei ergeben sich Kohärenzwerte zwischen 0 und 1. Wobei die beiden betrachteten Wörter eines Themas bei einem Wert von 1 identisch sind. In der Regel werden Werte zwischen 0.5 und 0.7 als \glqq gut\grqq{} angesehen.
 
@@ -123,7 +123,7 @@ Für die Berechnung der Kohärenzen unserer Themenmodelle verwenden wir den etwa
 \label{coplot1}
 \end{figure}
 
-Der Graph in Abbildung \ref{coplot1} stellt die Kohärenzen in Relation zu den jeweiligen Anzahlen an Themen (Punkte im Graph). Mit steigender Themenzahl lässt sich ein klarer Abwärtstrend für die Kohärenzwerte erkennen, wobei sich das Maximum bei einer Anzahl von $K = 10$ Themen befindet. Wie oben aber bereits erwähnt dient die Kohärenz lediglich der Orientierung. Für die weitere Evaluationen haben wir uns zunächst auf drei Themenmodelle fokussiert ($K = 10$, $K = 30$ und $K = 80$). Sinn dieser Auswahl war es, ein Modell für jeweils eine Themengröße genauer zu betrachten. Durch die Anpassung einiger Parameter\footnote{Namentlich eine Erhöhung der \glqq chunksize\grqq{} und der \glqq passes\grqq{}} gelang es uns die Kohärenzwerte der drei Themenmodelle etwas zu erhöhen (siehe Abbildung \ref{coplot2}).
+Der Graph in Abbildung \ref{coplot1} stellt die Kohärenzen in Relation zu den jeweiligen Anzahlen an Themen (Punkte im Graph). Mit steigender Themenzahl lässt sich ein klarer Abwärtstrend für die Kohärenzwerte erkennen, wobei sich das Maximum bei einer Anzahl von $K = 10$ Themen befindet. Wie oben aber bereits erwähnt dient die Kohärenz lediglich der Orientierung. Für die weitere Evaluationen haben wir uns zunächst auf drei Themenmodelle fokussiert ($K = 10$, $K = 30$ und $K = 80$). Sinn dieser Auswahl war es, ein Modell für jeweils eine Themengröße genauer zu betrachten. Durch die Anpassung einiger Parameter\footnote{Namentlich eine Erhöhung der \glqq chunksize\grqq{} und der \glqq passes\grqq{}.} gelang es uns die Kohärenzwerte der drei Themenmodelle etwas zu erhöhen (siehe Abbildung \ref{coplot2}).
 
 \begin{figure}[!ht]
 \centering
@@ -145,7 +145,7 @@ POWER DEVICE FOR MOTOR FOR CAR PROBLEM TO BE SOLVED: To effectively use cooling 
 \end{table}
 \end{center}
 
-Das Patent wurde primär drei Themen zugeordnet: Thema 4 mit einer Gewichtung von 0.1992, Thema 11 (0.2292) und Thema 20 (0.1910). Wir visualisieren die drei Themen mit Hilfe einer \glqq Wordcloud\grqq{}. Dabei impliziert die Größe der Wörter, die Gewichtung der Wörter in dem jeweiligen Thema. \\
+Das Patent wurde primär drei Themen zugeordnet: Thema 4 mit einer Gewichtung von 0.1992, Thema 11 (0.2292) und Thema 20 (0.1910). Wir visualisieren die drei Themen mit Hilfe einer \glqq Wordcloud\grqq{}. Dabei impliziert die Größe der Wörter, die Gewichtung der Wörter in dem jeweiligen Thema. 
 
 \begin{figure}[!ht]
 \centering
@@ -192,33 +192,43 @@ Wir wenden wieder die Distanzmetrik der Kosinus-Ähnlichkeit auf die Vektoren un
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1.0\linewidth]{files/tmmds1.PNG}
-\caption{Graph der multidimensionalen Skalierung nach Themenvektoren, gesamter Zeitraum}
+\caption[MDS Themenvektoren]{Graph der multidimensionalen Skalierung nach Themenvektoren, gesamter Zeitraum}
 \label{tmmds1}
 \end{figure}
 
-Der Graph der Abbildung \ref{tmmds1} zeigt das Ergebnis der multidimensionalen Skalierung unserer zehn Firmen für den gesamten Zeitraum. Wir erkennen die drei Firmengruppen Ford und GM, Bosch und Hyundai und Honda, Toyota, Nissan, Denso und Hitachi. Die einzelnen Firmencluster scheinen, mit Ausnahme von Bosch und Hyundai, von der Nationalität der Firmen abzuhängen. So wäre es möglich, dass die einzelnen Länder verschiedene Wortgruppen bei der Formulierung ihrer Patente bevorzugen. Besonders auffällig ist der große Abstand zwischen den Firmen Denso und Bosch, da wir sowohl in Kapitel \ref{ch_jaffe}, als auch in Kapitel \ref{ch:zitat}, eine technologische Nähe der Automobilzulieferer feststellen konnten. Dennoch bleiben einige Zusammenhänge zu den anderen Technologieräumen bestehen. Beispielsweise fällt die Firma Mazda weiterhin aus dem Muster, auch die Firmen Toyota, Nissan und Honda weisen eine gewisse technologische Ähnlichkeit zueinander auf. \\
+Der Graph der Abbildung \ref{tmmds1} zeigt das Ergebnis der multidimensionalen Skalierung unserer zehn Firmen für den gesamten Zeitraum. Wir erkennen die drei Firmengruppen Ford und GM, Bosch und Hyundai und Honda, Toyota, Nissan, Denso und Hitachi. Die einzelnen Firmencluster scheinen, mit Ausnahme von Bosch und Hyundai, von der Nationalität der Firmen abzuhängen. So wäre es möglich, dass die einzelnen Länder verschiedene Wortgruppen bei der Formulierung ihrer Patente bevorzugen. Besonders auffällig ist der große Abstand zwischen den Firmen Denso und Bosch, da wir sowohl in Kapitel \ref{ch:jaffe}, als auch in Kapitel \ref{ch:zitat}, eine technologische Nähe der Automobilzulieferer feststellen konnten. Dennoch bleiben einige Zusammenhänge zu den anderen Technologieräumen bestehen. Beispielsweise fällt die Firma Mazda weiterhin aus dem Muster, auch die Firmen Toyota, Nissan und Honda weisen eine gewisse technologische Ähnlichkeit zueinander auf. 
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1.0\linewidth]{files/tmmds2.PNG}
-\caption{Graph der multidimensionalen Skalierung nach Themenvektoren, Zeitraum: 2000-2010 (links); 2011-2018 (rechts)}
+\caption[MDS Themenvektoren, zwei Zeiträume]{Graph der multidimensionalen Skalierung nach Themenvektoren, Zeitraum: 2000-2010 (links); 2011-2018 (rechts)}
 \label{tmmds2}
 \end{figure}
 
-Um die Bewegung der Firmen innerhalb von zwei Zeiträumen zu vergleichen wenden wir die Methodik aus \ref{jaffe:zeit} an.  Der Graph der Abbildung \ref{tmmds2} zeigt die Bewegung der Firmen innerhalb der Jahre 2000-2010 und 2011-2018. Honda scheint sich im zweiten Zeitraum etwas von Toyota zu entfernen. Die Bewegung von GM hin zu Ford und Bosch ist die deutlichste. Für die anderen Firmen lassen sich keine absoluten Aussagen treffen. 
+Um die Bewegung der Firmen innerhalb von zwei Zeiträumen zu vergleichen bedienen wir uns den beiden Methoden aus dem Kapitel \ref{ch:jaffe}.  Der Graph der Abbildung \ref{tmmds2} zeigt die Bewegung der Firmen innerhalb der Jahre 2000-2010 und 2011-2018. Honda scheint sich im zweiten Zeitraum etwas von Toyota zu entfernen. Des weiteren lässt sich eine deutliche Annäherung der Firma GM zu den Firmen Ford und Bosch erkennen. Die Änderung des Innovationsverhaltens der Firma GM konnten wir bereits in Kapitel \ref{ch:jaffe} feststellen.
 
-Um die Aussagekraft des Graphen zu steigern, nehmen wir mehr Firmen in die Berechnung auf. Wir betrachten die ersten 20 Firmen nach ihrer Anzahl an Patenten in der $Y02T\_10$ Klasse. 
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1.0\linewidth]{files/tmmds4.PNG}
+\caption[MDS Themenvektoren, zwei Zeiträume (2)]{Graph der multidimensionalen Skalierung nach Themenvektoren, Zeitraum: 2000-2010 (rot); 2011-2018 (blau)}
+\label{tmmds4}
+\end{figure}
+
+Wir wollen noch einmal festhalten, dass eine Bewertung der absoluten Firmenpositionen für den Graph der Abbildung \ref{tmmds4} wenig sinnvoll ist. Interessant ist die Richtungen der Bewegungen. Wir erkennen konträre Bewegungsrichtungen der Firmen GM und Ford auf der einen Seite und den übrigen Firmen auf der anderen Seite. Ein Zusammenspiel der amerikanischen Automobilhersteller konnten wir bereits öfters feststellen (Kapitel \ref{ch:jaffe}).
+
+
+Um die potentielle Aussagekraft des Technologieraums zu steigern, nehmen wir mehr Firmen in die Berechnung auf. Wir betrachten die ersten 20 Firmen nach ihrer Anzahl an Patenten in der $Y02T\_10$ Klasse. Darunter befinden sich auch deutsche Automarken wie z.B. Volkswagen, Daimler und BMW.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1.0\linewidth]{files/tmmds3.PNG}
-\caption{Graph der multidimensionalen Skalierung nach Themenvektoren, gesamter Zeitraum, 20 Firmen}
+\caption[MDS Themenvektoren, 20 Firmen]{Graph der multidimensionalen Skalierung nach Themenvektoren, gesamter Zeitraum, 20 Firmen}
 \label{tmmds3}
 \end{figure}
 
-Der Graph der Abbildung \ref{tmmds3} zeichnet ein klares Bild ab. Ausgenommen die Firma Hyundai, befinden sich alle Automobilunternehmen der westlichen Hemisphäre in einem Cluster. Die Firmen östlichen Ursprungs befinden sich auf der anderen Seite des Technologieraums. Wir gehen davon aus, dass dieses Ergebnis eine Mischung aus unterschiedlichem Sprachgebrauch und einem unterschiedlichen Technologiefokus zwischen den beiden Firmenclustern ist.
+Der Graph der Abbildung \ref{tmmds3} zeichnet ein klares Bild ab. Ausgenommen der Firma Hyundai, befinden sich alle Automobilunternehmen der westlichen Hemisphäre in einem Cluster. Die Firmen östlichen Ursprungs befinden sich auf der anderen Seite des Technologieraums. Wir gehen davon aus, dass sich das Ergebnis aus der Mischung zweier Tatsachen ergibt. Unterschiedliche Themenverteilungen ergeben sich aus divergierenden Sprachmustern zwischen den Firmenclustern. So sind möglicherweise einige Wörter typischer im östlichen Sprachgebrauch als im westlichen. Diese Tatsache ist aus technologische Sichtweise nicht weiter interessant. Allerdings gehen wir weiterhin davon aus, dass sich die Firmencluster auch in ihrem Forschungsfokus unterscheiden. 
 
-Um die Technologiethese zu stützen wählen wir einen Repräsentanten aus jeweils einem Firmencluster und untersuchen die Unterschiede der Themenvektoren. So erkennen wir zwischen den Firmen VW und Toyota große Unterschiede in den jeweiligen Auffangthemen. Die Gruppierung der Patente in diesen Themen lässt sich allerdings nicht ohne weiteres auf ein gemeinsame Technologie zurückführen. Dennoch sind auch Unterschiede in sinnvollen Themen zu erkennen. So hat Toyota besonders viele Patente mit dem Thema \glqq Elektromobilität und Hybridtechnik\grqq{topict} (siehe Abbildung). Auf der anderen Seite hält der Volkswagen Konzern die meisten Patente mit der Thematik \glqq Emissionsreduktion\grqq{} (siehe Abbildung \ref{topicvw}). 
+Um die Technologiethese zu stützen wählen wir einen Repräsentanten aus jeweils einem Firmencluster und untersuchen die Unterschiede der Themenvektoren. So erkennen wir zwischen den Firmen VW und Toyota systematische Unterschiede in den jeweiligen Auffangthemen. Die Gruppierung der Patente in diesen Themen lässt sich allerdings nicht ohne weiteres auf ein gemeinsame Technologie zurückführen. Dennoch erkennen wir auch unterschiedliche innovative Prioritäten, in den von uns beurteilbaren Themen. So hält Toyota besonders viele Patente mit dem Thema Elektromobilität und Hybridtechnik (siehe Abbildung \ref{topict}). Auf der anderen Seite hält der Volkswagen Konzern die meisten Patente mit der Thematik: Emissionsreduktion (siehe Abbildung \ref{topicvw}). 
 
 \begin{figure}[!ht]
 \centering
@@ -234,4 +244,4 @@ Um die Technologiethese zu stützen wählen wir einen Repräsentanten aus jeweil
 \label{topicvw}
 \end{figure}
 
-Eine interessante Erkenntnis, da beide Themen dasselbe Ziel verfolgen. Allerdings scheint die Herangehensweise an das Klimaproblem unterschiedlich auszufallen. Dabei setzt der eine Konzern darauf, die konventionelle Verbrennungsmotoren klimaneutraler zu gestalten, beispielsweise durch die Stickstoffreduktion mittels Harnstoff und das andere Unternehmen auf neue Energieträger, namentlich Hybrid- und Elektrofahrzeuge.
+Eine interessante Erkenntnis, da beide Themen dasselbe Ziel verfolgen. Allerdings scheint die Herangehensweise an das Klimaproblem unterschiedlich auszufallen. Dabei setzt der eine Konzern darauf, die konventionelle Verbrennungsmotoren klimaneutraler zu gestalten, beispielsweise durch die Stickstoffreduktion mittels Harnstoff und das andere Unternehmen auf neue Energieträger, namentlich Hybrid- und Elektrofahrzeuge. Weiter bemerkenswert ist die Postion der Firma Hyundai. Das Unternehmen östlichen Ursprungs positioniert sich in dem westliche Automobilcluster. Wir konnten bereits in Kapitel \ref{ch:jaffe} feststellen, wie sich der koreanische Automobilhersteller, trotz starker Aktivität im Elektro- und Hybridsektor von den japanischen Unternehmen distanziert. Möglicherweise sind die historische Differenzen der beiden Länder ein Hintergrund für dieses Ergebnis. Man könnte davon ausgehen, dass es aufgrund des Handelsstreits zwischen Japan und Korea nur zu einem minimalen Wissensaustausch kommt. Die Themen der Firma Hyundai lassen außerdem eine starke Ähnlichkeit zu der Firma Daimler erkennen. Grund dafür könnte ein Vergangenes Joint Venture der beiden Unternehmen sein\footnote{\href{https://www.nzz.ch/article7H4M1-1.511999}{nzz.ch} Stand: 24.10.2020.} (Vollständiger Code siehe \ref{appendix:tm}).

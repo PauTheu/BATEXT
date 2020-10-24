@@ -5,77 +5,81 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Anzahl der Patentanmeldungen in der Patentklasse $Y02T\_10$ pro Jahr\relax }}{5}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Anzahl der Patentanmeldungen in der Patentklasse $Y02T\_10$ pro Jahr\relax }}{6}{figure.caption.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Patentzahl Top 10 Unternehmen\relax }}{7}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Patentzahl Top 10 Unternehmen\relax }}{13}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Anzahl der $Y02T\_10$ Patente nach Gruppierung\relax }}{14}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Anzahl der $Y02T\_10$ Patente nach Gruppierung\relax }}{14}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Anzahl der $Y02T\_10$ Patente nach Firmengruppierung\relax }}{16}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Graph der multidimensionalen Skalierung nach Patentvektoren, gesamter Zeitraum (1970-2018)\relax }}{17}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces MDS Patentvektoren}}{18}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Graph der multidimensionalen Skalierung nach Patentvektoren, Zeitraum: 2000-2010 (links); 2011-2018 (rechts)\relax }}{19}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces MDS Patentvektoren, zwei Zeiträume}}{20}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Graph der multidimensionalen Skalierung nach Patentvektoren, zwei Distanzmetriken, \glqq min-complement distance\grqq {} (links), Kosinus-Ähnlichkeit (rechts)\relax }}{20}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces MDS Patentvektoren, zwei Zeträume (2)}}{21}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Beispiel: drei Firmen zitieren Patente\relax }}{23}{figure.caption.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Technologische Positionen von Firmen in der japanischen Halbleiterindustrie \parencite [S. 30]{stuart1996local}\relax }}{26}{figure.caption.11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Patentzitate der Firma Blau (links) und Firma Rot\relax }}{27}{figure.caption.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Patentzitate der zweiten Ebene, $\omega _{RB}^{21}$\relax }}{28}{figure.caption.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Patentzitate der zweiten Ebene, $\omega _{BR}^{22}$\relax }}{29}{figure.caption.14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Bewegung US-amerikanischer Firmen über die Zeit \parencite [S. 12]{kitahara2017technology}\relax }}{31}{figure.caption.15}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Anzahl Zitationen pro Firma\relax }}{32}{figure.caption.16}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Graph der multidimensionalen Skalierung nach Patentzitaten\relax }}{33}{figure.caption.17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Graph der multidimensionalen Skalierung nach Patentzitaten ohne die Firma Toyota\relax }}{34}{figure.caption.18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Graph der multidimensionalen Skalierung nach Patentzitaten mit der Firma LG\relax }}{35}{figure.caption.19}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Graph der multidimensionalen Skalierung nach Patentzitaten inklusive second-order Zitate $\eta = 0.6$\relax }}{37}{figure.caption.20}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Graph der multidimensionalen Skalierung nach Patentzitaten inklusive second-order Zitate für 31 Firmen\relax }}{38}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces MDS Patentvektoren, zwei Distanzmetriken}}{23}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Graphisches Modell der LDA \parencite [S. 997]{blei2003latent}\relax }}{40}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Beispiel: drei Firmen zitieren Patente\relax }}{26}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Verteilung zweier Artikel auf Themen in einer Dirichletverteilung\relax }}{42}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces MDS der japanische Halbleiterindustrie}}{28}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Zusammenhang der Verteilungen\relax }}{42}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Patentzitate der Firma Blau (links) und Firma Rot\relax }}{30}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Kohärenzwerte pro Themenzahl\relax }}{46}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Patentzitate der zweiten Ebene, $\omega _{RB}^{21}$\relax }}{31}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Kohärenzwerte pro Themenzahl K ($K = 10$, $K = 30$ und $K = 80$)\relax }}{46}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Patentzitate der zweiten Ebene, $\omega _{BR}^{22}$\relax }}{32}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Wordcloud Thema 4: Temperatur\relax }}{48}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces MDS Polarisation von Firmen}}{33}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Wordcloud Thema 11: Batterie\relax }}{48}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Anzahl Zitationen pro Firma\relax }}{34}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Wordcloud Thema 20: Auffangthema\relax }}{48}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces MDS Patentzitate}}{36}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Verteilung der Patente der Firma Honda auf die Themen 0-29\relax }}{49}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces MDS Patentzitate ohne Toyota}}{37}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Graph der multidimensionalen Skalierung nach Themenvektoren, gesamter Zeitraum\relax }}{50}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces MDS Patentzitate mit LG}}{38}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Graph der multidimensionalen Skalierung nach Themenvektoren, Zeitraum: 2000-2010 (links); 2011-2018 (rechts)\relax }}{51}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces MDS Patentzitate der zweiten Ebene}}{39}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Graph der multidimensionalen Skalierung nach Themenvektoren, gesamter Zeitraum, 20 Firmen\relax }}{52}{figure.caption.36}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Relevantes Thema der Firma Toyota\relax }}{52}{figure.caption.37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Relevantes Thema der Firma VW\relax }}{53}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces MDS Patentzitate der zweiten Ebene, 31 Firmen}}{40}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Modell der LDA}}{42}{figure.caption.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Verteilung zweier Artikel auf Themen in einer Dirichletverteilung\relax }}{44}{figure.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Zusammenhang der Verteilungen\relax }}{44}{figure.caption.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Kohärenzwerte pro Themenzahl\relax }}{48}{figure.caption.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Kohärenzwerte pro Themenzahl K ($K = 10$, $K = 30$ und $K = 80$)\relax }}{48}{figure.caption.30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Wordcloud Thema 4: Temperatur\relax }}{49}{figure.caption.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Wordcloud Thema 11: Batterie\relax }}{50}{figure.caption.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Wordcloud Thema 20: Auffangthema\relax }}{50}{figure.caption.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Verteilung der Patente der Firma Honda auf die Themen 0-29\relax }}{51}{figure.caption.35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces MDS Themenvektoren}}{52}{figure.caption.36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces MDS Themenvektoren, zwei Zeiträume}}{52}{figure.caption.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces MDS Themenvektoren, zwei Zeiträume (2)}}{53}{figure.caption.38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces MDS Themenvektoren, 20 Firmen}}{54}{figure.caption.39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Relevantes Thema der Firma Toyota\relax }}{55}{figure.caption.40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Relevantes Thema der Firma VW\relax }}{55}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

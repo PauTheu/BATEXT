@@ -19,6 +19,44 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{almeida1997exploration}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7c64b91d17457d93205db918881fccad}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac37283c50cb2762288a27bf24b1c80f}{%
+           family={Kogut},
+           familyi={K\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{69eeb10fd47b395543c3271f4a23eacc}
+      \strng{fullhash}{69eeb10fd47b395543c3271f4a23eacc}
+      \strng{bibnamehash}{69eeb10fd47b395543c3271f4a23eacc}
+      \strng{authorbibnamehash}{69eeb10fd47b395543c3271f4a23eacc}
+      \strng{authornamehash}{69eeb10fd47b395543c3271f4a23eacc}
+      \strng{authorfullhash}{69eeb10fd47b395543c3271f4a23eacc}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Small Business Economics}
+      \field{number}{1}
+      \field{title}{The exploration of technological diversity and geographic localization in innovation: Start-up firms in the semiconductor industry}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{21\bibrangedash 31}
+      \range{pages}{11}
+    \endentry
     \entry{alstott2017mapping}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=6fb2022bd2b68617f700518b8377776d}{%
@@ -143,6 +181,36 @@
       \field{volume}{37}
       \field{year}{2008}
       \field{pages}{1556\bibrangedash 1567}
+      \range{pages}{12}
+    \endentry
+    \entry{berndt2014nicht}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4b476a003b15a851f818015a3ec86ee4}{%
+           family={Berndt},
+           familyi={B\bibinitperiod},
+           given={Enno},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4b476a003b15a851f818015a3ec86ee4}
+      \strng{fullhash}{4b476a003b15a851f818015a3ec86ee4}
+      \strng{bibnamehash}{4b476a003b15a851f818015a3ec86ee4}
+      \strng{authorbibnamehash}{4b476a003b15a851f818015a3ec86ee4}
+      \strng{authornamehash}{4b476a003b15a851f818015a3ec86ee4}
+      \strng{authorfullhash}{4b476a003b15a851f818015a3ec86ee4}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Automotive Management}
+      \field{title}{Nicht-konventionelle Antriebe--Kommerzialisierung durch japanische Automobilhersteller}
+      \field{year}{2014}
+      \field{pages}{121\bibrangedash 132}
       \range{pages}{12}
     \endentry
     \entry{blei2003latent}{article}{}
@@ -332,38 +400,6 @@
       \field{year}{1993}
       \field{pages}{577\bibrangedash 598}
       \range{pages}{22}
-    \endentry
-    \entry{karki1997patent}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=563a1db8e793692caa20e393cb303a37}{%
-           family={Karki},
-           familyi={K\bibinitperiod},
-           given={MMS},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{563a1db8e793692caa20e393cb303a37}
-      \strng{fullhash}{563a1db8e793692caa20e393cb303a37}
-      \strng{bibnamehash}{563a1db8e793692caa20e393cb303a37}
-      \strng{authorbibnamehash}{563a1db8e793692caa20e393cb303a37}
-      \strng{authornamehash}{563a1db8e793692caa20e393cb303a37}
-      \strng{authorfullhash}{563a1db8e793692caa20e393cb303a37}
-      \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{World Patent Information}
-      \field{number}{4}
-      \field{title}{Patent citation analysis: A policy analysis tool}
-      \field{volume}{19}
-      \field{year}{1997}
-      \field{pages}{269\bibrangedash 272}
-      \range{pages}{4}
     \endentry
     \entry{kitahara2017technology}{article}{}
       \name{author}{2}{}{%
@@ -569,7 +605,6 @@
       \field{year}{2019}
     \endentry
   \enddatalist
-  \missing{almeida1997exploration}
   \missing{jaffe1989technological}
 \endrefsection
 \endinput
