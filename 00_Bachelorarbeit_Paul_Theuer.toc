@@ -37,13 +37,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Bildung der Patentvektoren und der Distanzmatrix}{13}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Multidimensionale Skalierung}{16}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Multidimensionale Skalierung}{17}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.3}Interpretation des Graphen}{18}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Zeitliche Entwicklung}{19}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.4}Zeitliche Entwicklung}{20}{subsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Robustheit}{22}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.5}Robustheit}{21}{subsection.3.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Der Technologieraum auf Basis von Patentzitaten}{24}{chapter.4}%
 \defcounter {refsection}{0}\relax 
@@ -81,7 +81,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.4}Die Einstellungen der Maschine}{43}{subsection.5.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Die Zahnräder der Maschine}{43}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.5}Die Zahnräder der Maschine}{44}{subsection.5.1.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Das Topic Model der Patenttexte}{45}{section.5.2}%
 \defcounter {refsection}{0}\relax 
@@ -93,28 +93,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.4}Der Technologieraum nach Themenvektoren}{51}{subsection.5.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{56}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Fazit}{57}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Zusammenfassung}{56}{section.6.1}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung}{57}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Ausblick}{57}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Ausblick}{58}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{58}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Appendix}{59}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Code Datenbasis}{58}{section.A.1}%
+\contentsline {section}{\numberline {A.1}Code Datenbasis}{59}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Code deskriptive Statikstiken}{58}{section.A.2}%
+\contentsline {section}{\numberline {A.2}Code deskriptive Statikstiken}{59}{section.A.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Code Kapitel \ref {ch:jaffe}}{58}{section.A.3}%
+\contentsline {section}{\numberline {A.3}Code Kapitel \ref {ch:jaffe}}{59}{section.A.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Code Kapitel \ref {ch:zitat}}{58}{section.A.4}%
+\contentsline {section}{\numberline {A.4}Code Kapitel \ref {ch:zitat}}{59}{section.A.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Code Kapitel \ref {ch:tm}}{58}{section.A.5}%
+\contentsline {section}{\numberline {A.5}Code Kapitel \ref {ch:tm}}{59}{section.A.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.6}Berechnung der Omegawerte}{59}{section.A.6}%
+\contentsline {section}{\numberline {A.6}Berechnung der Omegawerte}{60}{section.A.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.7}Stopwords}{60}{section.A.7}%
+\contentsline {section}{\numberline {A.7}Stopwords}{61}{section.A.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.8}SpaCy}{61}{section.A.8}%
+\contentsline {section}{\numberline {A.8}SpaCy}{62}{section.A.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis }{62}{chapter*.42}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis }{63}{chapter*.42}%

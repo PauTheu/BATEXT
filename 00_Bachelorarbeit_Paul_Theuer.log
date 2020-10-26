@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  24 OCT 2020 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  26 OCT 2020 15:42
 entering extended mode
 **./00_Bachelorarbeit_Paul_Theuer.tex
 (00_Bachelorarbeit_Paul_Theuer.tex
@@ -1792,11 +1792,7 @@ chapter 2.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-<files/numyears.PNG, id=286, 507.39563pt x 368.1253pt>
+<files/numyears.PNG, id=288, 507.39563pt x 368.1253pt>
 File: files/numyears.PNG Graphic file (type png)
 <use files/numyears.PNG>
 Package pdftex.def Info: files/numyears.PNG  used on input line 29.
@@ -1805,13 +1801,13 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 30.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 30.
-[5]
-<files/top10.PNG, id=301, 491.58656pt x 354.57469pt>
+ [5 <./files/numyears.PNG>]
+<files/top10.PNG, id=302, 491.58656pt x 354.57469pt>
 File: files/top10.PNG Graphic file (type png)
 <use files/top10.PNG>
 Package pdftex.def Info: files/top10.PNG  used on input line 40.
 (pdftex.def)             Requested size: 455.24417pt x 328.3714pt.
-) [6 <./files/numyears.PNG>] [7 <./files/top10.PNG>]
+) [6] [7 <./files/top10.PNG>]
 \openout2 = `05_Jaffe.aux'.
 
  (05_Jaffe.tex
@@ -1821,10 +1817,10 @@ chapter 3.
 
 
 ] [9] [10] [11] [12]
-<files/cpcnum15.PNG, id=377, 475.7775pt x 352.31625pt>
+<files/cpcnum15.PNG, id=379, 475.7775pt x 352.31625pt>
 File: files/cpcnum15.PNG Graphic file (type png)
 <use files/cpcnum15.PNG>
-Package pdftex.def Info: files/cpcnum15.PNG  used on input line 98.
+Package pdftex.def Info: files/cpcnum15.PNG  used on input line 97.
 (pdftex.def)             Requested size: 455.24417pt x 337.12845pt.
  [13] [14 <./files/cpcnum15.PNG>]
 \g__nicematrix_max_cell_width_dim=\dimen310
@@ -1852,17 +1848,11 @@ Package pdftex.def Info: files/cpcnum15.PNG  used on input line 98.
 \l__nicematrix_initial_j_int=\count506
 \l__nicematrix_final_i_int=\count507
 \l__nicematrix_final_j_int=\count508
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 137.
-
-
-LaTeX Warning: Reference `cpcfirmen15' on page 15 undefined on input line 137.
-
-[15]
-<files/cpcfirmen15.PNG, id=397, 472.76625pt x 441.90094pt>
+ [15]
+<files/cpcfirmen15.PNG, id=400, 472.76625pt x 441.90094pt>
 File: files/cpcfirmen15.PNG Graphic file (type png)
 <use files/cpcfirmen15.PNG>
-Package pdftex.def Info: files/cpcfirmen15.PNG  used on input line 141.
+Package pdftex.def Info: files/cpcfirmen15.PNG  used on input line 140.
 (pdftex.def)             Requested size: 455.24417pt x 425.53494pt.
  [16 <./files/cpcfirmen15.PNG>]
 ("C:\Users\Paul\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.s
@@ -1870,49 +1860,50 @@ ty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
-157.
+156.
 
 ("C:\Users\Paul\AppData\Local\Programs\MiKTeX 2.9\tex/latex/newtx\t1ntxtt.fd"
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 157.
+(Font)              scaled to size 12.0pt on input line 156.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 8.0pt on input line 157.
+(Font)              scaled to size 8.0pt on input line 156.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 158.
+(Font)              scaled to size 8.0pt on input line 157.
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
-59.
+58.
 
 ("C:\Users\Paul\AppData\Local\Programs\MiKTeX 2.9\tex/latex/txfonts\t1txtt.fd"
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <8> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 159.
-<files/mdsjaffe1.PNG, id=406, 407.27156pt x 326.72063pt>
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 158.
+[17]
+<files/mdsjaffe1.PNG, id=449, 407.27156pt x 326.72063pt>
 File: files/mdsjaffe1.PNG Graphic file (type png)
 <use files/mdsjaffe1.PNG>
-Package pdftex.def Info: files/mdsjaffe1.PNG  used on input line 197.
+Package pdftex.def Info: files/mdsjaffe1.PNG  used on input line 196.
 (pdftex.def)             Requested size: 455.24417pt x 365.22166pt.
-[17] [18 <./files/mdsjaffe1.PNG>] [19]
-<files/mdsjaffe2.PNG, id=466, 752.8125pt x 326.72063pt>
+ [18 <./files/mdsjaffe1.PNG>] [19]
+<files/mdsjaffe2.PNG, id=469, 752.8125pt x 326.72063pt>
 File: files/mdsjaffe2.PNG Graphic file (type png)
 <use files/mdsjaffe2.PNG>
-Package pdftex.def Info: files/mdsjaffe2.PNG  used on input line 224.
+Package pdftex.def Info: files/mdsjaffe2.PNG  used on input line 223.
 (pdftex.def)             Requested size: 455.24417pt x 197.57933pt.
- [20 <./files/mdsjaffe2.PNG>]
-<files/mdsjaffe4.PNG, id=473, 389.95688pt x 352.31625pt>
+<files/mdsjaffe4.PNG, id=470, 389.95688pt x 352.31625pt>
 File: files/mdsjaffe4.PNG Graphic file (type png)
 <use files/mdsjaffe4.PNG>
-Package pdftex.def Info: files/mdsjaffe4.PNG  used on input line 233.
+Package pdftex.def Info: files/mdsjaffe4.PNG  used on input line 232.
 (pdftex.def)             Requested size: 455.24417pt x 411.31595pt.
- [21 <./files/mdsjaffe4.PNG>]
-<files/mdsjaffe3.PNG, id=486, 746.79pt x 327.47343pt>
+ [20] [21 <./files/mdsjaffe2.PNG>]
+[22 <./files/mdsjaffe4.PNG>]
+<files/mdsjaffe3.PNG, id=497, 746.79pt x 327.47343pt>
 File: files/mdsjaffe3.PNG Graphic file (type png)
 <use files/mdsjaffe3.PNG>
-Package pdftex.def Info: files/mdsjaffe3.PNG  used on input line 254.
+Package pdftex.def Info: files/mdsjaffe3.PNG  used on input line 253.
 (pdftex.def)             Requested size: 455.24417pt x 199.62859pt.
-) [22] [23 <./files/mdsjaffe3.PNG>]
+) [23 <./files/mdsjaffe3.PNG>]
 \openout2 = `06_Stuart.aux'.
 
  (06_Stuart.tex
@@ -1922,77 +1913,78 @@ chapter 4.
 
 
 ] [25]
-<files/bspzit.PNG, id=521, 491.58656pt x 302.63063pt>
+<files/bspzit.PNG, id=526, 491.58656pt x 302.63063pt>
 File: files/bspzit.PNG Graphic file (type png)
 <use files/bspzit.PNG>
 Package pdftex.def Info: files/bspzit.PNG  used on input line 34.
 (pdftex.def)             Requested size: 364.19672pt x 224.21559pt.
  [26 <./files/bspzit.PNG>] [27]
-<files/mitsu.PNG, id=540, 494.59781pt x 354.57469pt>
+<files/mitsu.PNG, id=544, 494.59781pt x 354.57469pt>
 File: files/mitsu.PNG Graphic file (type png)
 <use files/mitsu.PNG>
 Package pdftex.def Info: files/mitsu.PNG  used on input line 80.
 (pdftex.def)             Requested size: 455.24417pt x 326.35875pt.
  [28 <./files/mitsu.PNG>]
-<files/kitbsp.PNG, id=556, 550.30594pt x 335.75438pt>
+<files/kitbsp.PNG, id=560, 550.30594pt x 335.75438pt>
 File: files/kitbsp.PNG Graphic file (type png)
 <use files/kitbsp.PNG>
 Package pdftex.def Info: files/kitbsp.PNG  used on input line 113.
 (pdftex.def)             Requested size: 364.19672pt x 222.21335pt.
  [29] [30 <./files/kitbsp.PNG>]
-<files/kitbsp2.PNG, id=581, 450.9347pt x 251.43938pt>
+<files/kitbsp2.PNG, id=585, 450.9347pt x 251.43938pt>
 File: files/kitbsp2.PNG Graphic file (type png)
 <use files/kitbsp2.PNG>
 Package pdftex.def Info: files/kitbsp2.PNG  used on input line 138.
 (pdftex.def)             Requested size: 364.19672pt x 203.08543pt.
-<files/kitbsp3.PNG, id=583, 446.41782pt x 271.0125pt>
+<files/kitbsp3.PNG, id=587, 446.41782pt x 271.0125pt>
 File: files/kitbsp3.PNG Graphic file (type png)
 <use files/kitbsp3.PNG>
 Package pdftex.def Info: files/kitbsp3.PNG  used on input line 154.
 (pdftex.def)             Requested size: 364.19672pt x 221.0986pt.
  [31 <./files/kitbsp2.PNG>] [32 <./files/kitbsp3.PNG>]
-<files/kitbild1.PNG, id=605, 401.24907pt x 159.59625pt>
+<files/kitbild1.PNG, id=609, 401.24907pt x 159.59625pt>
 File: files/kitbild1.PNG Graphic file (type png)
 <use files/kitbild1.PNG>
 Package pdftex.def Info: files/kitbild1.PNG  used on input line 185.
 (pdftex.def)             Requested size: 455.24417pt x 181.08438pt.
 
 [33 <./files/kitbild1.PNG>]
-<files/anzahlzit.PNG, id=619, 498.36188pt x 358.33875pt>
+<files/anzahlzit.PNG, id=623, 498.36188pt x 358.33875pt>
 File: files/anzahlzit.PNG Graphic file (type png)
 <use files/anzahlzit.PNG>
 Package pdftex.def Info: files/anzahlzit.PNG  used on input line 205.
 (pdftex.def)             Requested size: 455.24417pt x 327.34636pt.
  [34 <./files/anzahlzit.PNG>]
-<files/mdsstuart1.PNG, id=628, 417.81094pt x 358.33875pt>
+<files/mdsstuart1.PNG, id=632, 417.81094pt x 358.33875pt>
 File: files/mdsstuart1.PNG Graphic file (type png)
 <use files/mdsstuart1.PNG>
 Package pdftex.def Info: files/mdsstuart1.PNG  used on input line 243.
 (pdftex.def)             Requested size: 455.24417pt x 390.46667pt.
-<files/mdsstuart2.PNG, id=633, 395.22656pt x 363.60844pt>
+<files/mdsstuart2.PNG, id=638, 395.22656pt x 363.60844pt>
 File: files/mdsstuart2.PNG Graphic file (type png)
 <use files/mdsstuart2.PNG>
 Package pdftex.def Info: files/mdsstuart2.PNG  used on input line 253.
 (pdftex.def)             Requested size: 455.24417pt x 418.82887pt.
  [35] [36 <./files/mdsstuart1.PNG>]
-<files/mdsstuart3.PNG, id=669, 386.94562pt x 353.06906pt>
+<files/mdsstuart3.PNG, id=675, 386.94562pt x 353.06906pt>
 File: files/mdsstuart3.PNG Graphic file (type png)
 <use files/mdsstuart3.PNG>
 Package pdftex.def Info: files/mdsstuart3.PNG  used on input line 266.
 (pdftex.def)             Requested size: 455.24417pt x 415.39493pt.
  [37 <./files/mdsstuart2.PNG>] [38 <./files/mdsstuart3.PNG>]
-<files/mdskit1.PNG, id=687, 391.4625pt x 356.83313pt>
+<files/mdskit1.PNG, id=693, 391.4625pt x 356.83313pt>
 File: files/mdskit1.PNG Graphic file (type png)
 <use files/mdskit1.PNG>
 Package pdftex.def Info: files/mdskit1.PNG  used on input line 281.
 (pdftex.def)             Requested size: 455.24417pt x 414.9939pt.
-<files/mdskit2.PNG, id=691, 382.42876pt x 348.55219pt>
+
+[39 <./files/mdskit1.PNG>]
+<files/mdskit2.PNG, id=702, 382.42876pt x 348.55219pt>
 File: files/mdskit2.PNG Graphic file (type png)
 <use files/mdskit2.PNG>
 Package pdftex.def Info: files/mdskit2.PNG  used on input line 290.
 (pdftex.def)             Requested size: 455.24417pt x 414.93646pt.
-)
-[39 <./files/mdskit1.PNG>] [40 <./files/mdskit2.PNG>]
+) [40 <./files/mdskit2.PNG>]
 \openout2 = `07_TopicModeling.aux'.
 
  (07_TopicModeling.tex
@@ -2002,23 +1994,27 @@ chapter 5.
 
 
 ]
-<files/tmschab.PNG, id=712, 312.41719pt x 124.21407pt>
+<files/tmschab.PNG, id=721, 312.41719pt x 124.21407pt>
 File: files/tmschab.PNG Graphic file (type png)
 <use files/tmschab.PNG>
 Package pdftex.def Info: files/tmschab.PNG  used on input line 25.
 (pdftex.def)             Requested size: 364.19672pt x 144.80484pt.
  [42 <./files/tmschab.PNG>]
-<files/tmbsp1.PNG, id=725, 450.9347pt x 353.82187pt>
+<files/tmbsp1.PNG, id=734, 450.9347pt x 353.82187pt>
 File: files/tmbsp1.PNG Graphic file (type png)
 <use files/tmbsp1.PNG>
 Package pdftex.def Info: files/tmbsp1.PNG  used on input line 47.
 (pdftex.def)             Requested size: 364.19672pt x 285.7789pt.
-<files/tmschab2.PNG, id=728, 660.21657pt x 273.27094pt>
+ [43 <./files/tmbsp1.PNG>]
+<files/tmschab2.PNG, id=743, 660.21657pt x 273.27094pt>
 File: files/tmschab2.PNG Graphic file (type png)
 <use files/tmschab2.PNG>
 Package pdftex.def Info: files/tmschab2.PNG  used on input line 58.
 (pdftex.def)             Requested size: 455.24417pt x 188.4362pt.
- [43] [44 <./files/tmbsp1.PNG> <./files/tmschab2.PNG>]
+ [44 <./files/tmschab2.PNG>]
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 73.
+
 
 LaTeX Warning: Reference `appenidx:spacy' on page 45 undefined on input line 73
 .
@@ -2034,13 +2030,13 @@ Overfull \hbox (12.79999pt too wide) in paragraph at lines 90--93
  []
 
 [45] [46]
-<files/coplot1.PNG, id=756, 413.29407pt x 259.7203pt>
+<files/coplot1.PNG, id=763, 413.29407pt x 259.7203pt>
 File: files/coplot1.PNG Graphic file (type png)
 <use files/coplot1.PNG>
 Package pdftex.def Info: files/coplot1.PNG  used on input line 121.
 (pdftex.def)             Requested size: 364.19672pt x 228.87161pt.
  [47]
-<files/coplot2.PNG, id=768, 426.84468pt x 255.20343pt>
+<files/coplot2.PNG, id=775, 426.84468pt x 255.20343pt>
 File: files/coplot2.PNG Graphic file (type png)
 <use files/coplot2.PNG>
 Package pdftex.def Info: files/coplot2.PNG  used on input line 130.
@@ -2065,34 +2061,34 @@ Overfull \hbox (12.79999pt too wide) in paragraph at lines 141--144
 [][] 
  []
 
-<files/topic4.PNG, id=778, 362.10281pt x 182.93344pt>
+<files/topic4.PNG, id=784, 362.10281pt x 182.93344pt>
 File: files/topic4.PNG Graphic file (type png)
 <use files/topic4.PNG>
 Package pdftex.def Info: files/topic4.PNG  used on input line 152.
 (pdftex.def)             Requested size: 364.19672pt x 183.99368pt.
-<files/topic11.PNG, id=780, 356.0803pt x 179.16937pt>
+<files/topic11.PNG, id=786, 356.0803pt x 179.16937pt>
 File: files/topic11.PNG Graphic file (type png)
 <use files/topic11.PNG>
 Package pdftex.def Info: files/topic11.PNG  used on input line 161.
 (pdftex.def)             Requested size: 364.19672pt x 183.26157pt.
 [49 <./files/topic4.PNG>]
-<files/topic20.PNG, id=788, 360.59718pt x 182.93344pt>
+<files/topic20.PNG, id=793, 360.59718pt x 182.93344pt>
 File: files/topic20.PNG Graphic file (type png)
 <use files/topic20.PNG>
 Package pdftex.def Info: files/topic20.PNG  used on input line 170.
 (pdftex.def)             Requested size: 364.19672pt x 184.75851pt.
  [50 <./files/topic11.PNG> <./files/topic20.PNG>]
-<files/hondavektor.PNG, id=799, 478.03593pt x 207.77625pt>
+<files/hondavektor.PNG, id=804, 478.03593pt x 207.77625pt>
 File: files/hondavektor.PNG Graphic file (type png)
 <use files/hondavektor.PNG>
 Package pdftex.def Info: files/hondavektor.PNG  used on input line 185.
 (pdftex.def)             Requested size: 455.24417pt x 197.8682pt.
-<files/tmmds1.PNG, id=800, 416.30531pt x 353.82187pt>
+<files/tmmds1.PNG, id=805, 416.30531pt x 353.82187pt>
 File: files/tmmds1.PNG Graphic file (type png)
 <use files/tmmds1.PNG>
 Package pdftex.def Info: files/tmmds1.PNG  used on input line 194.
 (pdftex.def)             Requested size: 455.24417pt x 386.93773pt.
-<files/tmmds2.PNG, id=804, 832.61063pt x 360.59718pt>
+<files/tmmds2.PNG, id=809, 832.61063pt x 360.59718pt>
 File: files/tmmds2.PNG Graphic file (type png)
 <use files/tmmds2.PNG>
 Package pdftex.def Info: files/tmmds2.PNG  used on input line 203.
@@ -2103,52 +2099,52 @@ Package pdftex.def Info: files/tmmds2.PNG  used on input line 203.
 LaTeX Warning: Text page 52 contains only floats.
 
 [52 <./files/tmmds1.PNG> <./files/tmmds2.PNG>]
-<files/tmmds4.PNG, id=819, 432.11438pt x 353.06906pt>
+<files/tmmds4.PNG, id=824, 432.11438pt x 353.06906pt>
 File: files/tmmds4.PNG Graphic file (type png)
 <use files/tmmds4.PNG>
 Package pdftex.def Info: files/tmmds4.PNG  used on input line 212.
 (pdftex.def)             Requested size: 455.24417pt x 371.98332pt.
-<files/tmmds3.PNG, id=822, 382.42876pt x 350.05782pt>
+<files/tmmds3.PNG, id=827, 382.42876pt x 350.05782pt>
 File: files/tmmds3.PNG Graphic file (type png)
 <use files/tmmds3.PNG>
 Package pdftex.def Info: files/tmmds3.PNG  used on input line 224.
 (pdftex.def)             Requested size: 455.24417pt x 416.72885pt.
  [53 <./files/tmmds4.PNG>]
 [54 <./files/tmmds3.PNG>]
-<files/topictoyota.PNG, id=837, 353.82187pt x 181.42781pt>
+<files/topictoyota.PNG, id=842, 353.82187pt x 181.42781pt>
 File: files/topictoyota.PNG Graphic file (type png)
 <use files/topictoyota.PNG>
 Package pdftex.def Info: files/topictoyota.PNG  used on input line 235.
 (pdftex.def)             Requested size: 364.19672pt x 186.75092pt.
-<files/topicvw.PNG, id=838, 359.09157pt x 181.42781pt>
+<files/topicvw.PNG, id=843, 359.09157pt x 181.42781pt>
 File: files/topicvw.PNG Graphic file (type png)
 <use files/topicvw.PNG>
 Package pdftex.def Info: files/topicvw.PNG  used on input line 242.
 (pdftex.def)             Requested size: 364.19672pt x 184.02132pt.
-) [55 <./files/topictoyota.PNG> <./files/topicvw.PNG>]
+) [55 <./files/topictoyota.PNG> <./files/topicvw.PNG>] [56]
 \openout2 = `08_Zusammenfassung.aux'.
 
-(08_Zusammenfassung.tex
+ (08_Zusammenfassung.tex
 chapter 6.
-) [56
+[57
 
 
 
-] [57]
+]) [58]
 \openout2 = `A_Appendix.aux'.
 
  (A_Appendix.tex
 chapter A.
-[58
+[59
 
 
 
-] [59] [60]) [61]
+] [60] [61]) [62]
 chapter without number
-[62
+[63
 
 
-] [63]
+] [64]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
  (00_Bachelorarbeit_Paul_Theuer.aux (01_Titelseite.aux)
@@ -2167,41 +2163,25 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to '00_Bachelorarbeit_Paul_Theuer.run.xml
 '.
 \openout1 = `00_Bachelorarbeit_Paul_Theuer.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39743 strings out of 481005
- 782361 string characters out of 2901323
- 1738106 words of memory out of 3000000
- 54406 multiletter control sequences out of 15000+200000
+ 39744 strings out of 481005
+ 782345 string characters out of 2901323
+ 1738726 words of memory out of 3000000
+ 54405 multiletter control sequences out of 15000+200000
  643714 words of font info for 175 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 65i,20n,115p,10131b,3724s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{https://www.forbes.com/sites/altheachang/2011/08/
-31/ford-toyota-hybrid-partnership/} has been referenced but does not exist, rep
-laced by a fixed one
+ 65i,21n,115p,10131b,3724s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{BrandZ} has been referenced but does not exist, r
+eplaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.30} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.26} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.31} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.28} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.41} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{https://www.forbes.com/sites/altheachang/2011/08/31
+/ford-toyota-hybrid-partnership/} has been referenced but does not exist, repla
+ced by a fixed one
 
 {C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec-t
 lf.enc}{C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/newtx/n
@@ -2220,9 +2200,9 @@ sers/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/txsys.pfb>
 pfb><C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/newtx/z
 tmr.pfb><C:/Users/Paul/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/new
 tx/ztmri.pfb>
-Output written on 00_Bachelorarbeit_Paul_Theuer.pdf (70 pages, 1381419 bytes).
+Output written on 00_Bachelorarbeit_Paul_Theuer.pdf (71 pages, 1387772 bytes).
 PDF statistics:
- 1287 PDF objects out of 1440 (max. 8388607)
- 379 named destinations out of 1000 (max. 500000)
+ 1306 PDF objects out of 1440 (max. 8388607)
+ 381 named destinations out of 1000 (max. 500000)
  670 words of extra memory for PDF output out of 10000 (max. 10000000)
 
